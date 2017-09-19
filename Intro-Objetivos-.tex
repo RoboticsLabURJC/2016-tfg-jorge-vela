@@ -1,0 +1,218 @@
+\documentclass{article}
+% pre\'ambulo
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[10pt]{moresize}
+\usepackage{amsmath} 
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+\title{TFG}
+\author{Jorge Vela Peña}
+
+\begin{document}
+% cuerpo del documento
+
+\maketitle
+
+
+
+\newpage
+
+\section{Introducci\'on}
+Cada vez es mas com\'un el uso de drones para labores que pueden ser muy diversas, como puede ser grabar un plano para una pel\'icula o mantener vigilado un lugar sobrevolando estas zonas. Pero para llegar al punto en el que estamos hoy primero hay que pensar en el inicio de \'estos. 
+
+\subsection{Historia de los drones}
+\hspace{1 cm} Los drones son conocidos como UAV(veh\'iculos aereos no tripulados). Estos veh\'iculos no siempre se ha visto y pensado en ellos de la misma forma que ahora, pues en la actualidad se asocia a un aparato con varias h\'elices que puede volar en diferentes direcciones. Sin embargo, el primer registro de UAV se trata de un globo aeroest\'atico en un entorno militar, ya que este se pod\'ia utilizar para sobrevolar una zona y lanzar bombas desde cierta altura sin necesidad de que hubiera ninguna persona en este y, por tanto, sin arriesgar una vida. Este UAV es muy distinto a lo que vino despues, principalmente porque el motor de \'este se trata de una bolsa que tiene un gas mas ligero que el aire, lo que le permite coger altura y jugar con las corrientes de viento para desplazarse en una direcci\'on o en otra. 
+
+\hspace{1 cm} Mas adelante, ya en la primera guerra mundial, se comenzaron a utilizar para sobrevolar las areas enemigas y hacer fotos de estas para as\'i tener un control de sus movimientos (en este punto nos damos cuenta de que el introducir una c\'amara en un UAV es algo que se hizo desde los primeros momentos, pero en ello ya profundizaremos mas adelante). Estos veh\'iculos eran aviones tripulados por radiofrecuencia, por lo que se dio un gran salto con respecto al anterior, pues era mucho mas facil su control, por lo que pod\'ian manejar su trayectoria con mucha mas facilidad. 
+
+\hspace{1 cm} Tambi\'en durante la primera, pero mas desarollado para la segunda guerra mundial, se le di\'o uso a \'estos para utilizarlos como explosivos, ya que pod\'ian seguir su trayectoria en todo momento y asegurarse que llegaban al destino correcto. Adem\'as de poder segir a otros veh\'iculos en movimiento del bando enemigo y as\'i hacer que este no llegara a su destino. 
+
+\hspace{1 cm} Est\'a claro que los inicios de estos ten\'ian solo fines militares y que su desarrollo era exclusivamente para ello. En comparaci\'on con estos años, el avance sobre estos freno en gran medida y ya lo que se hac\'ia era modificaciones para poder dar uso a lo que ya hab\'ia, pues se utilizaban para vigilancia a\'erea en zonas de conflictos, lo que llev\'o a mejorar el sistema de control haciendo as\'i que se pudieran manejar a una mayor distancia. 
+
+\hspace{1 cm}Destacar que fue alrededor de 1980 cuando se vi\'o que la tecnolog\'a y el software de los UAV eran de gran fiabilidad y se pod\'ian asignar a estas tareas de mayor responsabilidad para no jugarse la vida de los pilotos. Decir como dato curioso, que una vez no estaban los pilotos en la cabina del veh\'iculo se pod\'ia jugar con mayor libertad a la hora de realizar movimientos, ya que ciertos giros que los pilotos no podian realizar por ser demasiado bruscos para aguantarlos el cuerpo humano, ahora pod\'ian hacerlos con la brusquedad que permitiera el sistema.  
+
+\hspace{1 cm} Tras esto ya en la decada de los 90 se da un avance muy importante, y es que se desarrolla el sistema GPS para el desplazamiento de estos veh\'iculos. Esto permit\'ia no depender de la radiofrecuencia, ya que con \'esta vamos a tener un l\'imite en distancia y no revisar los datos para ver en todo momento su situaci\'on y dirigir la trayectoria. Con \'este sistema se traza una ruta al inicio y el UAV puede trabajar de forma autonoma. 
+
+\hspace{1 cm} Fue pasado el año 2000 cuando comenz\'o el uso de drones tal y como lo conocemos ahora, que son aparatos con diversos tamaños al que se le puede dar en gran medida un uso civil, pues mucha gente tiene uno solo por ocio. En este punto es destacable el r\'apido desarrollo que tuvieron en este aspecto. Han mejorado mucho en pocos años con respecto a los años anteriores, lo que ha llevado al punto de tener que crear leyes para restringir y controlar su uso. Son aparatos con muchas funcionalidades pero pueden ser aparatos muy peligrosos, por ejemplo, el manejarlos sobre carreteras transitadas, en caso de que haya alg\'un fallo, puede provocar un accidente muy grave. Hoy en d\'ia est\'a el problema que al no ser algo esperado, se han creado leyes para su control pero a\'un quedan muchos cabos sueltos, por lo que ciertas cosas que pueden suponer un gran peligro no estan reguladas y por lo tanto, pueden llevar a problemas. Al igual que cosas que no tienen peligro alguno y sin hacer un mal uso del drone, pueden acarrear multas inesperadas.
+
+\subsection{Estructura de un dron}
+\hspace{1 cm} Hay que destacar las partes que tiene un dron y su forma, pues es gran parte lo que lo hace tan especial,permite que tenga una gran libertad de movimientos, ya que puede moverse sin problema desde cualquier punto hacia los ejes X, Y y Z. Lo que ganamos con esto son cosas como poder permitirse un aterrizaje y un despegue totalmente vertical, sin depender de un espacio en el que cojer velocidad para poder levantar el vuelo, e igual con el aterrizaje, pudiendo el dron estando quieto en el aire bajar totalmente en vertical hasta tocar posarse sobre el suelo. Una vez en el aire pueden moverse adelante, atr\'as, izquierda, derecha, arriba, abajo y combinaciones de movimientos entre ejes, adem\'as de los movimientos Roll, Yaw y Pitch y sin necesidad de hacer movimientos bruscos. Sin embargo, en los anteriores UAV solo tenemos el movimiento hacia adelante, teniendo que jugar con Roll, Yaw y Pitch para poder movernos en los distintos ejes.
+
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=0.3\textwidth]{C:/Users/jorge/Pictures/ejesdrone.eps}
+		\caption{Esta imagen muestra los movimientos que tiene un dron.}
+	\label{fig:ejesdrone}
+\end{figure}
+
+\hspace{1 cm} Explicado esto, un desglose explicando cada una de las partes ser\'ia :
+
+\hspace{1 cm}\textbf{Frame:} Tambi\'en conocido como marco, estructura o chasis. Es la estructura principal sobre la que se situan el resto de los elementos. Este variar\'a su forma dependiendo del dron, variando la longitud de las patas o el n\'umero de soportes para helices, por ejemplo. Esta puede estar hecha por diversos materiales, generalmente se trata de alg\'un tipo de plastico, ya que es un material que tiene poco coste y pesa poco. Un ejemplo es el polipropileno, que es ligero y con mucha resistencia, lo que permite colocar sobre el la bater\'ia. Otro material que suele utilizarse es la fibra de carbono, ya que se trata de un material que pesa poco y es muy resistente, aunque puede tener factores negativos como su conductividad. Por ultimo, tambi\'en nombrar la fibra de v\'idrio. Este material tambi\'en es muy utilizado por ser ligero, y tiene caracter\'isticas como que no es conductor de la electricidad. Es com\'un ver estucturas h\'ibridas entre distintos materiales, sobre todo juntando los dos tipos de fibra. 
+
+\hspace{1 cm}\textbf{H\'elices:} Elemento formado por dos palas montadas de forma concentrica sobre un eje, que al girar crean un par de fuerzas, permitiendo así el movimiento del dron.
+
+\hspace{1 cm}\textbf{Motores:} Son los encargados de transformar la energ\'ia que llega en movimiento sobre el eje en el que se situan las h\'elices, para asi permitirles a estas hacer su trabajo. Este a su vez tiene distintos parametros que ser\'an principalmente los que permitan al drone llevar mayor velocidad. 
+
+\hspace{1 cm} El numero de vueltas que d\'e por minuto, lo que dependera de los KiloVoltios. Este suele estar en torno a 800-900kV.
+
+\hspace{1 cm} El tamaño que \'este tenga. Al mirar las especificaciones de un drone est\'a en un numero de 4 d\'igitos, en el que los dos primeros hacen referencia al tamaño del rotor y los otros dos al tamaño de la bobina. 
+
+\hspace{1 cm} El empuje, valor que hacer referencia al peso que puede levantar el motor.
+
+\hspace{1 cm} La corriente, que se trata de la energ\'ia (amperios) que se consume cuando el motor esta al m\'aximo.
+
+
+\hspace{1 cm}\textbf{Bateria:} Encargada de proporcionar la energ\'ia suficiente para que el dron pueda realizar un vuelo, permitiendo trabajar a la placa controladora y motores. La caracter\'istica principal de las baterias son los miliamperios, ya que es la que permitir\'a una mayor capacidad y por lo tanto que el dron tenga un mayor tiempo de vuelo. Existen bater\'ias de muy diversos tamaños, desde los 350 mah en drones de jugete a, por ejemplo, los 4500mah que tiene la bater\'ia del dron 3DR solo. Tambi\'en es importante la tasa de descarga, que se trata de la m\'axima energ\'ia que puede entregar y el periodo de tiempo durante el que puede hacerlo. Normalmente los drones traen sitemas de alerta que avisan cuando a la bater\'ia le queda poca energ\'ia, o que cuando queda un valor menor a cierto porcentaje de carga no permite despegar el dron, evitando as\'i que se quede sin energ\'ia a mitad de un vuelo.
+
+\hspace{1 cm}\textbf{Equipo de transmision:} Es el encargado de que se comunique el dron con una estaci\'on receptora. Este puede variar en funcion del aparato ya que se pueden usar diferentes tecnolog\'ias, pero principalmente se trata de radiofrecuencia o de Wifi. Existen casos, como el modelo 3DR que combina ambas tecnolog\'ias, utilizando la radiofrecuencia para la informaci\'on del movimiento, bater\'ia y posicionamiento, y el WiFi para la transmisi\'on de im\'agenes en directo. Podemos encontrar distintos equipos de sistemas de transmisi\'on, uno de los ultimos y mas destacables es \textbf{Hyperion}, que utiliza un sistema \'optico de comunicaciones capaz de transmitir hasta 1Gb por segundo, lo que permite la transmisi\'on de datos mediante la luz directa. La principal caracter\'istica de \'este es que no pierde informaci\'on cuando no hay contacto directo entre las dos estaciones. Pero v\'ia WiFi es algo muy utilizado en los ultimos momentos, pues permite controlar el dron desde una aplicaci\'on movil, por lo que conectando estos dos tendr\'iamos un mando que nos permite cambiar gran parte de la configuraci\'on del dron. Tambi\'en existen dispositivos que permiten el control mediante Bluetooth, pero este es menos com\'un ya que tiene mayor restricci\'on de velocidad de datos y distancia. 
+
+
+\hspace{1 cm}\textbf{Placa controladora:} Es el procesador del dron, el que se encarga de recoger la informaci\'on del dron y cuando le llega una orden ver que informaci\'on tiene que mandar para que \'esta se ejecute de forma correcta, as\'i como en caso de haber un problema tratar de evitarlo. Este es basicamente el hardware que utiliza el dron, hay una gama muy amplia dentro de \'este, donde podemos encontrar algunos muy importantes como: 
+	\begin{itemize}
+		\item Pixhawk: Este es el m\'as utilizado debido a que trabaja con 3DRobotics y Ardupilot. Este sirve para diversos dispositivos como son drones, helic\'opteros y barcos. Esta pensado para cualquier veh\'iculo que tenga movimiento. 
+
+		\item Pixhawk2: Es una versi\'on avanzada de la placa anterior. Este tiene mejoras como aislamiento de vibraciones, 3 IMUs para redundancia(3 acelerometros, 3 giroscopios, 3 magnetometros y 2 barometros) y sensor para controlar la temperatura. 
+
+		\item PixRacer: \'Este se ha desarrollado para los drones de carreras, aunque tambi\'en se utiliza en minidrones. Suele tener una mayor memoria flash.
+
+		\item Navio2: Piloto autom\'atico diseñado de Raspberry Pi. Te permite convertir esta en un controlador de drone. 
+
+		\item PXFmini: Se trata de otro piloto autom\'atico de Raspberry Pi. Este tiene la electr\'onica para la mayoria de los componentes que puede utilizar un dron. 
+
+		\item FlytPOD: Este se trata de una placa Odroid XU4 SBC junto con una PixHawk. Puede volar diversos veh\'iculos aereos y su principal caracter\'istica es el WiFi que tiene integrado. Existe una placa FlytPOD pro que se trata de una versi\'on extendida de la anterior, teniendo todas sus caracter\'isticas, pero con mas sensores y mayor capacidad de almacenamiento. 
+
+		\item U-Pilot: Este hardware se caracteriza por servir para diversos vehi\'iculos aereos, siendo programable para realizar todas las acciones de su camino de forma autom\'atica. Su radioenlace con frecuencia en torno a 900Mhz permite controlar el dispositivo a una distancia de 100km. 
+	\end{itemize}
+
+\hspace{1 cm} Hay que destacar un elemento impotante como es la \textbf{camara}, que aunque no todos los drones la llevan s\'i que es algo bastante com\'un. Algunos la llevan incorporada (incluso dos camaras, una que apunta hacia la parte de delante y otra que apunta la parte de abajo) y otras que traen soporte para poder incorporar ciertas camaras, normalmente consideradas camaras de acci\'on, para as\'i obtener una mejor calidad, e incluso incorporar adaptadores como puede ser una Gimbal para controlar la parte hacia la que queremos que apunte la camara en cada momento o utilizarlo como estabilizador, para evitar asi que afecten a la imagen diversos movimientos, generalmente bruscos, que pueda realizar el dron. Cabe destacar que en muchas ocasiones, utilizado normalmente para carreras de drones, la c\'amara sirve para integrar la tecnolog\'ia FPV (First Person View), que es junto a la c\'amara, el transmisor de v\'ideo y el receptor de v\'ideo, poder ver en tiempo real las imagenes sobre una pantalla LCD o utilizando unas gafas de realidad virtual. En este aspecto, en los ultimos años se ha visto por otro lado un gran avance de la realidad virtual, y es tambi\'ien hay una gran variedad en este mundo, pues existe una gama que va desde las \emph{cardnboard}, que permiten con un trozo de cart\'on y un par de lentes, poniendolos de cierta forma y con el uso de un smartphone, tener de forma sencilla unas gafas 3D, hasta gafas para la videoconsola que te permiten entrar en el videojuego, añadiendo una gran calidad de imagen y con un sonido envolvente para entrar de lleno en el ambiente. Pero una de las cosas mas impactantes es el conjunto que se ha creado con el done \textbf{FLYBi}, estando \'este conectado a unas gafas de realidad virtual que tienen sensor de movimiento, lo que te permite sentir que eres t\'u el que vuelas y el que est\'as en el lugar del dron, y con cualquier movimiento que sientan las gafas la c\'amara del drone lo imitar\'a. En caso de que esto parezca incomodo el dron tiene un joystick con el que enviar\'a la informaci\'on de los elementos a realizar a la c\'amara. 
+ 
+\subsection{Software de los drones}
+Como bien sabemos, \'este es el programa que va a permitir actuar al dron y poder realizar diversas tareas. El software del dron ser\'a el que va instalado en la placa controladora, y por tanto el que se ejecute para enviar las ordenes correctas en cada momento a los diversos elementos del aparato. Logicamente, con el avance de los drones que ha habido en los ultimos años, el software ha cambiado mucho, añadiendo las necesidades que se iban dando fuera del mundo militar para el que comenzo el desarrollo. Hay diversos softwares que permiten el manejo de los drones, algunos relevantes son:
+
+\hspace{1 cm} \textbf{Ardupilot:} Es un sistema OpenSource encargado de recibir la informaci\'on que se le da y de esta forma enviar las señales correspondientes a los actuadores. Este software se caracteriza por la variedad de dispostivos que puede llegar a controlar, ya que trabaja con diversos dispositivos aereos(aviones, helicopteros, drones, etc) y con dispositivos marinos(como pueden ser los barcos y submarinos). Este ha tenido un gran desarollo debido a su principal caracter\'istica: Opensource. Hay mucha gente creando interfaces para este y dichos usuarios comparten sus avances con el resto. A partir de \'este han nacido controladores como Ardupilot Mega. El problema que tiene dicho software es que solo permite trabajar con plataformas de los mismos creadores, lo que lleva al siguiente software.
+
+\hspace{1 cm} \textbf{Megapirate-NG:} Apareci\'o como desarrollo del anterior. La funcionalidad de uno y otro es practicamente la misma, con la diferencia de que \'este permite trabajar con Hardware de otros creadores. El problema es que siempre depende de Ardupilot, por lo tanto sus funcionalidades, aunque sean mas c\'omodas para trabajar, puede que esten atrasadas.
+
+\hspace{1 cm} \textbf{MultiWii:} \'Este se propuso como radiocontrol para drones. Es un sistema que fue creado por los desarrolladores y con los sensores (giroscopios y acelerometros) de la Nintendo Wii. Es una plataforma basada en arduino, con el factor en contra de tener una funcionalidad bastante limitada. 
+
+Estos primeros son los softwares principales que estar\'ian sobre el veh\'iculo, pero tambi\'en estan los programas que se ejecutar\'ian en otros dispositivos como el ordenador o el tel\'efono m\'ovil para ver la informaci\'on que este nos env\'ia. Normalmente el fabricante del drone tiene ya un programa que realiza esta funci\'on. 
+
+\hspace{1 cm} En este punto es importante el protocolo de comunicaci\'on que habr\'a para comunicarse el veh\'iculo con la estaci\'on terrena. Aqu\'i hay un protocolo que destaca sobre los dem\'as, el \textbf{MAVLink} (Micro Air Vehicle Communication Protocol). \'Este protocolo tiene la informaci\'on contenida en ficheros .xml, lo que permite utilizarlo en diversos lenguajes de comunicaci\'on, lo que conlleva una mejora notable en su desarrollo. Al tener el fichero .xml los tipos de mensaje, permite con facilidad añadir nuevos tipos para asignar una tarea nueva a cada uno. Otra ventaja de este es que hay muchos software de drones que lo soportan, como pueden ser Ardupilot, Autopilot, algunos derivados de estos y otros como Gentlenav o Flexipilot, y desde la estaci\'on tierra algunos como MAVProxy, Mission Planer o APM planner. 
+Un problema en este protocolo es que los datos no estan encriptados en la comunicaci\'on, por lo que es mas facil un ataque y que se manipulen los datos, siendo detectable si se hace perder algun dato ya que se utiliza CRC (codigo de redundancia c\'iclica para detectar cambios en los datos, este se utiliza en protocolos como TCP).
+MAVLink utiliza otro software llamado MAVProxy para poder acceder a los datos del veh\'iculo, como la velocidad y las im\'agenes, lo que nos permitir\'a tambi\'en saber que datos mandarle para que funcione de forma correcta. 
+
+\hspace{1 cm} A parte de todos estos, existen tambi\'en otras infraestructuras software como puede ser \textbf{JdeRobot}. En s\'i JdeRobot se trata de un software de desarrollo para rob\'otica y aplicaciones de visi\'on por computador. \'Este puede trabajar con distintos sensores que le proporcionan informaci\'on, en caso del drone con la informaci\'on que le permite Ardrone Server, y gracias a esto puede controlar el dispositivo y ver los distintos datos de este. Con JdeRobot es muy sencillo tomar el control del hardware gracias a su programa de control. Tiene una gran API que permite realizar diversas tareas como trabajar con aparatos reales o simulados, y conectarse a ellos de forma local o a trav\'es de la red. Decir que para el trabajo realizado, esta plataforma ha sido muy importante, pues su componente para la c\'amara, su aplicaci\'on para filtros de color y la posibilidad de realizar diagramas de estado permite tener en todo momento datos importantes del dron y poder mantenerlo bajo control sin ningun problema. Destacar que se trata de un sistema OpenSource que permite trabajar con simuladores como Gazebo y con ayuda de librerias como OpenCV. 
+ 
+\hspace{1 cm} Ya que este proyecto se ha desarrollado en python, hay que destacar algunas librerias y herramientas muy importantes para la creaci\'on de un buen software, lo que permitir\'a una mejor y m\'as r\'apida ejecuci\'on. 
+	\begin{itemize}
+	\item OpenCV: Se trata de una biblioteca de visi\'on artificial. Esta biblioteca est\'a implementada en C++, pero se puede utilizar en los distintos lenguajes como C++,C, python y Java. Es una biblioteca utilizada por miles de usuarios y tiene funciones que te permiten detectar movimiento, reconocer objetos, reconocimiento facial y trabajar sobre im\'agenes (modificando datos de \'estas), mostrando, guardando y creando nuevas im\'agenes, cambios de valor sobre pixeles concretos para que sea mas sencillo ver el proceso que se esta realizando. Est\'a disponible para los diversos sistemas operativos y se utiliza mucho para software de visi\'on. Se trata de una librer\'ia opensource y por lo tanto su desarrollo puede avanzar a gran velocidad ya que todo el mundo puede contribuir y compartir este.
+	
+	\item PIL: Esta librer\'ia permite la edici\'on de im\'agenes desde python. Tiene una gran variedad de operaciones que permite el realizar diversos cambios como puede ser rotaci\'on, escalado o manipulaci\'on de p\'ixeles en imagenes, adem\'as de cargar y guardar estas para trabajar con ellas o una vez est\'en modificadas. 
+	
+	\item NumPy: Se trata de un paquete en python que permite la computaci\'on cient\'ifica. La principal caracter\'istica son las matrices multidimensionales que permite hacer y el conjunto de funciones matem\'aticas que tiene para poder operar. NumPy permite ejecutar a gran velocidad las operaciones deseadas. En ocasiones los datos obtenidos en operaciones con la biblioteca OpenCV son almacenados en matrices NumPy, pues en realidad estas im\'agenes son matrices de datos a las que se le dan ciertos valores para luego poder representarlas, y acceder a estas estructuras se puede hacer de forma mas sencilla con un bajo coste computacional, adem\'as de permitirte interoperabilidad con otros paquetes como scipy o matplotlib. 
+
+	\item Scipy: Esta librer\'ia Opensource permite trabajar con diversos algoritmos matem\'aticos de gran capacidad ya que tiene modulos para la optimizaci\'on de funciones. 
+	\end{itemize}
+	
+	Cabe destacar las diferencias que tiene este lenguaje de programaci\'on respecto a otros. La principal diferencia es que se trata de un lenguaje interpretado, por lo que podriamos decir que sus programas hacen una compilaci\'on en directo, es decir que mientras compilan ejecutan, lo conlleva que no haya errores de compilaci\'on sino que sean errores en ejecuci\'on. Este tiene ventajas como la simplicidad para escribir el codigo, ya que te permite hacerlo de forma mucho mas limpia y abreviada que en otros lenguajes. No te obliga a declarar el tipo del que es una variable, simplemente con asignarle un valor ya te deja trabajar con el, a diferencia de otros como C o Java que si hay que declararlo. Todo esto conlleva que el tiempo de desarrollo en un programa se reduce de forma notable, permite que sea mejor y mas fluido el trabajo en equipo ya que si se crea un codigo legible es mas facil de entender y te permite no estar preocupado por la reserva y liberaci\'on de memoria. Tiene tambi\'en factores en contra como pueden ser el rendimiento, pues para hacer la misma operaci\'on necesita mas tiempo que otros lenguajes, y emplea mas memoria. Destacar que se esta trabajando en esto ya que se considera una desventaja importante, y se han creado herramientas como \textbf{Numba}, que con pocas lineas permite que este acelere su ejecuci\'on, hasta veinte veces su velocidad. 
+	
+
+\subsection{Uso actual de los drones}
+Habiendo visto ya algunas de las caracter\'isticas principales que tiene un dron, podemos entrar en todas las actividades que podemos realizar con \'el, pues dado su desarrollo este abarca campos muy diversos y en actividades muy distintas. Antes, debido a la historia de los UAV se ha comentado el uso militar que tenian y como fue avanzando en este terreno, pero a continuaci\'on vamos a nombrar y explicar distintos usos que se le da a los drones hoy en d\'ia:
+
+\begin{itemize}
+	\item \textbf{Medio Audiovisual:} El dron es un medio utilizado con mucha frecuencia en este medio, pues debido a sus caracteristicas es posible grabar grandes planos para pel\'iculas o simplemente v\'ideos, adem\'as de permitir tomar fotograf\'ias desde un plano elevado con gran facilidad. Una de las razones de que esto ocurra es que este es un sector muy amplio, y tiene muchas empresas con gran cantidad de dinero, lo que les permite realizar inversiones en nueva tecnolog\'ia, y si funciona como ha sido en este caso, que empresas mas pequeñas puedan comprar este material a un alcance mas econ\'omico, algo que es posible debido a la gran diversidad de drones que existen, y por lo tanto los diferentes precios que hay, siendo algunos realmente baratos. 	
+	
+	\hspace{1 cm} Por otra parte, tambi\'en es muy utilizado para eventos deportivos, pues la misma raz\'on de antes, permite planos espectaculares, aparte de llegar a ciertas zonas con mas facilidad que con una c\'amara normal, pues en deportes como puede ser el esqui, carreras a traves del campo, del desierto o cualquier deporte que se realiza en el mar, \'este puede situarse sobre el deportista, o cerca de donde est\'e y grabar lo que este haciendo en ese momento. Grabar planos que sin este aparato necesitariamos un despliegue importante de medios, como podr\'ia ser un helicoptero para grabar planos desde las alturas. 
+	
+	\item \textbf{Seguridad:} Esta est\'a pensada para la videovigilancia en grandes superficies, ya que lo que ser\'ia un despliegue enorme de camaras de seguridad, y que en muchas ocasiones se quedar\'ian zonas sin vigilar, \'este nos permite movernos sin problemas a trav\'es de la zona y en cualquier momento poder ver una zona espec\'ifica. Con el software correcto, adem\'as se podr\'ia programar que dicho dron hiciera ciertas rutas en momentos espec\'ificos de forma rutinaria, algo posible y que se est\'a aplicando mucho sobre todo en grandes superficies abiertas gracias a los sistemas GPS que muchos llevan incorporados.
+	
+	\item \textbf{Sector agr\'icola:} De primeras parece un campo un poco alejado del uso que podria tener un dron, y es en ese momento donde uno se da cuenta de la importancia que pueden coger estos UAV en la actualidad. Simplemente gracias a que puedan sobrevolar una zona y ofrecer imagenes de alta calidad de esta, se puede tener un buen control de los cultivos en menos tiempo, con menos gasto y al tratarse de un vehiculo electrico al evitar desplazamientos de otros automoviles conlleva un menor impacto ambiental. Adem\'as, este permite ver con facilidad el estado de la cosecha, detectar enfermedades o plagas, permiten fumigar desde el aire con mayor precisi\'on, ya que les puedes programar una ruta y que sigan esta. Adem\'as de obtener otros datos como zonas regadas o si hace falta mas agua, ver si el estado el terreno es correcto y en caso de tener los sensores oportunos, ver si en todas las zonas las condiciones son las optimas para obtener los resultados esperados.  
+	
+\item \textbf{Mantenimiento:} En este apartado podemos englobar diversas actividades, como puede ser mantenimiento de edificios y construcciones, redes electricas o diversas instalaciones industriales como aerogeneradores e\'olicos y estados de paneles solares. Al igual que en el apartado anterior, aqui podemos recorrer grandes distancias, por ejemplo para comprobar las redes electricas, sin la necesidad de que un operario pierda mucho tiempo recorriendo dicha l\'inea. Con las instalaciones solares por ejemplo, desde un plano superior podriamos observar si todas las placas estan en las condiciones optimas y en caso de existir algun fallo poder identificarlo con facilidad. Para edificios y aerogeneradores lo que hay que tener en cuenta es la altura que estos pueden tener, y a la cual con un dron llegar\'iamos con facilidad y observar\'iamos si hay algun problema. En estos casos lo que evitamos, como anteriormente he comentado, es que alguien tenga que ir sitio a sitio perdiendo mucho tiempo. Destacando tambi\'en que este tipo de actividades se pueden implementar programas que directamente detecten las anomalias, sin necesidad de que haya una persona revisando en todo momento las im\'agenes, donde tambi\'en con una inversion inicial, al final ahorrariamos mucho tiempo y dinero. 
+	
+\item \textbf{Log\'istica:} En este aspecto es ideal un dron que tenga una bater\'ia para aguantar muchas horas de vuelo, ya que lo principal es que pueda recorrer grandes almacenes haciendo inventario de los productos que hay en este, haciendo asi un trabajo muy costoso en un periodo corto de tiempo. 
+\hspace{1 cm} Por otra parte algunas empresas estan comenzando a utilizar los drones como elementos de reparto(por supuesto, para objetos poco pesados), esto ahorraria dinero en repartidores y otros veh\'iculos de reparto, ademas de ganar en tiempo, pues los repartos se podr\'ian realizar con mayor frecuencia y facilidad.
+
+\end{itemize}
+
+A parte de \'estos, que son los usos principales y los mas sonados, hay que destacar otros usos menos comunes:
+\begin{itemize}
+	\item \textbf{Emergencias:} Cuando ocurren ciertas catastrofes naturales por ejemplo, son de gran ayuda debido a la velocidad con la que pueden llevar materiales (medicos o de otro tipo) a la zona afectada.
+
+	\item \textbf{Busqueda de personas:} Al tratarse de medios que pueden sobrevolar zonas obteniendo grandes im\'agenes, pueden ser de ayuda cuando montañeros o caminantes tienen accidentes en bosques o montañas, quedan incomunicados y se comienza una b\'usqueda.
+
+	\item \textbf{Incendios forestales:} Los drones pueden estar sobrevolando zonas y obteniendo informaci\'on de esta, para as\'i poder prevenr posibles incendios o alertar lo antes posible en cuanto uno ocurra. 
+
+\item \textbf{Investigaciones:} Para este apartado pueden ser de distinto tipo, ya que puede recorrer zonas largas de restos arqueologicos y tomar datos de estos, entrar en zonas peligrosas como ciertas cuevas o volcanes y obtener datos para su posterior estudio, e incluso investigaciones biologicas, recreando en un dron la actividad de un ave para as\'i estudiar su comportamiento.
+\end{itemize}
+ 
+\hspace{1 cm} Lo que podemos obtener con todas las actividades posibles y lo anteriormente comentado, es que muchas actividades de los drones pueden ser automatizadas en un principio y dejar a estos junto con el software correspondiente que trabajen, obteniendo al final unos datos que seran los que el ser humano podra interpretar y a partir de los cuales trabajara. Por supuesto, con cierta frecuencia y durante la realizaci\'on del trabajo alguien debera revisar que las cosas van funcionando correctamente, pero con un correcto, y aunque duro trabajo inicial, podemos obtener en un futuro un trabajo con menos esfuerzo, menores resultados, menos gasto y durante mas tiempo, algo que es muy conveniente para cualquier actividad de la que se hable. 
+
+\hspace{1 cm} Con todo lo contado hasta ahora, de aqu\'i en adelante contar\'e como he trabajado con estas tecnolog\'ias para conseguir que el drone realice de forma automatica determinadas tareas para que asi sea mas sencillo su control y gracias a ello poder realizar diversas actividades, sin tener que preocuparse en lo aqu\'i ya programado. 
+
+ 
+
+
+\newpage
+
+\section{Objetivos.}
+
+\subsection{Objetivo principal.}
+\hspace{1 cm} Para este trabajo, el principal objetivo era conseguir la navegaci\'on totalmente autonoma del dron. Para ello la idea era hacer que el dron comenzara su vuelo. Una vez hubiera finalizado el despegue y el don se mantuviera en el aire de forma estable comenzara a moverse utilizando un algoritmo de busqueda. Con este lo que conseguiriamos sería su movimiento por determinada zona sin necesidad de pilotarlo. Durante este periodo el dron estaria haciendo caso a las instrucciones de un algoritmo que le indicarian los movimientos que tiene que realizar en funcion de lo que ve la camara, y por tanto la informaci\'on que se pueden obtener de sus imagenes. Con estas imagenes, el software estaria detectando lo que ve en ellas, en busqueda de una baliza escogida previamente, la cual ser\'a un cuadrado con diversos cuadrados con dos colores en su interior, una baliza ejemplo seria la de la siguiente imagen: 
+\newline
+imagen
+\newline
+Una vez se haya detectado esta baliza, se le enviaran al dron una serie de ordenes para que se centre sobre ella y una vez centrado y visto que es un lugar apropiado, aterrice sobre esta. 
+
+\hspace{1 cm} Aunque durante la realizaci\'on del proyecto podriamos definir distintos puntos importantes que han sido importantes para el final comportamiento correcto del dron:
+\begin{itemize}
+	\item \textbf{Creaci\'on de un filtro de color:} A traves de este conseguiamos aislar el color de lo que queriamos ver del resto, de esta forma eliminabamos elementos no necesarios de la foto.
+	\item \textbf{Detecci\'on de objetos: } Gracias a esto podemos detectar los objetos que hab\'ia en la imagen e intentar trabajar con ellos, filtrando si eran o no objetos de interes.
+	\item \textbf{Movimiento del dron: } En este punto lo que se pretend\'ia era que el dron trabajara de forma fluida, sin tener movimientos demasiado bruscos que pudieran desestabilizarlo o dificultar sus tareas. 
+\end{itemize}
+
+
+\subsection{M\'etodo realizado.}
+
+\hspace{1 cm} Para poder conseguir todo esto, era necesario saber las plataformas con las que ser\'ia posible, donde tiene gran importancia el software JdeRobot, pues gracias a su desarrollo que permite la comunicaci\'on con el dron, y de estas forma obtener los datos de sus sensores, principalmente de la camara. Para este apartado fue primordial el aprendizaje de sus distintas herramientas, hubo que hacer pruebas con estas y ver su funcionamiento tanto en entornos simulados como en reales.
+
+\hspace{1 cm} Una vez realizada esta parte y ya teniendo una toma de contacto con el entorno, habiendo realizado tambi\'en pequeños algoritmos y ver que funcionaban de forma correcta,seguimos con la siguiente metodolog\'ia de trabajo:
+
+\hspace{1 cm} Con el tutor ibamos proponiendo pequeños objetivos semana a semana, los cuales se planteaban dependiendo de las necesidades que se ve\'ian en el momento y si los avances anteriores habian ido por el camino correcto. Estos pequeños objetivos pod\'ian ser bastante diferente de una semana a otra, como se ver\'a mas adelante en profundidad, pero un ejemplo de esto seria que una semana era probar que el dron comunicaba correctamente con diversos dispositivos y funcionaba correctamente con distintas versiones, a cambiar el interfaz gr\'afico de alguna herramienta de modo que durante el desarrollo fuera mas sencillo ver lo que se estaba haciendo. 
+
+\hspace{1 cm}Cada avance realizado iba quedando constancia gracias a videos que se grababan, los cuales eran los que ve\'iamos y analiz\'abamos. De esta forma tambi\'en teniamos una pequeña \textit{wiki}, donde al final se pueden observar los procesos y avances, y en muchas ocasiones como alguna parte ha ido cambiando en funci\'on de lo que quer\'iamos en ese momento. Cabe destacar que en numerosas ocasiones los objetivos semanales no fueron los deseados, en algunas ocasiones porque las cosas no se llegaban a desarrollar con tanta exactitud como se requer\'ia, y en otras porque al realizar pruebas surg\'ian problemas inesperados. Una vez se consegu\'ia el objetivo tal y como lo quer\'iamos, este se utilizaba de base o como ayuda para los siguientes objetivos que se proponian.
+Por tanto, un pequeño esquema del metodo de trabajo podr\'ia ser:
+$
+\newline 
+\framebox[8cm][c]{Proponer nuevos objetivos}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Realizaci\'on de los objetivos}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Diversas pruebas de lo realizado y grabar}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Observar los avances conseguidos}
+$
+
+\end{document}
+
+
+
+
+
+
+
+
+
