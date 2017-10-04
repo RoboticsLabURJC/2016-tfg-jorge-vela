@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=latex 2017.9.14)  4 OCT 2017 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=latex 2017.9.14)  4 OCT 2017 22:41
 entering extended mode
 **./1-Intro-Objetivos.tex
 (1-Intro-Objetivos.tex
@@ -196,10 +196,8 @@ File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
-) (1-Intro-Objetivos.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
 )
+No file 1-Intro-Objetivos.aux.
 \openout1 = `1-Intro-Objetivos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -215,7 +213,6 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 17.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -248,9 +245,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1
 
 ] [2]
-File: C:/Users/jorge/Pictures/ejesdrone.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/ejesdrone.eps> [3] [4] [5]
-[6] [7] [8] [9] [10] [11] [12]
+File: imgs/ejesdrone.eps Graphic file (type eps)
+ <imgs/ejesdrone.eps> [3] [4] [5] [6] [7] [8] [9]
+[10] [11] [12]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 192.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -266,12 +263,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2944 strings out of 493324
- 39411 string characters out of 3139092
+ 2941 strings out of 493324
+ 39313 string characters out of 3139092
  107860 words of memory out of 3000000
- 6452 multiletter control sequences out of 15000+200000
+ 6451 multiletter control sequences out of 15000+200000
  51471 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,6n,30p,2160b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 1-Intro-Objetivos.dvi (13 pages, 47472 bytes).
+Output written on 1-Intro-Objetivos.dvi (13 pages, 47456 bytes).

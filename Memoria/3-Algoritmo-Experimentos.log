@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=latex 2017.9.14)  4 OCT 2017 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=latex 2017.9.14)  4 OCT 2017 22:40
 entering extended mode
 **./3-Algoritmo-Experimentos.tex
 (3-Algoritmo-Experimentos.tex
@@ -321,8 +321,8 @@ Cap\'{\i }tulo 1.
 
 
 ] [2]
-File: C:/Users/jorge/Pictures/colorfilter.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/colorfilter.eps>
+File: imgs/colorfilter.eps Graphic file (type eps)
+ <imgs/colorfilter.eps>
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 64.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -332,17 +332,17 @@ Overfull \hbox (16.10277pt too wide) in paragraph at lines 70--70
  []
 
 [3]
-File: C:/Users/jorge/Pictures/k_beacon2.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/k_beacon2.eps> [4]
-File: C:/Users/jorge/Pictures/E_Imagen_baliza.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/E_Imagen_baliza.eps> [5]
+File: imgs/k_beacon2.eps Graphic file (type eps)
+ <imgs/k_beacon2.eps> [4]
+File: imgs/E_Imagen_baliza.eps Graphic file (type eps)
+ <imgs/E_Imagen_baliza.eps> [5]
 Overfull \hbox (90.2028pt too wide) in paragraph at lines 113--113
 []\T1/lmtt/m/n/12 _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)[] 
  []
 
 [6] [7]
-File: C:/Users/jorge/Pictures/k_Beacon1.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/k_Beacon1.eps>
+File: imgs/k_Beacon1.eps Graphic file (type eps)
+ <imgs/k_Beacon1.eps>
 Overfull \hbox (44.08743pt too wide) in paragraph at lines 136--137
  [][] 
  []
@@ -392,20 +392,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 198.
  [10]
-File: C:/Users/jorge/Pictures/states.eps Graphic file (type eps)
+File: imgs/states.eps Graphic file (type eps)
 
-<C:/Users/jorge/Pictures/states.eps> [11] [12] [13]
+<imgs/states.eps> [11] [12] [13]
 Cap\'{\i }tulo 2.
 [14
 
 ] [15]
-File: C:/Users/jorge/Pictures/balizaNaranja1.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/balizaNaranja1.eps>
-File: C:/Users/jorge/Pictures/balizaNaranja2.eps Graphic file (type eps)
- <C:/Users/jorge/Pictures/balizaNaranja2.eps>
-File: C:/Users/jorge/Pictures/balizaNaranja3.eps Graphic file (type eps)
-
-<C:/Users/jorge/Pictures/balizaNaranja3.eps> [16] [17] (3-Algoritmo-Experimentos.aux
+File: imgs/balizaNaranja1.eps Graphic file (type eps)
+ <imgs/balizaNaranja1.eps>
+File: imgs/balizaNaranja2.eps Graphic file (type eps)
+ <imgs/balizaNaranja2.eps>
+File: imgs/balizaNaranja3.eps Graphic file (type eps)
+ <imgs/balizaNaranja3.eps> [16] [17]
+(3-Algoritmo-Experimentos.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -415,11 +415,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  ) 
 Here is how much of TeX's memory you used:
  4700 strings out of 493324
- 69565 string characters out of 3139092
+ 69394 string characters out of 3139092
  150671 words of memory out of 3000000
  8180 multiletter control sequences out of 15000+200000
  46995 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,9n,49p,3329b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 3-Algoritmo-Experimentos.dvi (17 pages, 52968 bytes).
+Output written on 3-Algoritmo-Experimentos.dvi (17 pages, 52816 bytes).
