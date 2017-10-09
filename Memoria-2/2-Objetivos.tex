@@ -1,0 +1,43 @@
+\chapter{Objetivos}\label{cap.Objetivos}
+
+\section{Objetivo principal.}
+\hspace{1 cm} Para este trabajo, el principal objetivo era conseguir la navegaci\'on totalmente autonoma del dron. Para ello la idea era hacer que el dron comenzara su vuelo. Una vez hubiera finalizado el despegue y el don se mantuviera en el aire de forma estable comenzara a moverse utilizando un algoritmo de busqueda. Con este lo que conseguiriamos ser?a su movimiento por determinada zona sin necesidad de pilotarlo. Durante este periodo el dron estaria haciendo caso a las instrucciones de un algoritmo que le indicarian los movimientos que tiene que realizar en funcion de lo que ve la camara, y por tanto la informaci\'on que se pueden obtener de sus imagenes. Con estas imagenes, el software estaria detectando lo que ve en ellas, en busqueda de una baliza escogida previamente, la cual ser\'a un cuadrado con diversos cuadrados con dos colores en su interior, una baliza ejemplo seria la de la siguiente imagen: 
+\newline
+imagen
+\newline
+Una vez se haya detectado esta baliza, se le enviaran al dron una serie de ordenes para que se centre sobre ella y una vez centrado y visto que es un lugar apropiado, aterrice sobre esta. 
+
+\hspace{1 cm} Aunque durante la realizaci\'on del proyecto podriamos definir distintos puntos importantes que han sido importantes para el final comportamiento correcto del dron:
+\begin{itemize}
+	\item \textbf{Creaci\'on de un filtro de color:} A traves de este conseguiamos aislar el color de lo que queriamos ver del resto, de esta forma eliminabamos elementos no necesarios de la foto.
+	\item \textbf{Detecci\'on de objetos: } Gracias a esto podemos detectar los objetos que hab\'ia en la imagen e intentar trabajar con ellos, filtrando si eran o no objetos de interes.
+	\item \textbf{Movimiento del dron: } En este punto lo que se pretend\'ia era que el dron trabajara de forma fluida, sin tener movimientos demasiado bruscos que pudieran desestabilizarlo o dificultar sus tareas. 
+\end{itemize}
+
+
+\section{M\'etodo realizado.}
+
+\hspace{1 cm} Para poder conseguir todo esto, era necesario saber las plataformas con las que ser\'ia posible, donde tiene gran importancia el software JdeRobot, pues gracias a su desarrollo que permite la comunicaci\'on con el dron, y de estas forma obtener los datos de sus sensores, principalmente de la camara. Para este apartado fue primordial el aprendizaje de sus distintas herramientas, hubo que hacer pruebas con estas y ver su funcionamiento tanto en entornos simulados como en reales.
+
+\hspace{1 cm} Una vez realizada esta parte y ya teniendo una toma de contacto con el entorno, habiendo realizado tambi\'en peque?os algoritmos y ver que funcionaban de forma correcta,seguimos con la siguiente metodolog\'ia de trabajo:
+
+\hspace{1 cm} Con el tutor ibamos proponiendo peque?os objetivos semana a semana, los cuales se planteaban dependiendo de las necesidades que se ve\'ian en el momento y si los avances anteriores habian ido por el camino correcto. Estos peque?os objetivos pod\'ian ser bastante diferente de una semana a otra, como se ver\'a mas adelante en profundidad, pero un ejemplo de esto seria que una semana era probar que el dron comunicaba correctamente con diversos dispositivos y funcionaba correctamente con distintas versiones, a cambiar el interfaz gr\'afico de alguna herramienta de modo que durante el desarrollo fuera mas sencillo ver lo que se estaba haciendo. 
+
+\hspace{1 cm}Cada avance realizado iba quedando constancia gracias a videos que se grababan, los cuales eran los que ve\'iamos y analiz\'abamos. De esta forma tambi\'en teniamos una peque?a \textit{wiki}, donde al final se pueden observar los procesos y avances, y en muchas ocasiones como alguna parte ha ido cambiando en funci\'on de lo que quer\'iamos en ese momento. Cabe destacar que en numerosas ocasiones los objetivos semanales no fueron los deseados, en algunas ocasiones porque las cosas no se llegaban a desarrollar con tanta exactitud como se requer\'ia, y en otras porque al realizar pruebas surg\'ian problemas inesperados. Una vez se consegu\'ia el objetivo tal y como lo quer\'iamos, este se utilizaba de base o como ayuda para los siguientes objetivos que se proponian.
+Por tanto, un peque?o esquema del metodo de trabajo podr\'ia ser:
+$
+\newline 
+\framebox[8cm][c]{Proponer nuevos objetivos}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Realizaci\'on de los objetivos}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Diversas pruebas de lo realizado y grabar}
+\newline 
+\downarrow 
+\newline
+\framebox[8cm][c]{Observar los avances conseguidos}
+$
