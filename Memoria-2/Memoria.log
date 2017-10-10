@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  10 OCT 2017 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  10 OCT 2017 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,7 +981,7 @@ e
 \openout2 = `Portada.aux'.
 
 
-(./Portada.tex <imgs/logo.jpg, id=88, 632.3625pt x 321.2pt>
+(./Portada.tex <imgs/logo.jpg, id=92, 632.3625pt x 321.2pt>
 File: imgs/logo.jpg Graphic file (type jpg)
 
 <use imgs/logo.jpg>
@@ -1073,7 +1073,7 @@ ed-to.pdf imgs/ejesdrone.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/ejesdrone-eps-converted-to.pdf, id=173, 776.9025pt x 513.92pt>
+<imgs/ejesdrone-eps-converted-to.pdf, id=178, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
@@ -1165,20 +1165,47 @@ l.172 ...cs[width=0.55\textwidth]{imgs/amazon.jpg}
 
  (./2-Objetivos.tex
 Chapter 2.
+
+LaTeX Warning: File `imgs/baliza.jpg' not found on input line 9.
+
+
+! Package pdftex.def Error: File `imgs/baliza.jpg' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 		\includegraphics{imgs/baliza.jpg}
+                                       
+? 
 [20
 
 
 
-] [21]) [22]
+] [21]
+
+LaTeX Warning: File `imgs/metodologia-espiral.jpg' not found on input line 32.
+
+
+! Package pdftex.def Error: File `imgs/metodologia-espiral.jpg' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...ludegraphics{imgs/metodologia-espiral.jpg}
+                                                  
+? 
+[22]) [23]
 \openout2 = `3-Infraestuctura.aux'.
 
  (./3-Infraestuctura.tex
 Chapter 3.
-[23
+[24
 
 
 
-] [24] [25] [26] [27]
+] [25] [26] [27] [28]
 Package epstopdf Info: Source file: <imgs/k_beacon2.eps>
 (epstopdf)                    date: 2017-09-23 13:02:14
 (epstopdf)                    size: 12606962 bytes
@@ -1190,23 +1217,23 @@ ed-to.pdf imgs/k_beacon2.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_beacon2-eps-converted-to.pdf, id=283, 1927.2pt x 1084.05pt>
+<imgs/k_beacon2-eps-converted-to.pdf, id=295, 1927.2pt x 1084.05pt>
 File: imgs/k_beacon2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_beacon2-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/k_beacon2-eps-converted-to.pdf used on input line
  41.
 (pdftex.def)             Requested size: 440.84746pt x 247.96988pt.
-) [28 <./imgs/k_beacon2-eps-converted-to.pdf>]
+) [29 <./imgs/k_beacon2-eps-converted-to.pdf>]
 \openout2 = `4-Algoritmo.aux'.
 
  (./4-Algoritmo.tex
 Chapter 4.
-[29
+[30
 
 
 
-] [30] [31]
+] [31] [32]
 Package epstopdf Info: Source file: <imgs/colorfilter.eps>
 (epstopdf)                    date: 2017-09-23 17:53:18
 (epstopdf)                    size: 6142855 bytes
@@ -1218,7 +1245,7 @@ rted-to.pdf imgs/colorfilter.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/colorfilter-eps-converted-to.pdf, id=304, 1116.17pt x 328.22626pt>
+<imgs/colorfilter-eps-converted-to.pdf, id=316, 1116.17pt x 328.22626pt>
 File: imgs/colorfilter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/colorfilter-eps-converted-to.pdf>
@@ -1231,7 +1258,7 @@ Overfull \hbox (16.10277pt too wide) in paragraph at lines 38--38
 k= maskOrange)[] 
  []
 
-[32 <./imgs/colorfilter-eps-converted-to.pdf>]
+[33 <./imgs/colorfilter-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <imgs/k_beacon2.eps>
 (epstopdf)                    date: 2017-09-23 13:02:14
 (epstopdf)                    size: 12606962 bytes
@@ -1248,7 +1275,7 @@ File: imgs/k_beacon2-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/k_beacon2-eps-converted-to.pdf used on input line
  45.
 (pdftex.def)             Requested size: 176.33629pt x 99.18132pt.
- [33] [34]
+ [34] [35]
 Package epstopdf Info: Source file: <imgs/E_Imagen_baliza.eps>
 (epstopdf)                    date: 2017-09-23 19:59:28
 (epstopdf)                    size: 3418469 bytes
@@ -1261,7 +1288,7 @@ onverted-to.pdf imgs/E_Imagen_baliza.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=321, 969.6225pt x 328.22626pt>
+<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=332, 969.6225pt x 328.22626pt>
 File: imgs/E_Imagen_baliza-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/E_Imagen_baliza-eps-converted-to.pdf>
@@ -1274,7 +1301,7 @@ Overfull \hbox (90.2028pt too wide) in paragraph at lines 81--81
 E,cv2.CHAIN_APPROX_SIMPLE)[] 
  []
 
-[35 <./imgs/E_Imagen_baliza-eps-converted-to.pdf>] [36] [37]
+[36 <./imgs/E_Imagen_baliza-eps-converted-to.pdf>] [37] [38]
 Package epstopdf Info: Source file: <imgs/k_Beacon1.eps>
 (epstopdf)                    date: 2017-09-24 12:44:20
 (epstopdf)                    size: 2340924 bytes
@@ -1286,7 +1313,7 @@ ed-to.pdf imgs/k_Beacon1.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_Beacon1-eps-converted-to.pdf, id=340, 679.53876pt x 321.2pt>
+<imgs/k_Beacon1-eps-converted-to.pdf, id=352, 679.53876pt x 321.2pt>
 File: imgs/k_Beacon1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_Beacon1-eps-converted-to.pdf>
@@ -1298,7 +1325,7 @@ Overfull \hbox (44.08743pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
-[38]
+[39]
 Overfull \hbox (90.2028pt too wide) in paragraph at lines 136--136
 []\OT1/lmtt/m/n/12 _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TRE
 E,cv2.CHAIN_APPROX_SIMPLE)[] 
@@ -1310,19 +1337,19 @@ Overfull \hbox (40.80278pt too wide) in paragraph at lines 136--136
 actual,True),True)[] 
  []
 
-[39 <./imgs/k_Beacon1-eps-converted-to.pdf>]
+[40 <./imgs/k_Beacon1-eps-converted-to.pdf>]
 Overfull \hbox (90.2028pt too wide) in paragraph at lines 162--162
 []\OT1/lmtt/m/n/12 _,contours,_ = cv2.findContours(imagen_gris,cv2.RETR_EXTERNA
 L,cv2.CHAIN_APPROX_SIMPLE)[] 
  []
 
-[40]
+[41]
 Overfull \hbox (121.07782pt too wide) in paragraph at lines 162--162
 []        \OT1/lmtt/m/n/12 cv2.rectangle(show_image,(posicion_x,posicion_y),(po
 sicion_x+ancho,posicion_y+alto)[] 
  []
 
-[41] [42]
+[42] [43]
 Package epstopdf Info: Source file: <imgs/states.eps>
 (epstopdf)                    date: 2017-09-27 18:55:18
 (epstopdf)                    size: 2007123 bytes
@@ -1333,23 +1360,23 @@ Package epstopdf Info: Source file: <imgs/states.eps>
 to.pdf imgs/states.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
- <imgs/states-eps-converted-to.pdf, id=371, 486.81876pt x 383.4325pt>
+ <imgs/states-eps-converted-to.pdf, id=382, 486.81876pt x 383.4325pt>
 File: imgs/states-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/states-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/states-eps-converted-to.pdf used on input line 19
 2.
 (pdftex.def)             Requested size: 132.25557pt x 104.16588pt.
- [43 <./imgs/states-eps-converted-to.pdf>] [44]) [45]
+ [44 <./imgs/states-eps-converted-to.pdf>] [45]) [46]
 \openout2 = `5-Experimentos.aux'.
 
  (./5-Experimentos.tex
 Chapter 5.
-[46
+[47
 
 
 
-] [47]
+] [48]
 Package epstopdf Info: Source file: <imgs/balizaNaranja1.eps>
 (epstopdf)                    date: 2017-09-27 19:29:36
 (epstopdf)                    size: 2625337 bytes
@@ -1361,7 +1388,7 @@ nverted-to.pdf imgs/balizaNaranja1.eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja1-eps-converted-to.pdf, id=396, 561.09625pt x 279.0425pt>
+<imgs/balizaNaranja1-eps-converted-to.pdf, id=407, 561.09625pt x 279.0425pt>
 File: imgs/balizaNaranja1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja1-eps-converted-to.pdf>
@@ -1379,7 +1406,7 @@ nverted-to.pdf imgs/balizaNaranja2.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja2-eps-converted-to.pdf, id=397, 565.11125pt x 279.0425pt>
+<imgs/balizaNaranja2-eps-converted-to.pdf, id=408, 565.11125pt x 279.0425pt>
 File: imgs/balizaNaranja2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja2-eps-converted-to.pdf>
@@ -1397,24 +1424,24 @@ nverted-to.pdf imgs/balizaNaranja3.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja3-eps-converted-to.pdf, id=398, 562.1pt x 290.08376pt>
+<imgs/balizaNaranja3-eps-converted-to.pdf, id=409, 562.1pt x 290.08376pt>
 File: imgs/balizaNaranja3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja3-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/balizaNaranja3-eps-converted-to.pdf used on input
  line 26.
 (pdftex.def)             Requested size: 132.25557pt x 68.25378pt.
- [48] [49 <./imgs/balizaNaranja1-eps-converted-to.pdf> <./imgs/balizaNaranja2-e
-ps-converted-to.pdf> <./imgs/balizaNaranja3-eps-converted-to.pdf>]) [50]
+ [49] [50 <./imgs/balizaNaranja1-eps-converted-to.pdf> <./imgs/balizaNaranja2-e
+ps-converted-to.pdf> <./imgs/balizaNaranja3-eps-converted-to.pdf>]) [51]
 \openout2 = `6-Conclusiones.aux'.
 
  (./6-Conclusiones.tex
 Chapter 6.
-[51
+[52
 
 
 
-]) [52]
+]) [53]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
  (./Memoria.aux (./Portada.aux) (./Resumen.aux) (./1-Introduccion.aux) (./2-Obj
@@ -1423,7 +1450,7 @@ etivos.aux) (./3-Infraestuctura.aux) (./4-Algoritmo.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 0BC06A75E02843F5F72FEB4BC28290A4;1274.
+(rerunfilecheck)             Checksum: 0E6E7D8CA06F1B680DF2D1CFE20B7508;1332.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1431,10 +1458,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 10903 strings out of 494953
- 160290 string characters out of 6180977
- 263462 words of memory out of 5000000
- 13845 multiletter control sequences out of 15000+600000
+ 10912 strings out of 494953
+ 160452 string characters out of 6180977
+ 262665 words of memory out of 5000000
+ 13848 multiletter control sequences out of 15000+600000
  68598 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,13n,51p,3340b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1449,10 +1476,10 @@ s/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
 1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (57 pages, 774360 bytes).
+Output written on Memoria.pdf (58 pages, 774821 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
