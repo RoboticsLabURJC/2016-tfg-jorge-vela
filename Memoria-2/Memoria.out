@@ -2,17 +2,20 @@
 \BOOKMARK [0][-]{chapter*.4}{\315ndice de tablas}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Historia de los drones}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Estructura de un dron}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Software de los drones}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Hardware.}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Software.}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Uso actual de los drones}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Objetivo principal.}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{M\351todo realizado.}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada.}{}% 11
-\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 12
-\BOOKMARK [1][-]{section.4.1}{Dise\361o.}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.2}{Percepci\363n.}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.3}{Control.}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.4}{Funcionamiento del algoritmo.}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{Experimentos.}{}% 17
-\BOOKMARK [0][-]{chapter.6}{Conclusi\363nes}{}% 18
+\BOOKMARK [2][-]{subsection.1.4.1}{Medios Audiovisuales.}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.2}{Control de distintas zonas.}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.3}{Desarrollo aut\363nomo.}{section.1.4}% 10
+\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Objetivo principal.}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{M\351todo realizado.}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada.}{}% 14
+\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 15
+\BOOKMARK [1][-]{section.4.1}{Dise\361o.}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Percepci\363n.}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.3}{Control.}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.4}{Funcionamiento del algoritmo.}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Experimentos.}{}% 20
+\BOOKMARK [0][-]{chapter.6}{Conclusi\363nes}{}% 21
