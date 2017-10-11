@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  11 OCT 2017 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  11 OCT 2017 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,115 +1082,66 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 60.
  [6] [7]
+<imgs/chasis-drone.jpg, id=210, 301.125pt x 186.6975pt>
+File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `imgs/chasis-drone.jpg' not found on input line 82.
+<use imgs/chasis-drone.jpg>
+Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 82.
+(pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
+<imgs/helices-drone.jpg, id=211, 276.73387pt x 155.68163pt>
+File: imgs/helices-drone.jpg Graphic file (type jpg)
 
-! Package pdftex.def Error: File `imgs/chasis-drone.jpg' not found.
+<use imgs/helices-drone.jpg>
+Package pdftex.def Info: imgs/helices-drone.jpg used on input line 85.
+(pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
+ <imgs/motor-drone.jpg, id=212, 803.0pt x 803.0pt>
+File: imgs/motor-drone.jpg Graphic file (type jpg)
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.82 ...dth=0.2\textwidth]{imgs/chasis-drone.jpg}}
-                                                  
-? 
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 82.
+<use imgs/motor-drone.jpg>
+Package pdftex.def Info: imgs/motor-drone.jpg used on input line 88.
+(pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+<imgs/placaControladora-drone.jpg, id=213, 459.7175pt x 459.7175pt>
+File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `imgs/helices-drone.jpg' not found on input line 85.
+<use imgs/placaControladora-drone.jpg>
+Package pdftex.def Info: imgs/placaControladora-drone.jpg used on input line 91
+.
+(pdftex.def)             Requested size: 88.16814pt x 88.16795pt.
+ [8 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-drone.jp
+g> <./imgs/placaControladora-drone.jpg>]
+[9] [10] [11] [12] [13] [14] [15] [16]
+<imgs/amazon.jpg, id=258, 496.85625pt x 279.29344pt>
+File: imgs/amazon.jpg Graphic file (type jpg)
+ <use imgs/amazon.jpg>
+Package pdftex.def Info: imgs/amazon.jpg used on input line 172.
+(pdftex.def)             Requested size: 242.46744pt x 136.29669pt.
 
-
-! Package pdftex.def Error: File `imgs/helices-drone.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 ...th=0.2\textwidth]{imgs/helices-drone.jpg}}
-                                                  
-? 
-
-LaTeX Warning: File `imgs/motor-drone.jpg' not found on input line 88.
-
-
-! Package pdftex.def Error: File `imgs/motor-drone.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 ...idth=0.2\textwidth]{imgs/motor-drone.jpg}}
-                                                  
-? 
-
-LaTeX Warning: File `imgs/placaControladora-drone.jpg' not found on input line 
-91.
-
-
-! Package pdftex.def Error: File `imgs/placaControladora-drone.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 ...twidth]{imgs/placaControladora-drone.jpg}}
-                                                  
-? 
-[8] [9] [10] [11] [12] [13] [14] [15] [16]
-
-LaTeX Warning: File `imgs/amazon.jpg' not found on input line 172.
-
-
-! Package pdftex.def Error: File `imgs/amazon.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 ...cs[width=0.55\textwidth]{imgs/amazon.jpg}
-                                                  
-? 
-[17]) [18]
+[17 <./imgs/amazon.jpg>]) [18]
 \openout2 = `2-Objetivos.aux'.
 
  (./2-Objetivos.tex
 Chapter 2.
+<imgs/baliza.jpg, id=268, 181.42781pt x 125.71968pt>
+File: imgs/baliza.jpg Graphic file (type jpg)
+ <use imgs/baliza.jpg>
+Package pdftex.def Info: imgs/baliza.jpg used on input line 9.
+(pdftex.def)             Requested size: 181.42737pt x 125.71936pt.
 
-LaTeX Warning: File `imgs/baliza.jpg' not found on input line 9.
-
-
-! Package pdftex.def Error: File `imgs/baliza.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 		\includegraphics{imgs/baliza.jpg}
-                                       
-? 
 [19
 
 
 
-] [20]
+] [20 <./imgs/baliza.jpg>]
+<imgs/metodologia-espiral.jpg, id=279, 347.04657pt x 184.43906pt>
+File: imgs/metodologia-espiral.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `imgs/metodologia-espiral.jpg' not found on input line 32.
-
-
-! Package pdftex.def Error: File `imgs/metodologia-espiral.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...ludegraphics{imgs/metodologia-espiral.jpg}
-                                                  
-? 
-[21]) [22]
+<use imgs/metodologia-espiral.jpg>
+Package pdftex.def Info: imgs/metodologia-espiral.jpg used on input line 32.
+(pdftex.def)             Requested size: 347.04572pt x 184.4386pt.
+ [21 <./imgs/metodologia-espiral.jpg>])
+[22]
 \openout2 = `3-Infraestuctura.aux'.
 
  (./3-Infraestuctura.tex
@@ -1211,7 +1162,7 @@ ed-to.pdf imgs/k_beacon2.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_beacon2-eps-converted-to.pdf, id=306, 1927.2pt x 1084.05pt>
+<imgs/k_beacon2-eps-converted-to.pdf, id=312, 1927.2pt x 1084.05pt>
 File: imgs/k_beacon2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_beacon2-eps-converted-to.pdf>
@@ -1239,14 +1190,19 @@ rted-to.pdf imgs/colorfilter.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/colorfilter-eps-converted-to.pdf, id=331, 1116.17pt x 328.22626pt>
+<imgs/colorfilter-eps-converted-to.pdf, id=337, 1116.17pt x 328.22626pt>
 File: imgs/colorfilter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/colorfilter-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/colorfilter-eps-converted-to.pdf used on input li
 ne 26.
 (pdftex.def)             Requested size: 440.84746pt x 129.63542pt.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 32.
 
+
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Overfull \hbox (16.10277pt too wide) in paragraph at lines 38--38
 []\OT1/lmtt/m/n/12 maskRGBOrange = cv2.bitwise_and(input_image,input_image, mas
 k= maskOrange)[] 
@@ -1282,7 +1238,7 @@ onverted-to.pdf imgs/E_Imagen_baliza.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=347, 969.6225pt x 328.22626pt>
+<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=354, 969.6225pt x 328.22626pt>
 File: imgs/E_Imagen_baliza-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/E_Imagen_baliza-eps-converted-to.pdf>
@@ -1307,7 +1263,7 @@ ed-to.pdf imgs/k_Beacon1.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_Beacon1-eps-converted-to.pdf, id=367, 679.53876pt x 321.2pt>
+<imgs/k_Beacon1-eps-converted-to.pdf, id=374, 679.53876pt x 321.2pt>
 File: imgs/k_Beacon1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_Beacon1-eps-converted-to.pdf>
@@ -1354,7 +1310,7 @@ Package epstopdf Info: Source file: <imgs/states.eps>
 to.pdf imgs/states.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
- <imgs/states-eps-converted-to.pdf, id=397, 486.81876pt x 383.4325pt>
+ <imgs/states-eps-converted-to.pdf, id=404, 486.81876pt x 383.4325pt>
 File: imgs/states-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/states-eps-converted-to.pdf>
@@ -1382,7 +1338,7 @@ nverted-to.pdf imgs/balizaNaranja1.eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja1-eps-converted-to.pdf, id=423, 561.09625pt x 279.0425pt>
+<imgs/balizaNaranja1-eps-converted-to.pdf, id=430, 561.09625pt x 279.0425pt>
 File: imgs/balizaNaranja1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja1-eps-converted-to.pdf>
@@ -1400,7 +1356,7 @@ nverted-to.pdf imgs/balizaNaranja2.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja2-eps-converted-to.pdf, id=424, 565.11125pt x 279.0425pt>
+<imgs/balizaNaranja2-eps-converted-to.pdf, id=431, 565.11125pt x 279.0425pt>
 File: imgs/balizaNaranja2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja2-eps-converted-to.pdf>
@@ -1418,7 +1374,7 @@ nverted-to.pdf imgs/balizaNaranja3.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja3-eps-converted-to.pdf, id=425, 562.1pt x 290.08376pt>
+<imgs/balizaNaranja3-eps-converted-to.pdf, id=432, 562.1pt x 290.08376pt>
 File: imgs/balizaNaranja3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja3-eps-converted-to.pdf>
@@ -1452,15 +1408,15 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 10915 strings out of 494953
- 160497 string characters out of 6180977
+ 10943 strings out of 494953
+ 161270 string characters out of 6180977
  262667 words of memory out of 5000000
- 13851 multiletter control sequences out of 15000+600000
+ 13879 multiletter control sequences out of 15000+600000
  68598 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,13n,51p,3340b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/sha
+c/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/
 lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
@@ -1470,10 +1426,10 @@ s/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
 1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (58 pages, 775401 bytes).
+Output written on Memoria.pdf (58 pages, 1009209 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
+ 541 PDF objects out of 1000 (max. 8388607)
  437 compressed objects within 5 object streams
  110 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
