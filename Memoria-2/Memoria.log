@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  11 OCT 2017 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  11 OCT 2017 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,7 +995,7 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imgs/logo.jpg>])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imgs/logo.jpg>] [2])
 \openout2 = `Resumen.aux'.
 
  (./Resumen.tex)
@@ -1055,7 +1055,13 @@ l.9
 
 
 
-] [2] [3]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \hspace{1 cm}
+                   Tras esto ya en la decada de los 90 se da un avance muy i...
+[2] [3]
 Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 (epstopdf)                    date: 2017-09-16 14:33:30
 (epstopdf)                    size: 4289204 bytes
@@ -1066,8 +1072,7 @@ Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 ed-to.pdf imgs/ejesdrone.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-
-<imgs/ejesdrone-eps-converted-to.pdf, id=189, 776.9025pt x 513.92pt>
+ <imgs/ejesdrone-eps-converted-to.pdf, id=192, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
@@ -1082,27 +1087,27 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 60.
  [6] [7]
-<imgs/chasis-drone.jpg, id=210, 301.125pt x 186.6975pt>
+<imgs/chasis-drone.jpg, id=214, 301.125pt x 186.6975pt>
 File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
 <use imgs/chasis-drone.jpg>
 Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 82.
 (pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
-<imgs/helices-drone.jpg, id=211, 276.73387pt x 155.68163pt>
+<imgs/helices-drone.jpg, id=215, 276.73387pt x 155.68163pt>
 File: imgs/helices-drone.jpg Graphic file (type jpg)
 
 <use imgs/helices-drone.jpg>
 Package pdftex.def Info: imgs/helices-drone.jpg used on input line 85.
 (pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
- <imgs/motor-drone.jpg, id=212, 803.0pt x 803.0pt>
+ <imgs/motor-drone.jpg, id=216, 803.0pt x 803.0pt>
 File: imgs/motor-drone.jpg Graphic file (type jpg)
 
 <use imgs/motor-drone.jpg>
 Package pdftex.def Info: imgs/motor-drone.jpg used on input line 88.
 (pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
-<imgs/placaControladora-drone.jpg, id=213, 459.7175pt x 459.7175pt>
+<imgs/placaControladora-drone.jpg, id=217, 459.7175pt x 459.7175pt>
 File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
 <use imgs/placaControladora-drone.jpg>
@@ -1112,7 +1117,7 @@ Package pdftex.def Info: imgs/placaControladora-drone.jpg used on input line 91
  [8 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-drone.jp
 g> <./imgs/placaControladora-drone.jpg>]
 [9] [10] [11] [12] [13] [14] [15] [16]
-<imgs/amazon.jpg, id=258, 496.85625pt x 279.29344pt>
+<imgs/amazon.jpg, id=261, 496.85625pt x 279.29344pt>
 File: imgs/amazon.jpg Graphic file (type jpg)
  <use imgs/amazon.jpg>
 Package pdftex.def Info: imgs/amazon.jpg used on input line 172.
@@ -1123,7 +1128,7 @@ Package pdftex.def Info: imgs/amazon.jpg used on input line 172.
 
  (./2-Objetivos.tex
 Chapter 2.
-<imgs/baliza.jpg, id=268, 181.42781pt x 125.71968pt>
+<imgs/baliza.jpg, id=271, 181.42781pt x 125.71968pt>
 File: imgs/baliza.jpg Graphic file (type jpg)
  <use imgs/baliza.jpg>
 Package pdftex.def Info: imgs/baliza.jpg used on input line 9.
@@ -1134,7 +1139,7 @@ Package pdftex.def Info: imgs/baliza.jpg used on input line 9.
 
 
 ] [20 <./imgs/baliza.jpg>]
-<imgs/metodologia-espiral.jpg, id=279, 347.04657pt x 184.43906pt>
+<imgs/metodologia-espiral.jpg, id=282, 347.04657pt x 184.43906pt>
 File: imgs/metodologia-espiral.jpg Graphic file (type jpg)
 
 <use imgs/metodologia-espiral.jpg>
@@ -1162,7 +1167,7 @@ ed-to.pdf imgs/k_beacon2.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_beacon2-eps-converted-to.pdf, id=312, 1927.2pt x 1084.05pt>
+<imgs/k_beacon2-eps-converted-to.pdf, id=315, 1927.2pt x 1084.05pt>
 File: imgs/k_beacon2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_beacon2-eps-converted-to.pdf>
@@ -1190,7 +1195,7 @@ rted-to.pdf imgs/colorfilter.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/colorfilter-eps-converted-to.pdf, id=337, 1116.17pt x 328.22626pt>
+<imgs/colorfilter-eps-converted-to.pdf, id=340, 1116.17pt x 328.22626pt>
 File: imgs/colorfilter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/colorfilter-eps-converted-to.pdf>
@@ -1238,7 +1243,7 @@ onverted-to.pdf imgs/E_Imagen_baliza.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=354, 969.6225pt x 328.22626pt>
+<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=357, 969.6225pt x 328.22626pt>
 File: imgs/E_Imagen_baliza-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/E_Imagen_baliza-eps-converted-to.pdf>
@@ -1263,7 +1268,7 @@ ed-to.pdf imgs/k_Beacon1.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_Beacon1-eps-converted-to.pdf, id=374, 679.53876pt x 321.2pt>
+<imgs/k_Beacon1-eps-converted-to.pdf, id=377, 679.53876pt x 321.2pt>
 File: imgs/k_Beacon1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_Beacon1-eps-converted-to.pdf>
@@ -1310,7 +1315,7 @@ Package epstopdf Info: Source file: <imgs/states.eps>
 to.pdf imgs/states.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
- <imgs/states-eps-converted-to.pdf, id=404, 486.81876pt x 383.4325pt>
+ <imgs/states-eps-converted-to.pdf, id=408, 486.81876pt x 383.4325pt>
 File: imgs/states-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/states-eps-converted-to.pdf>
@@ -1338,7 +1343,7 @@ nverted-to.pdf imgs/balizaNaranja1.eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja1-eps-converted-to.pdf, id=430, 561.09625pt x 279.0425pt>
+<imgs/balizaNaranja1-eps-converted-to.pdf, id=433, 561.09625pt x 279.0425pt>
 File: imgs/balizaNaranja1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja1-eps-converted-to.pdf>
@@ -1356,7 +1361,7 @@ nverted-to.pdf imgs/balizaNaranja2.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja2-eps-converted-to.pdf, id=431, 565.11125pt x 279.0425pt>
+<imgs/balizaNaranja2-eps-converted-to.pdf, id=434, 565.11125pt x 279.0425pt>
 File: imgs/balizaNaranja2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja2-eps-converted-to.pdf>
@@ -1374,7 +1379,7 @@ nverted-to.pdf imgs/balizaNaranja3.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/balizaNaranja3-eps-converted-to.pdf, id=432, 562.1pt x 290.08376pt>
+<imgs/balizaNaranja3-eps-converted-to.pdf, id=435, 562.1pt x 290.08376pt>
 File: imgs/balizaNaranja3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/balizaNaranja3-eps-converted-to.pdf>
@@ -1408,10 +1413,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 10943 strings out of 494953
- 161270 string characters out of 6180977
+ 10942 strings out of 494953
+ 161262 string characters out of 6180977
  262667 words of memory out of 5000000
- 13879 multiletter control sequences out of 15000+600000
+ 13878 multiletter control sequences out of 15000+600000
  68598 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,13n,51p,3340b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1426,10 +1431,10 @@ s/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
 1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (58 pages, 1009209 bytes).
+Output written on Memoria.pdf (59 pages, 1009876 bytes).
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
+ 544 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
  110 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
