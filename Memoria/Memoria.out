@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{chapter*.3}{\315ndice de figuras}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Historia de los drones}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Hardware.}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Software.}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Uso actual de los drones}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.4.1}{Medios Audiovisuales.}{section.1.4}% 7
+\BOOKMARK [2][-]{subsection.1.4.2}{Control de distintas zonas.}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.3}{Desarrollo aut\363nomo.}{section.1.4}% 9
+\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Objetivo principal.}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Metodolog\355a.}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Plan de trabajo.}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada.}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Parrot AR.Drone 2.0 .}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Gazebo .}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{JdeRobot.}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{OpenCV.}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Dise\361o.}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Percepci\363n.}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Control.}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Funcionamiento del algoritmo.}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Experimentos.}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Despegue en la simulaci\363n}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Despegue en el drone real}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{B\372squeda en el simulador}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.4}{B\372squeda en el drone real}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.5}{Aterrizaje en el simulador}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.6}{Aterrizaje en el drone real}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.7}{Algoritmo completo en el simulador}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.8}{Algoritmo completo en el drone real}{chapter.5}% 32
+\BOOKMARK [0][-]{chapter.6}{Conclusi\363nes}{}% 33
