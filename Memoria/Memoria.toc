@@ -19,9 +19,9 @@
 \contentsline {section}{\numberline {3.4}OpenCV.}{29}{section.3.4}
 \contentsline {chapter}{\numberline {4}Algoritmo}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o.}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Percepci\'on.}{32}{section.4.2}
+\contentsline {section}{\numberline {4.2}Percepci\'on.}{33}{section.4.2}
 \contentsline {section}{\numberline {4.3}Control.}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}Funcionamiento del algoritmo.}{46}{section.4.4}
+\contentsline {section}{\numberline {4.4}funci\'onamiento del algoritmo.}{46}{section.4.4}
 \contentsline {chapter}{\numberline {5}Experimentos.}{48}{chapter.5}
 \contentsline {section}{\numberline {5.1}Percepci\'on. }{49}{section.5.1}
 \contentsline {section}{\numberline {5.2}Despegue.}{50}{section.5.2}
@@ -29,3 +29,4 @@
 \contentsline {section}{\numberline {5.4}Aterrizaje. }{53}{section.5.4}
 \contentsline {section}{\numberline {5.5}Algoritmo completo. }{55}{section.5.5}
 \contentsline {chapter}{\numberline {6}Conclusi\'ones}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Lineas futuras.}{58}{section.6.1}
