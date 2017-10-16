@@ -2,31 +2,34 @@
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Historia de los drones}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Aplicaciones actuales }{3}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Medios Audiovisuales.}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Drones para el control.}{4}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Proyectos de empresas. }{8}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Hardware.}{10}{section.1.3}
-\contentsline {section}{\numberline {1.4}Software para drones.}{15}{section.1.4}
-\contentsline {section}{\numberline {1.5}Rob\'otica a\'erea en el laboratorio de la URJC.}{18}{section.1.5}
+\contentsline {subsection}{\numberline {1.2.1}Medios Audiovisuales}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Seguridad}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Sector agr\'icola}{5}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Inspecci\'on}{6}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Emergencias}{7}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}Proyectos de empresas }{7}{subsection.1.2.6}
+\contentsline {section}{\numberline {1.3}Hardware}{10}{section.1.3}
+\contentsline {section}{\numberline {1.4}Software}{15}{section.1.4}
+\contentsline {section}{\numberline {1.5}Rob\'otica a\'erea en el laboratorio de la URJC}{18}{section.1.5}
 \contentsline {chapter}{\numberline {2}Objetivos}{20}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivo principal.}{20}{section.2.1}
-\contentsline {section}{\numberline {2.2}Metodolog\'ia.}{22}{section.2.2}
-\contentsline {section}{\numberline {2.3}Plan de trabajo.}{23}{section.2.3}
-\contentsline {chapter}{\numberline {3}Infraestructura utilizada.}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Parrot AR.Drone 2.0 .}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Gazebo .}{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}JdeRobot.}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}OpenCV.}{29}{section.3.4}
+\contentsline {section}{\numberline {2.1}Objetivo principal}{20}{section.2.1}
+\contentsline {section}{\numberline {2.2}Metodolog\'ia}{22}{section.2.2}
+\contentsline {section}{\numberline {2.3}Plan de trabajo}{23}{section.2.3}
+\contentsline {chapter}{\numberline {3}Infraestructura utilizada}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parrot AR.Drone 2.0 }{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}Gazebo }{27}{section.3.2}
+\contentsline {section}{\numberline {3.3}JdeRobot}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}OpenCV}{29}{section.3.4}
 \contentsline {chapter}{\numberline {4}Algoritmo}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o.}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Percepci\'on.}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Control.}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}funci\'onamiento del algoritmo.}{46}{section.4.4}
-\contentsline {chapter}{\numberline {5}Experimentos.}{48}{chapter.5}
-\contentsline {section}{\numberline {5.1}Percepci\'on. }{49}{section.5.1}
-\contentsline {section}{\numberline {5.2}Despegue.}{50}{section.5.2}
-\contentsline {section}{\numberline {5.3}B\'usqueda. }{51}{section.5.3}
-\contentsline {section}{\numberline {5.4}Aterrizaje. }{53}{section.5.4}
-\contentsline {section}{\numberline {5.5}Algoritmo completo. }{55}{section.5.5}
+\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Percepci\'on}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Control}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Funci\'onamiento del algoritmo}{46}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experimentos}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Percepci\'on }{49}{section.5.1}
+\contentsline {section}{\numberline {5.2}Despegue}{50}{section.5.2}
+\contentsline {section}{\numberline {5.3}B\'usqueda }{51}{section.5.3}
+\contentsline {section}{\numberline {5.4}Aterrizaje}{53}{section.5.4}
+\contentsline {section}{\numberline {5.5}Algoritmo completo}{55}{section.5.5}
 \contentsline {chapter}{\numberline {6}Conclusi\'ones}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}Lineas futuras.}{58}{section.6.1}
+\contentsline {section}{\numberline {6.1}Lineas futuras}{58}{section.6.1}

@@ -1,4 +1,4 @@
-\chapter{Experimentos.}\label{cap.experimentos}
+\chapter{Experimentos}\label{cap.experimentos}
 \hspace{1cm} En este cap\'itulo se van a comentar las distintas pruebas realizadas tanto con el drone real como en la simulaci\'on, las cuales validan cada fase del proyecto y la soluci\'on final. Tambi\'en estas pruebas han servido para depurar mientras se desarrollaba. 
 
 \hspace{1cm} Antes de comenzar, comentar diferencias importantes que hay entre trabajar en el entorno simulado y en el real. Primero, en el entorno simulado los colores puros ideales y mas f\'aciles de detectar, sin embargo en el entorno real debido a luces y sombras un color puede verse mas o menos n\'itido, adem\'as de ser mas dif\'icil aislarlo del resto. Tambi\'en las velocidades a aplicar sobre uno y otro son distintas, pues en el entorno simulado se le puede dar una mayor velocidad que trabajara sin problemas, sin embargo en el real una velocidad alta y un movimiento brusco puede llevar a desestabilizarlo. 
@@ -7,7 +7,7 @@
 
 \hspace{1cm} Para organizar las distintas pruebas,  se va a hablar sobre la parte de percepci\'on. Tras esto se comentara por separado cada una de las partes del algoritmo (despegue, b\'usqueda y aterrizaje), para terminar con una ejecuci\'on t\'ipica del algoritmo completo.
 
-\section{Percepci\'on. }
+\section{Percepci\'on }
 
 \hspace{1cm} Para las pruebas de esta secci\'on, hay que tener en cuenta el objeto a detectar. Como ya se ha dicho anteriormente, este trata de un cuadrado con cuatro cuadrados dentro, dos de color naranja, y otros dos de color azul (trabajando con el drone real) o verde(si se trabajaba en un entorno simulado. 
 
@@ -34,7 +34,7 @@
 	\label{fig:Detectando baliza real.}
 \end{figure}
 
-\section{Despegue.}
+\section{Despegue}
 
 \hspace{1cm} Las primeras pruebas del despegue sobre el simulador fueron las mas sencillas. Esto se debe a que se trata de un entorno ideal en el cual el drone no tiene deriva ni se dan otros factores externos. Las pruebas consist\'ian en despegar el drone y que este se centrara sobre la baliza, aunque tambi\'en se prob\'o a despegar el drone sobre el coche con la baliza y mover el coche para ver que el drone le iba siguiendo. Esta parte se decidi\'o implementar porque el drone ten\'ia una deriva que le llevaba a desplazarse hacia atr\'as cuando ten\'ia que estar en el sitio. Cuando se hicieron las primeras pruebas de esto, se vi\'o que el drone siempre despegaba en esta direcci\'on y hab\'ia un dos segundos en los que no se pueden controlar sus movimientos, por tanto hab\'ia que contar con este desplazamiento.
 \begin{figure}[H]
@@ -62,7 +62,7 @@ Para la realizaci\'on del algoritmo, el periodo de despegue se controla por tiem
 En el siguiente enlace esta el video con el despegue real del drone:\\
 \underline{\url{https://www.youtube.com/watch?time_continue=26&v=HVGSlbA1tq4}}
 
-\section{B\'usqueda. } Para la realizaci\'on de \'esta parte del algoritmo, como ya he comentado anteriormente, el drone va movi\'endose en espiral hasta encontrar la baliza, para ya centrarse sobre esta. Al principio de los experimentos, el drone se situaba cerca de la baliza para empezar su desplazamiento y que al encontrar la baliza se centrara. Una vez esto funcionaba, se probaba a poner el drone m\'as lejos de \'esta para que en la primera vuelta de la espiral no encontrara ning\'un objeto de inter\'es, pero ya en la segunda vuelta pudiera verlo y se centrara, comprobando de esta forma que las espirales se realizaban de forma correcta. En los primeros experimentos el control, pues solo ten\'ia componente proporcional y el momento que pasaba de no detectar nada a encontrar una posible baliza los movimientos eran muy bruscos, arreglando esto con el control PID. 
+\section{B\'usqueda } Para la realizaci\'on de \'esta parte del algoritmo, como ya he comentado anteriormente, el drone va movi\'endose en espiral hasta encontrar la baliza, para ya centrarse sobre esta. Al principio de los experimentos, el drone se situaba cerca de la baliza para empezar su desplazamiento y que al encontrar la baliza se centrara. Una vez esto funcionaba, se probaba a poner el drone m\'as lejos de \'esta para que en la primera vuelta de la espiral no encontrara ning\'un objeto de inter\'es, pero ya en la segunda vuelta pudiera verlo y se centrara, comprobando de esta forma que las espirales se realizaban de forma correcta. En los primeros experimentos el control, pues solo ten\'ia componente proporcional y el momento que pasaba de no detectar nada a encontrar una posible baliza los movimientos eran muy bruscos, arreglando esto con el control PID. 
 
 \begin{figure}[H]
  \centering
@@ -106,27 +106,27 @@ En el siguiente enlace esta el video con el despegue real del drone:\\
    \label{f:Busqueda}
     \includegraphics[width=0.4\textwidth]{imgs/busqueda_real7.jpg}}
  \caption{Busqueda}
- \label{f:Busqueda sobre el simulador}
+ \label{f:Busqueda con el drone real}
 \end{figure}
 
 
-\section{Aterrizaje. }
+\section{Aterrizaje}
 
 \hspace{1cm} En los experimentos de esta parte, lo que se trat\'o fue que el drone se centrara sobre la baliza sin realizar movimientos bruscos, una vez que el drone detectaba que estaba pr\'acticamente centrado sobre la baliza, comenzaba a descender, y una vez detectaba que estaba lo suficientemente cerca enviaba la orden de aterrizar. Como podemos observar, en estos experimentos la parte de percepci\'on se basan en controlar el centro de la baliza y el \'area, para tener una aproximaci\'on de la distancia que hab\'ia a \'esta. 
 
 \begin{figure}[H]
  \centering
   \subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
+   \label{f:Aterrizaje1}
     \includegraphics[width=0.33\textwidth]{imgs/landing1.jpg}}
   \subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
+   \label{f:Aterrizaje2}
     \includegraphics[width=0.38\textwidth]{imgs/landing2.jpg}}
 	\subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
+   \label{f:Aterrizaje3}
     \includegraphics[width=0.33\textwidth]{imgs/landing3.jpg}}\\
 	\subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
+   \label{f:Aterrizaje4}
     \includegraphics[width=0.4\textwidth]{imgs/landing4.jpg}}
  \caption{Aterrizaje}
  \label{f:Aterrizaje sobre el simulador}
@@ -156,14 +156,14 @@ En el siguiente enlace esta el video con el despegue real del drone:\\
    \label{f:Aterrizaje}
     \includegraphics[width=0.33\textwidth]{imgs/aterrizaje_real6.jpg}}
  \caption{Aterrizaje}
- \label{f:Aterrizaje sobre el simulador}
+ \label{f:Aterrizaje con el drone real.}
 \end{figure}
 
 
-\section{Algoritmo completo. }
+\section{Algoritmo completo}
 \hspace{1cm} Este experimento se realiz\'o para comprobar que todo lo que se hab\'ia programado por partes funcionaba tambi\'en si se probaba el algoritmo completo. Cabe destacar que las pruebas salieron correctamente. Sobre el simulador se prob\'o a poner el drone sobre la baliza, que despegaba y se situaba en el centro de esta. Una vez pasaron 10 segundos y el drone continuaba en el centro, se hizo que este se alejara y perdiera la referencia de la baliza, y comenzara su algoritmo de b\'usqueda. Una vez realizaba las espirales, en el momento que detectaba los colores de la baliza se centraba sobre estos, y una vez estaba pr\'acticamente centrado, comenzaba a descender, hasta que detectaba que estaba a una altura suficiente y se le pod\'ia mandar la orden de aterrizar, pos\'andose as\'i sobre la baliza. 
 
-A continuaci\'on esta la secuencia de im\'agenes de esta prueba, pero la referencia para con el v\'	ideo es la siguiente:\\
+A continuaci\'on se muestra la secuencia de im\'agenes con el despegue y el drone alej\'andose de la baliza. Las im\'agenes de la b\'usqueda y el aterrizaje est\'an en las figuras \ref{f:Busqueda sobre el simulador} y \ref{f:Aterrizaje sobre el simulador}. La referencia para con el v\'ideo es la siguiente:\\
 \underline{\url{https://www.youtube.com/watch?time_continue=129&v=g9ZGJhRWTiY}}
 
 \begin{figure}[H]
@@ -183,27 +183,27 @@ A continuaci\'on esta la secuencia de im\'agenes de esta prueba, pero la referen
 	\subfloat[Alejandose de la baliza]{
    \label{f:Alejandose de la baliza}
     \includegraphics[width=0.25\textwidth]{imgs/total5.jpg}}
-	\subfloat[Busqueda]{
-   \label{f:Busqueda}
-    \includegraphics[width=0.25\textwidth]{imgs/busqueda2.jpg}}
-	\subfloat[Busqueda]{
-   \label{f:Busqueda}
-    \includegraphics[width=0.25\textwidth]{imgs/busqueda4.jpg}}
-	\subfloat[Busqueda]{
-   \label{f:Busqueda}
-    \includegraphics[width=0.25\textwidth]{imgs/busqueda6.jpg}} \\
-		  \subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
-    \includegraphics[width=0.25\textwidth]{imgs/landing1.jpg}}
-  \subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
-    \includegraphics[width=0.30\textwidth]{imgs/landing2.jpg}}
-	\subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
-    \includegraphics[width=0.25\textwidth]{imgs/landing3.jpg}}
-	\subfloat[Aterrizaje]{
-   \label{f:Aterrizaje}
-    \includegraphics[width=0.25\textwidth]{imgs/landing4.jpg}}
+	%\subfloat[Busqueda]{
+  % \label{f:Busqueda}
+  %  \includegraphics[width=0.25\textwidth]{imgs/busqueda2.jpg}}
+	%\subfloat[Busqueda]{
+  % \label{f:Busqueda}
+  %  \includegraphics[width=0.25\textwidth]{imgs/busqueda4.jpg}}
+	%\subfloat[Busqueda]{
+  % \label{f:Busqueda}
+  %  \includegraphics[width=0.25\textwidth]{imgs/busqueda6.jpg}} \\
+	%	  \subfloat[Aterrizaje]{
+  % \label{f:Aterrizaje}
+  %  \includegraphics[width=0.25\textwidth]{imgs/landing1.jpg}}
+  %\subfloat[Aterrizaje]{
+  % \label{f:Aterrizaje}
+  %  \includegraphics[width=0.30\textwidth]{imgs/landing2.jpg}}
+	%\subfloat[Aterrizaje]{
+  % \label{f:Aterrizaje}
+  %  \includegraphics[width=0.25\textwidth]{imgs/landing3.jpg}}
+	%\subfloat[Aterrizaje]{
+  % \label{f:Aterrizaje}
+  %  \includegraphics[width=0.25\textwidth]{imgs/landing4.jpg}}
  \caption{Algoritmo completo sobre el simulador. }
  \label{f:Algoritmo completo sobre el simulador. }
 \end{figure}
