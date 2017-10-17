@@ -13,18 +13,23 @@
 \BOOKMARK [1][-]{section.1.5}{Rob\363tica a\351rea en el laboratorio de la URJC}{chapter.1}% 13
 \BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 14
 \BOOKMARK [1][-]{section.2.1}{Objetivo principal}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{Metodolog\355a}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.3}{Plan de trabajo}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Dise\361o}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Percepci\363n}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Control}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.4}{Funci\363namiento del algoritmo}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Experimentos}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Percepci\363n }{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Despegue}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{B\372squeda }{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Aterrizaje}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.5}{Algoritmo completo}{chapter.4}% 28
-\BOOKMARK [0][-]{chapter.5}{Conclusi\363nes}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Lineas futuras}{chapter.5}% 30
+\BOOKMARK [1][-]{section.2.2}{Requisitos}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Metodolog\355a}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.4}{Plan de trabajo}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.4.1}{Formaci\363n}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.2}{Desarrollo de la percepci\363n robusta de la baliza}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.3}{Desarrollo de control visual de aterrizaje y despegue}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.4}{Desarrollo del control de b\372squeda}{section.2.4}% 22
+\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Dise\361o}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Percepci\363n}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.3}{Control}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Funci\363namiento del algoritmo}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Experimentos}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Percepci\363n }{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Despegue}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{B\372squeda }{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Aterrizaje}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Algoritmo completo}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 34
+\BOOKMARK [1][-]{section.5.1}{L\355neas futuras}{chapter.5}% 35
