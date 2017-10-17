@@ -1,47 +1,60 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Drone grabando para la publicidad de una marca de coches.\relax }}{4}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Empresa Prevent Security Sistems utiliza drones para videovigilancia en grandes superficies .\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Empresa Novadrone utiliza drones para la gesti\'on de las explotaciones agr\'icolas .\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Desarrollan en la universidad de Holanda un dron que lleva incorporado un desfibrilador .\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Drone detectando codigo RFID.\relax }}{9}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RFID detectado}}}{9}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RFID decodificado}}}{9}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Item RFID localizado}}}{9}{subfigure.5.3}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Esta imagen muestra los movimientos que tiene un dron.\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Distintas partes del drone.\relax }}{15}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Chasis}}}{15}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Helices}}}{15}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Motor}}}{15}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Placa-Madre}}}{15}{subfigure.7.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Esta imagen muestra el conjunto de herramientas utilizadas.\relax }}{10}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Esta imagen muestra un primer filtro de color.\relax }}{15}{figure.caption.8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Esta imagen muestra el conjunto de herramientas utilizadas.\relax }}{16}{figure.caption.9}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Imagen que muestra la suma de las diferentes im\'agenes creadas por cada objeto.\relax }}{22}{figure.caption.11}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Imagen que muestra el diagrama de estados.\relax }}{26}{figure.caption.12}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esta imagen muestra un primer filtro de color.\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esta imagen muestra el conjunto de herramientas utilizadas.\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Imagen que muestra la suma de las diferentes im\'agenes creadas por cada objeto.\relax }}{34}{figure.caption.18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Imagen que muestra el diagrama de estados.\relax }}{38}{figure.caption.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Drone detectando objeto.\relax }}{30}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Percepci\'on posible objeto}}}{30}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Detecta objeto}}}{30}{subfigure.1.2}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Detectando baliza real.\relax }}{31}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Despegue\relax }}{32}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue vista baliza}}}{32}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue vista drone}}}{32}{subfigure.3.2}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Busqueda\relax }}{33}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Busqueda}}}{33}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Busqueda}}}{33}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Busqueda}}}{33}{subfigure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Busqueda}}}{33}{subfigure.4.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Busqueda}}}{33}{subfigure.4.5}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Busqueda\relax }}{34}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Busqueda}}}{34}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Busqueda}}}{34}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Busqueda}}}{34}{subfigure.5.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Busqueda}}}{34}{subfigure.5.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Busqueda}}}{34}{subfigure.5.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Aterrizaje\relax }}{35}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{35}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{35}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{35}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{35}{subfigure.6.4}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Aterrizaje\relax }}{36}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.5}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Aterrizaje}}}{36}{subfigure.7.6}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Algoritmo completo sobre el simulador. \relax }}{37}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{37}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{37}{subfigure.8.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{37}{subfigure.8.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Despegue}}}{37}{subfigure.8.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Alejandose de la baliza}}}{37}{subfigure.8.5}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Drone detectando objeto.\relax }}{42}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Percepci\'on posible objeto}}}{42}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Detecta objeto}}}{42}{subfigure.1.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Detectando baliza real.\relax }}{43}{figure.caption.21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Despegue\relax }}{44}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue vista baliza}}}{44}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue vista drone}}}{44}{subfigure.3.2}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Busqueda\relax }}{45}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Busqueda}}}{45}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Busqueda}}}{45}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Busqueda}}}{45}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Busqueda}}}{45}{subfigure.4.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Busqueda}}}{45}{subfigure.4.5}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Busqueda\relax }}{46}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Busqueda}}}{46}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Busqueda}}}{46}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Busqueda}}}{46}{subfigure.5.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Busqueda}}}{46}{subfigure.5.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Busqueda}}}{46}{subfigure.5.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Aterrizaje\relax }}{47}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{47}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{47}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{47}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{47}{subfigure.6.4}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Aterrizaje\relax }}{48}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.7.6}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Algoritmo completo sobre el simulador. \relax }}{49}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{49}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{49}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{49}{subfigure.8.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Despegue}}}{49}{subfigure.8.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Alejandose de la baliza}}}{49}{subfigure.8.5}
 \addvspace {10\p@ }
