@@ -20,16 +20,21 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Desarrollo de la percepci\363n robusta de la baliza}{section.2.4}% 20
 \BOOKMARK [2][-]{subsection.2.4.3}{Desarrollo de control visual de aterrizaje y despegue}{section.2.4}% 21
 \BOOKMARK [2][-]{subsection.2.4.4}{Desarrollo del control de b\372squeda}{section.2.4}% 22
-\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Dise\361o}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Percepci\363n}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{Control}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Funci\363namiento del algoritmo}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Experimentos}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Percepci\363n }{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.2}{Despegue}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{B\372squeda }{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.4}{Aterrizaje}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.5}{Algoritmo completo}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 34
-\BOOKMARK [1][-]{section.5.1}{L\355neas futuras}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Parrot AR.Drone 2.0 }{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Gazebo }{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.3}{JdeRobot}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{OpenCV}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Dise\361o}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Percepci\363n}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Control}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Funci\363namiento del algoritmo}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Experimentos}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Percepci\363n }{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Despegue}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{B\372squeda }{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Aterrizaje}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{Algoritmo completo}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 39
+\BOOKMARK [1][-]{section.6.1}{L\355neas futuras}{chapter.6}% 40
