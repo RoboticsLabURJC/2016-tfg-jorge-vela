@@ -7,7 +7,7 @@
 
 \hspace{1cm} Para organizar las distintas pruebas,  se va a hablar sobre la parte de percepci\'on. Tras esto se comentara por separado cada una de las partes del algoritmo (despegue, b\'usqueda y aterrizaje), para terminar con una ejecuci\'on t\'ipica del algoritmo completo.
 
-\section{Percepci\'on }
+\section{Percepci\'on }\label{sec:percepcion}
 
 \hspace{1cm} Para las pruebas de esta secci\'on, hay que tener en cuenta el objeto a detectar. Como ya se ha dicho anteriormente, este trata de un cuadrado con cuatro cuadrados dentro, dos de color naranja, y otros dos de color azul (trabajando con el drone real) o verde(si se trabajaba en un entorno simulado. 
 
@@ -160,7 +160,7 @@ En el siguiente enlace esta el video con el despegue real del drone:\\
 \end{figure}
 
 
-\section{Algoritmo completo}
+\section{Algoritmo completo}\label{sec.algoritmocompleto}
 \hspace{1cm} Este experimento se realiz\'o para comprobar que todo lo que se hab\'ia programado por partes funcionaba tambi\'en si se probaba el algoritmo completo. Cabe destacar que las pruebas salieron correctamente. Sobre el simulador se prob\'o a poner el drone sobre la baliza, que despegaba y se situaba en el centro de esta. Una vez pasaron 10 segundos y el drone continuaba en el centro, se hizo que este se alejara y perdiera la referencia de la baliza, y comenzara su algoritmo de b\'usqueda. Una vez realizaba las espirales, en el momento que detectaba los colores de la baliza se centraba sobre estos, y una vez estaba pr\'acticamente centrado, comenzaba a descender, hasta que detectaba que estaba a una altura suficiente y se le pod\'ia mandar la orden de aterrizar, pos\'andose as\'i sobre la baliza. 
 
 A continuaci\'on se muestra la secuencia de im\'agenes con el despegue y el drone alej\'andose de la baliza. Las im\'agenes de la b\'usqueda y el aterrizaje est\'an en las figuras \ref{f:Busqueda sobre el simulador} y \ref{f:Aterrizaje sobre el simulador}. La referencia para con el v\'ideo es la siguiente:\\

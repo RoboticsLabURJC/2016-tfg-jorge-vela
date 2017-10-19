@@ -168,6 +168,7 @@ for c in contours:
 \end{verbatim}
 
 \section{Control}
+\label{sec.control}
 \hspace{1cm} Una vez terminado el filtro de color, hablemos del algoritmo de movimiento del drone. Las primeras pruebas sobre simulador se realizaban de forma simple: El drone despegaba, y mientras no detectara baliza sobre la que centrarse, sub\'ia dando vueltas sobre si mismo, en el momento que encontraba la baliza obten\'ia el centro de esta e intentaba que coincidiera con el centro de la imagen. Tras esto se probo que la baliza se desplazara y que el drone fuera capaz de seguirla. Prueba que tambi\'en funci\'ono sin problemas. Al depender la velocidad de la resta de los centros, provocaba que al estar mas lejos la velocidad de movimiento fuera mayor y fuera disminuyendo conforme se centraba, evitando de esta forma que el drone frenara de forma brusca y disminuir los balanceos y turbulencias. 
 Aun as\'i, se detectaban ciertas imperfecciones debido a que se trataba de un controlador proporcional, el cual funci\'onaba bien pero no lo suficiente, por lo que se decidi\'o añadir una componente derivativa, con el objetivo de mantener el error al m\'inimo, evitando que este se incremente y por lo tanto el drone sufra cada vez mas oscilaciones al situarse sobre un punto. Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo realiz\'abamos una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \]  
 \hspace{1cm} En nuestro algoritmo, en caso de que la operaci\'on de un valor menor a 0.1 lo igualamos a este, con lo que conseguimos que nunca sea un valor muy cercano a 0 y por lo tanto no se quede en el sitio. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad mas continua, de cara a acelerar o frenar su velocidad. 
@@ -192,13 +193,8 @@ if(numVuelta==100):
 self.machine.setStateActive(2, True)
 \end{verbatim}
 	
-Visualmente, durante la ejecuci\'on obten\'iamos esto:
-\begin{figure}[ht]
-	\centering
-		\includegraphics[width=0.3\textwidth]{imgs/states.eps}
-		\caption{Imagen que muestra el diagrama de estados.}
-	\label{fig:k_Beacon1}
-\end{figure}
+\hspace{1cm}La imagen del diagrama que ver\'iamos durante la ejecuci\'on se encuentra en \ref{fig:Diag_estados}.
+
 
 \section{Funci\'onamiento del algoritmo}
 \hspace{1cm} En realidad, todo lo contado del algoritmo sirve para satisfacer estas tres partes. 

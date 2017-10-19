@@ -22,19 +22,24 @@
 \contentsline {subsection}{\numberline {2.4.4}Desarrollo del control de b\'usqueda}{23}{subsection.2.4.4}
 \contentsline {chapter}{\numberline {3}Infraestructura utilizada}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}Parrot AR.Drone 2.0 }{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Gazebo }{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}JdeRobot}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}OpenCV}{29}{section.3.4}
-\contentsline {chapter}{\numberline {4}Algoritmo}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Percepci\'on}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Control}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}Funci\'onamiento del algoritmo}{46}{section.4.4}
-\contentsline {chapter}{\numberline {5}Experimentos}{48}{chapter.5}
-\contentsline {section}{\numberline {5.1}Percepci\'on }{49}{section.5.1}
-\contentsline {section}{\numberline {5.2}Despegue}{50}{section.5.2}
-\contentsline {section}{\numberline {5.3}B\'usqueda }{51}{section.5.3}
-\contentsline {section}{\numberline {5.4}Aterrizaje}{53}{section.5.4}
-\contentsline {section}{\numberline {5.5}Algoritmo completo}{55}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}L\'ineas futuras}{59}{section.6.1}
+\contentsline {section}{\numberline {3.2}Simulador Gazebo }{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Entorno JdeRobot}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Driver ArDroneServer}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Plugin modelo de cuadricoptero Gazebo}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Herramienta UAVviewer}{27}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Herramienta ColorTuner}{27}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}JdeRobot Academy}{28}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Biblioteca OpenCV}{29}{section.3.4}
+\contentsline {chapter}{\numberline {4}Algoritmo}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Percepci\'on}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Control}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}Funci\'onamiento del algoritmo}{44}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experimentos}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Percepci\'on }{48}{section.5.1}
+\contentsline {section}{\numberline {5.2}Despegue}{49}{section.5.2}
+\contentsline {section}{\numberline {5.3}B\'usqueda }{50}{section.5.3}
+\contentsline {section}{\numberline {5.4}Aterrizaje}{52}{section.5.4}
+\contentsline {section}{\numberline {5.5}Algoritmo completo}{54}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusiones}{56}{chapter.6}
+\contentsline {section}{\numberline {6.1}L\'ineas futuras}{58}{section.6.1}
