@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  19 OCT 2017 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  20 OCT 2017 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,8 +838,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 
-     
+l.41 \lstset
+            {escapeinside={<@}{@>}}
 ? 
 
 ! LaTeX Error: Unknown option `nonumberlist' for package `glossaries'.
@@ -848,15 +848,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 
-     
+l.41 \lstset
+            {escapeinside={<@}{@>}}
 ? 
 ! Undefined control sequence.
-l.42 \makeglossaries
+l.44 \makeglossaries
                     
 ? 
 (./Memoria.aux (./Portada.aux) (./Resumen.aux) (./1-Introduccion.aux)
-(./2-Objetivos.aux) (./3-Infraestructura.aux) (./4-Algoritmo.aux)
+(./2-Objetivos.aux) (./3-Infraestructura.aux) (./4-Algoritmo2.aux)
 (./5-Experimentos.aux
 
 LaTeX Warning: Label `f:Busqueda' multiply defined.
@@ -963,21 +963,21 @@ LaTeX Warning: Label `sub@f:Despegue' multiply defined.
 ) (./6-Conclusiones.aux))
 \openout1 = `Memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 93.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -989,7 +989,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -999,9 +999,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
 
 (./Memoria.out) (./Memoria.out)
 \@outlinefile=\write3
@@ -1074,7 +1074,7 @@ e
 \openout2 = `Portada.aux'.
 
 
-(./Portada.tex <imgs/logo.jpg, id=184, 632.3625pt x 321.2pt>
+(./Portada.tex <imgs/logo.jpg, id=164, 632.3625pt x 321.2pt>
 File: imgs/logo.jpg Graphic file (type jpg)
 
 <use imgs/logo.jpg>
@@ -1126,18 +1126,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `Memoria.toc'.
 
- [3] (./Memoria.lof [4
-
-
-])
+ [3] (./Memoria.lof)
 \tf@lof=\write5
 \openout5 = `Memoria.lof'.
 
+ [4
 
-[5]
+
+]
 \openout2 = `1-Introduccion.aux'.
 
- (./1-Introduccion.tex
+
+(./1-Introduccion.tex
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1148,53 +1148,53 @@ l.9
 
 
 
-] [2] <imgs/anuncio_television.jpg, id=322, 481.8pt x 321.2pt>
+] [2] <imgs/anuncio_television.jpg, id=286, 481.8pt x 321.2pt>
 File: imgs/anuncio_television.jpg Graphic file (type jpg)
 
 <use imgs/anuncio_television.jpg>
 Package pdftex.def Info: imgs/anuncio_television.jpg used on input line 31.
 (pdftex.def)             Requested size: 176.33629pt x 117.55315pt.
  [3]
-<imgs/seguridad_drone.jpg, id=327, 231.264pt x 173.448pt>
+<imgs/seguridad_drone.jpg, id=291, 231.264pt x 173.448pt>
 File: imgs/seguridad_drone.jpg Graphic file (type jpg)
 
 <use imgs/seguridad_drone.jpg>
 Package pdftex.def Info: imgs/seguridad_drone.jpg used on input line 44.
 (pdftex.def)             Requested size: 176.33629pt x 132.25853pt.
  [4 <./imgs/anuncio_television.jpg>]
-<imgs/novadrone.jpg, id=333, 752.8125pt x 401.5pt>
+<imgs/novadrone.jpg, id=296, 752.8125pt x 401.5pt>
 File: imgs/novadrone.jpg Graphic file (type jpg)
  <use imgs/novadrone.jpg>
 Package pdftex.def Info: imgs/novadrone.jpg used on input line 54.
 (pdftex.def)             Requested size: 176.33629pt x 94.04619pt.
 
 [5 <./imgs/seguridad_drone.jpg>] [6 <./imgs/novadrone.jpg>]
-<imgs/drone_desfibrilador.jpg, id=342, 427.5975pt x 331.2375pt>
+<imgs/drone_desfibrilador.jpg, id=305, 427.5975pt x 331.2375pt>
 File: imgs/drone_desfibrilador.jpg Graphic file (type jpg)
 
 <use imgs/drone_desfibrilador.jpg>
 Package pdftex.def Info: imgs/drone_desfibrilador.jpg used on input line 69.
 (pdftex.def)             Requested size: 176.33629pt x 136.59671pt.
  [7 <./imgs/drone_desfibrilador.jpg>]
-<imgs/amazon.jpg, id=349, 496.85625pt x 279.29344pt>
+<imgs/amazon.jpg, id=311, 496.85625pt x 279.29344pt>
 File: imgs/amazon.jpg Graphic file (type jpg)
  <use imgs/amazon.jpg>
 Package pdftex.def Info: imgs/amazon.jpg used on input line 87.
 (pdftex.def)             Requested size: 242.46744pt x 136.29669pt.
 
-[8 <./imgs/amazon.jpg>] <imgs/MIT1.jpg, id=355, 513.117pt x 279.444pt>
+[8 <./imgs/amazon.jpg>] <imgs/MIT1.jpg, id=318, 513.117pt x 279.444pt>
 File: imgs/MIT1.jpg Graphic file (type jpg)
 
 <use imgs/MIT1.jpg>
 Package pdftex.def Info: imgs/MIT1.jpg used on input line 99.
 (pdftex.def)             Requested size: 145.48045pt x 79.22876pt.
- <imgs/MIT2.jpg, id=356, 512.51476pt x 298.716pt>
+ <imgs/MIT2.jpg, id=319, 512.51476pt x 298.716pt>
 File: imgs/MIT2.jpg Graphic file (type jpg)
 
 <use imgs/MIT2.jpg>
 Package pdftex.def Info: imgs/MIT2.jpg used on input line 102.
 (pdftex.def)             Requested size: 145.48045pt x 84.79308pt.
- <imgs/MIT3.jpg, id=357, 496.85625pt x 273.4215pt>
+ <imgs/MIT3.jpg, id=320, 496.85625pt x 273.4215pt>
 File: imgs/MIT3.jpg Graphic file (type jpg)
 
 <use imgs/MIT3.jpg>
@@ -1217,7 +1217,7 @@ ed-to.pdf imgs/ejesdrone.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/ejesdrone-eps-converted-to.pdf, id=366, 776.9025pt x 513.92pt>
+<imgs/ejesdrone-eps-converted-to.pdf, id=330, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
@@ -1233,27 +1233,27 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 149.
  [12] [13]
-<imgs/chasis-drone.jpg, id=388, 301.125pt x 186.6975pt>
+<imgs/chasis-drone.jpg, id=351, 301.125pt x 186.6975pt>
 File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
 <use imgs/chasis-drone.jpg>
 Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 171.
 (pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
-<imgs/helices-drone.jpg, id=389, 276.73387pt x 155.68163pt>
+<imgs/helices-drone.jpg, id=352, 276.73387pt x 155.68163pt>
 File: imgs/helices-drone.jpg Graphic file (type jpg)
 
 <use imgs/helices-drone.jpg>
 Package pdftex.def Info: imgs/helices-drone.jpg used on input line 174.
 (pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
- <imgs/motor-drone.jpg, id=390, 803.0pt x 803.0pt>
+ <imgs/motor-drone.jpg, id=353, 803.0pt x 803.0pt>
 File: imgs/motor-drone.jpg Graphic file (type jpg)
 
 <use imgs/motor-drone.jpg>
 Package pdftex.def Info: imgs/motor-drone.jpg used on input line 177.
 (pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
-<imgs/placaControladora-drone.jpg, id=391, 459.7175pt x 459.7175pt>
+<imgs/placaControladora-drone.jpg, id=354, 459.7175pt x 459.7175pt>
 File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
 <use imgs/placaControladora-drone.jpg>
@@ -1270,7 +1270,7 @@ Chapter 2.
 
 
 
-] [21] <imgs/metodologia-espiral.jpg, id=430, 347.04657pt x 184.43906pt>
+] [21] <imgs/metodologia-espiral.jpg, id=394, 347.04657pt x 184.43906pt>
 File: imgs/metodologia-espiral.jpg Graphic file (type jpg)
 
 <use imgs/metodologia-espiral.jpg>
@@ -1286,7 +1286,7 @@ Chapter 3.
 
 
 
-] [25] <imgs/gazeboworld.png, id=453, 1311.90125pt x 743.77875pt>
+] [25] <imgs/gazeboworld.png, id=415, 1311.90125pt x 743.77875pt>
 File: imgs/gazeboworld.png Graphic file (type png)
 
 <use imgs/gazeboworld.png>
@@ -1296,20 +1296,20 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 33.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [26 <./imgs/gazeboworld.png>] <imgs/UAV1.png, id=460, 504.88625pt x 533.995pt
+) [26 <./imgs/gazeboworld.png>] <imgs/UAV1.png, id=423, 504.88625pt x 533.995pt
 >
 File: imgs/UAV1.png Graphic file (type png)
 
 <use imgs/UAV1.png>
 Package pdftex.def Info: imgs/UAV1.png used on input line 52.
 (pdftex.def)             Requested size: 127.84279pt x 135.20952pt.
- <imgs/UAV2.png, id=461, 706.64pt x 652.4375pt>
+ <imgs/UAV2.png, id=424, 706.64pt x 652.4375pt>
 File: imgs/UAV2.png Graphic file (type png)
 
 <use imgs/UAV2.png>
 Package pdftex.def Info: imgs/UAV2.png used on input line 55.
 (pdftex.def)             Requested size: 145.48045pt x 134.31801pt.
- <imgs/UAV3.png, id=462, 707.64375pt x 331.2375pt>
+ <imgs/UAV3.png, id=425, 707.64375pt x 331.2375pt>
 File: imgs/UAV3.png Graphic file (type png)
 
 <use imgs/UAV3.png>
@@ -1324,35 +1324,35 @@ Package epstopdf Info: Source file: <imgs/states.eps>
 (epstopdf)                    size: 21606 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/states-eps-converted-
 to.pdf imgs/states.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/states-eps-converted-to.pdf, id=470, 486.81876pt x 383.4325pt>
+<imgs/states-eps-converted-to.pdf, id=433, 486.81876pt x 383.4325pt>
 File: imgs/states-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/states-eps-converted-to.pdf>
-Package pdftex.def Info: imgs/states-eps-converted-to.pdf used on input line 74
+Package pdftex.def Info: imgs/states-eps-converted-to.pdf used on input line 75
 .
 (pdftex.def)             Requested size: 132.25557pt x 104.16588pt.
 
-<imgs/follow_turtlebot.png, id=471, 659.46375pt x 396.48125pt>
+<imgs/follow_turtlebot.png, id=434, 659.46375pt x 396.48125pt>
 File: imgs/follow_turtlebot.png Graphic file (type png)
 
 <use imgs/follow_turtlebot.png>
-Package pdftex.def Info: imgs/follow_turtlebot.png used on input line 82.
+Package pdftex.def Info: imgs/follow_turtlebot.png used on input line 83.
 (pdftex.def)             Requested size: 220.42372pt x 132.52106pt.
  [28 <./imgs/states-eps-converted-to.pdf> <./imgs/follow_turtlebot.png>] <imgs/
-opencv.png, id=480, 239.89626pt x 211.79124pt>
+opencv.png, id=444, 239.89626pt x 211.79124pt>
 File: imgs/opencv.png Graphic file (type png)
 
 <use imgs/opencv.png>
-Package pdftex.def Info: imgs/opencv.png used on input line 105.
+Package pdftex.def Info: imgs/opencv.png used on input line 106.
 (pdftex.def)             Requested size: 127.84279pt x 112.86607pt.
- <imgs/opencvP.png, id=481, 1371.1225pt x 552.0625pt>
+ <imgs/opencvP.png, id=445, 1371.1225pt x 552.0625pt>
 File: imgs/opencvP.png Graphic file (type png)
 
 <use imgs/opencvP.png>
-Package pdftex.def Info: imgs/opencvP.png used on input line 108.
+Package pdftex.def Info: imgs/opencvP.png used on input line 109.
 (pdftex.def)             Requested size: 145.48045pt x 58.57057pt.
 ) [29 <./imgs/opencv.png> <./imgs/opencvP.png>]
 \openout2 = `4-Algoritmo.aux'.
@@ -1364,13 +1364,20 @@ Chapter 4.
 
 
 
-] <imgs/esquema_d.jpg, id=493, 619.113pt x 287.8755pt>
-File: imgs/esquema_d.jpg Graphic file (type jpg)
+] <imgs/esquema2.png, id=457, 922.44624pt x 604.2575pt>
+File: imgs/esquema2.png Graphic file (type png)
 
-<use imgs/esquema_d.jpg>
-Package pdftex.def Info: imgs/esquema_d.jpg used on input line 12.
-(pdftex.def)             Requested size: 330.63559pt x 153.74171pt.
- [31 <./imgs/esquema_d.jpg>] [32]
+<use imgs/esquema2.png>
+Package pdftex.def Info: imgs/esquema2.png used on input line 16.
+(pdftex.def)             Requested size: 330.63559pt x 216.58286pt.
+ [31 <./imgs/esquema2.png>]
+<imgs/baliza.jpg, id=462, 181.42781pt x 125.71968pt>
+File: imgs/baliza.jpg Graphic file (type jpg)
+ <use imgs/baliza.jpg>
+Package pdftex.def Info: imgs/baliza.jpg used on input line 24.
+(pdftex.def)             Requested size: 132.25557pt x 91.64798pt.
+
+[32 <./imgs/baliza.jpg>] [33]
 Package epstopdf Info: Source file: <imgs/colorfilter.eps>
 (epstopdf)                    date: 2017-09-23 17:53:18
 (epstopdf)                    size: 6142855 bytes
@@ -1379,66 +1386,27 @@ Package epstopdf Info: Source file: <imgs/colorfilter.eps>
 (epstopdf)                    size: 34586 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/colorfilter-eps-conve
 rted-to.pdf imgs/colorfilter.eps>
-(epstopdf)             \includegraphics on input line 32.
+(epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/colorfilter-eps-converted-to.pdf, id=504, 1116.17pt x 328.22626pt>
+<imgs/colorfilter-eps-converted-to.pdf, id=482, 1116.17pt x 328.22626pt>
 File: imgs/colorfilter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/colorfilter-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/colorfilter-eps-converted-to.pdf used on input li
-ne 32.
-(pdftex.def)             Requested size: 440.84746pt x 129.63542pt.
- [33 <./imgs/colorfilter-eps-converted-to.pdf>]
-Overfull \hbox (16.10277pt too wide) in paragraph at lines 44--44
-[]\OT1/lmtt/m/n/12 maskRGBOrange = cv2.bitwise_and(input_image,input_image, mas
-k= maskOrange)[] 
+ne 71.
+(pdftex.def)             Requested size: 352.6793pt x 103.70734pt.
+ [34 <./imgs/colorfilter-eps-converted-to.pdf>] [35]
+Overfull \hbox (3.58554pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-Package epstopdf Info: Source file: <imgs/k_beacon2.eps>
-(epstopdf)                    date: 2017-09-23 13:02:14
-(epstopdf)                    size: 12606962 bytes
-(epstopdf)             Output file: <imgs/k_beacon2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-10-08 18:20:20
-(epstopdf)                    size: 133815 bytes
-(epstopdf)             Command: <repstopdf --outfile=imgs/k_beacon2-eps-convert
-ed-to.pdf imgs/k_beacon2.eps>
-(epstopdf)             \includegraphics on input line 51.
-Package epstopdf Info: Output file is already uptodate.
-<imgs/k_beacon2-eps-converted-to.pdf, id=512, 1927.2pt x 1084.05pt>
-File: imgs/k_beacon2-eps-converted-to.pdf Graphic file (type pdf)
+[36] [37] <imgs/k_beacon21.png, id=557, 466.74374pt x 262.73157pt>
+File: imgs/k_beacon21.png Graphic file (type png)
 
-<use imgs/k_beacon2-eps-converted-to.pdf>
-Package pdftex.def Info: imgs/k_beacon2-eps-converted-to.pdf used on input line
- 51.
-(pdftex.def)             Requested size: 176.33629pt x 99.18132pt.
- [34 <./imgs/k_beacon2-eps-converted-to.pdf>] [35]
-Package epstopdf Info: Source file: <imgs/E_Imagen_baliza.eps>
-(epstopdf)                    date: 2017-09-23 19:59:28
-(epstopdf)                    size: 3418469 bytes
-(epstopdf)             Output file: <imgs/E_Imagen_baliza-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2017-10-08 18:20:26
-(epstopdf)                    size: 34101 bytes
-(epstopdf)             Command: <repstopdf --outfile=imgs/E_Imagen_baliza-eps-c
-onverted-to.pdf imgs/E_Imagen_baliza.eps>
-(epstopdf)             \includegraphics on input line 76.
-Package epstopdf Info: Output file is already uptodate.
-
-<imgs/E_Imagen_baliza-eps-converted-to.pdf, id=524, 969.6225pt x 328.22626pt>
-File: imgs/E_Imagen_baliza-eps-converted-to.pdf Graphic file (type pdf)
-
-<use imgs/E_Imagen_baliza-eps-converted-to.pdf>
-Package pdftex.def Info: imgs/E_Imagen_baliza-eps-converted-to.pdf used on inpu
-t line 76.
-(pdftex.def)             Requested size: 352.6793pt x 119.3884pt.
- [36 <./imgs/E_Imagen_baliza-eps-converted-to.pdf>]
-Overfull \hbox (90.2028pt too wide) in paragraph at lines 87--87
-[]\OT1/lmtt/m/n/12 _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TRE
-E,cv2.CHAIN_APPROX_SIMPLE)[] 
- []
-
-[37] [38] [39]
+<use imgs/k_beacon21.png>
+Package pdftex.def Info: imgs/k_beacon21.png used on input line 161.
+(pdftex.def)             Requested size: 127.84279pt x 71.96074pt.
 Package epstopdf Info: Source file: <imgs/k_Beacon1.eps>
 (epstopdf)                    date: 2017-09-24 12:44:20
 (epstopdf)                    size: 2340924 bytes
@@ -1447,111 +1415,83 @@ Package epstopdf Info: Source file: <imgs/k_Beacon1.eps>
 (epstopdf)                    size: 14072 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/k_Beacon1-eps-convert
 ed-to.pdf imgs/k_Beacon1.eps>
-(epstopdf)             \includegraphics on input line 110.
+(epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_Beacon1-eps-converted-to.pdf, id=552, 679.53876pt x 321.2pt>
+<imgs/k_Beacon1-eps-converted-to.pdf, id=558, 679.53876pt x 321.2pt>
 File: imgs/k_Beacon1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_Beacon1-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/k_Beacon1-eps-converted-to.pdf used on input line
- 110.
-(pdftex.def)             Requested size: 484.93489pt x 229.21516pt.
-
-Overfull \hbox (44.08743pt too wide) in paragraph at lines 110--111
- [][] 
- []
-
-
-Overfull \hbox (90.2028pt too wide) in paragraph at lines 142--142
-[]\OT1/lmtt/m/n/12 _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TRE
-E,cv2.CHAIN_APPROX_SIMPLE)[] 
- []
-
-[40 <./imgs/k_Beacon1-eps-converted-to.pdf>]
-Overfull \hbox (40.80278pt too wide) in paragraph at lines 142--142
-[]        \OT1/lmtt/m/n/12 approx = cv2.approxPolyDP(actual,0.05*cv2.arcLength(
-actual,True),True)[] 
- []
-
-[41]
-Overfull \hbox (90.2028pt too wide) in paragraph at lines 168--168
-[]\OT1/lmtt/m/n/12 _,contours,_ = cv2.findContours(imagen_gris,cv2.RETR_EXTERNA
-L,cv2.CHAIN_APPROX_SIMPLE)[] 
- []
-
-
-Overfull \hbox (121.07782pt too wide) in paragraph at lines 168--168
-[]        \OT1/lmtt/m/n/12 cv2.rectangle(show_image,(posicion_x,posicion_y),(po
-sicion_x+ancho,posicion_y+alto)[] 
- []
-
-[42] [43] [44] [45]) [46]
+ 164.
+(pdftex.def)             Requested size: 145.48045pt x 68.76259pt.
+ [38 <./imgs/k_beacon21.png> <./imgs/k_Beacon1-eps-converted-to.pdf>] [39] [40]
+) [41]
 \openout2 = `5-Experimentos.aux'.
 
  (./5-Experimentos.tex
 Chapter 5.
-[47
+[42
 
 
 
-] <imgs/perception1.jpg, id=593, 216.20775pt x 98.769pt>
+] <imgs/perception1.jpg, id=605, 216.20775pt x 98.769pt>
 File: imgs/perception1.jpg Graphic file (type jpg)
 
 <use imgs/perception1.jpg>
 Package pdftex.def Info: imgs/perception1.jpg used on input line 20.
 (pdftex.def)             Requested size: 176.33629pt x 80.55553pt.
 
-<imgs/perception2.jpg, id=594, 173.448pt x 81.906pt>
+<imgs/perception2.jpg, id=606, 173.448pt x 81.906pt>
 File: imgs/perception2.jpg Graphic file (type jpg)
 
 <use imgs/perception2.jpg>
 Package pdftex.def Info: imgs/perception2.jpg used on input line 23.
 (pdftex.def)             Requested size: 176.33629pt x 83.27429pt.
 
-<imgs/k_beacon21.jpg, id=595, 622.325pt x 350.30875pt>
+<imgs/k_beacon21.jpg, id=607, 622.325pt x 350.30875pt>
 File: imgs/k_beacon21.jpg Graphic file (type jpg)
 
 <use imgs/k_beacon21.jpg>
 Package pdftex.def Info: imgs/k_beacon21.jpg used on input line 32.
 (pdftex.def)             Requested size: 242.46744pt x 136.48622pt.
- [48 <./imgs/perception1.jpg> <./imgs/perception2.jpg>] <imgs/TakeOff.jpg, id=6
-02, 457.71pt x 293.29575pt>
+ [43 <./imgs/perception1.jpg> <./imgs/perception2.jpg>] <imgs/TakeOff.jpg, id=6
+14, 457.71pt x 293.29575pt>
 File: imgs/TakeOff.jpg Graphic file (type jpg)
  <use imgs/TakeOff.jpg>
 Package pdftex.def Info: imgs/TakeOff.jpg used on input line 42.
 (pdftex.def)             Requested size: 176.33629pt x 112.99304pt.
 
-[49 <./imgs/k_beacon21.jpg> <./imgs/TakeOff.jpg>]
-<imgs/takeoff_baliza.jpg, id=609, 525.76425pt x 439.6425pt>
+[44 <./imgs/k_beacon21.jpg> <./imgs/TakeOff.jpg>]
+<imgs/takeoff_baliza.jpg, id=621, 525.76425pt x 439.6425pt>
 File: imgs/takeoff_baliza.jpg Graphic file (type jpg)
 
 <use imgs/takeoff_baliza.jpg>
 Package pdftex.def Info: imgs/takeoff_baliza.jpg used on input line 53.
 (pdftex.def)             Requested size: 176.33629pt x 147.45053pt.
 
-<imgs/takeoff_baliza2.jpg, id=610, 495.65175pt x 490.83376pt>
+<imgs/takeoff_baliza2.jpg, id=622, 495.65175pt x 490.83376pt>
 File: imgs/takeoff_baliza2.jpg Graphic file (type jpg)
 
 <use imgs/takeoff_baliza2.jpg>
 Package pdftex.def Info: imgs/takeoff_baliza2.jpg used on input line 56.
 (pdftex.def)             Requested size: 176.33629pt x 174.62541pt.
- [50 <./imgs/takeoff_baliza.jpg> <./imgs/takeoff_baliza2.jpg>] <imgs/busqueda1.
-jpg, id=618, 599.841pt x 338.4645pt>
+ [45 <./imgs/takeoff_baliza.jpg> <./imgs/takeoff_baliza2.jpg>] <imgs/busqueda1.
+jpg, id=631, 599.841pt x 338.4645pt>
 File: imgs/busqueda1.jpg Graphic file (type jpg)
 
 <use imgs/busqueda1.jpg>
 Package pdftex.def Info: imgs/busqueda1.jpg used on input line 71.
 (pdftex.def)             Requested size: 145.48045pt x 82.08528pt.
 
-<imgs/busqueda3.jpg, id=619, 613.69275pt x 309.5565pt>
+<imgs/busqueda3.jpg, id=632, 613.69275pt x 309.5565pt>
 File: imgs/busqueda3.jpg Graphic file (type jpg)
 
 <use imgs/busqueda3.jpg>
 Package pdftex.def Info: imgs/busqueda3.jpg used on input line 74.
 (pdftex.def)             Requested size: 145.48045pt x 73.37872pt.
 
-<imgs/busqueda5.jpg, id=620, 492.6405pt x 319.79475pt>
+<imgs/busqueda5.jpg, id=633, 492.6405pt x 319.79475pt>
 File: imgs/busqueda5.jpg Graphic file (type jpg)
 
 <use imgs/busqueda5.jpg>
@@ -1562,33 +1502,33 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 71--77
  [][][][][][] 
  []
 
-<imgs/busqueda6.jpg, id=621, 498.663pt x 302.93175pt>
+<imgs/busqueda6.jpg, id=634, 498.663pt x 302.93175pt>
 File: imgs/busqueda6.jpg Graphic file (type jpg)
  <use imgs/busqueda6.jpg>
 Package pdftex.def Info: imgs/busqueda6.jpg used on input line 80.
 (pdftex.def)             Requested size: 176.33629pt x 107.12318pt.
 
-<imgs/busqueda7.jpg, id=622, 561.297pt x 333.04425pt>
+<imgs/busqueda7.jpg, id=635, 561.297pt x 333.04425pt>
 File: imgs/busqueda7.jpg Graphic file (type jpg)
  <use imgs/busqueda7.jpg>
 Package pdftex.def Info: imgs/busqueda7.jpg used on input line 83.
 (pdftex.def)             Requested size: 176.33629pt x 104.62999pt.
 
-<imgs/busqueda_real1.jpg, id=623, 1098.504pt x 517.935pt>
+<imgs/busqueda_real1.jpg, id=636, 1098.504pt x 517.935pt>
 File: imgs/busqueda_real1.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real1.jpg>
 Package pdftex.def Info: imgs/busqueda_real1.jpg used on input line 95.
 (pdftex.def)             Requested size: 145.48045pt x 68.59048pt.
 
-<imgs/busqueda_real3.jpg, id=624, 1007.56425pt x 498.663pt>
+<imgs/busqueda_real3.jpg, id=637, 1007.56425pt x 498.663pt>
 File: imgs/busqueda_real3.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real3.jpg>
 Package pdftex.def Info: imgs/busqueda_real3.jpg used on input line 98.
 (pdftex.def)             Requested size: 145.48045pt x 71.99611pt.
 
-<imgs/busqueda_real5.jpg, id=625, 1085.2545pt x 562.5015pt>
+<imgs/busqueda_real5.jpg, id=638, 1085.2545pt x 562.5015pt>
 File: imgs/busqueda_real5.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real5.jpg>
@@ -1599,34 +1539,34 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 95--101
  [][][][][][] 
  []
 
-<imgs/busqueda_real6.jpg, id=626, 1115.96925pt x 552.26324pt>
+<imgs/busqueda_real6.jpg, id=639, 1115.96925pt x 552.26324pt>
 File: imgs/busqueda_real6.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real6.jpg>
 Package pdftex.def Info: imgs/busqueda_real6.jpg used on input line 104.
 (pdftex.def)             Requested size: 176.33629pt x 87.26pt.
 
-<imgs/busqueda_real7.jpg, id=627, 1058.15324pt x 540.8205pt>
+<imgs/busqueda_real7.jpg, id=640, 1058.15324pt x 540.8205pt>
 File: imgs/busqueda_real7.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real7.jpg>
 Package pdftex.def Info: imgs/busqueda_real7.jpg used on input line 107.
 (pdftex.def)             Requested size: 176.33629pt x 90.12277pt.
- [51 <./imgs/busqueda1.jpg> <./imgs/busqueda3.jpg> <./imgs/busqueda5.jpg> <./im
+ [46 <./imgs/busqueda1.jpg> <./imgs/busqueda3.jpg> <./imgs/busqueda5.jpg> <./im
 gs/busqueda6.jpg> <./imgs/busqueda7.jpg>]
-<imgs/landing1.jpg, id=637, 164.41425pt x 102.98476pt>
+<imgs/landing1.jpg, id=650, 164.41425pt x 102.98476pt>
 File: imgs/landing1.jpg Graphic file (type jpg)
  <use imgs/landing1.jpg>
 Package pdftex.def Info: imgs/landing1.jpg used on input line 121.
 (pdftex.def)             Requested size: 145.48045pt x 91.12813pt.
 
-<imgs/landing2.jpg, id=638, 203.5605pt x 102.3825pt>
+<imgs/landing2.jpg, id=651, 203.5605pt x 102.3825pt>
 File: imgs/landing2.jpg Graphic file (type jpg)
  <use imgs/landing2.jpg>
 Package pdftex.def Info: imgs/landing2.jpg used on input line 124.
 (pdftex.def)             Requested size: 167.52419pt x 84.26195pt.
 
-<imgs/landing3.jpg, id=639, 174.05025pt x 107.80275pt>
+<imgs/landing3.jpg, id=652, 174.05025pt x 107.80275pt>
 File: imgs/landing3.jpg Graphic file (type jpg)
  <use imgs/landing3.jpg>
 Package pdftex.def Info: imgs/landing3.jpg used on input line 127.
@@ -1636,29 +1576,29 @@ Overfull \hbox (29.38747pt too wide) in paragraph at lines 121--127
  [][][][][][] 
  []
 
-<imgs/landing4.jpg, id=640, 199.947pt x 99.37125pt>
+<imgs/landing4.jpg, id=653, 199.947pt x 99.37125pt>
 File: imgs/landing4.jpg Graphic file (type jpg)
  <use imgs/landing4.jpg>
 Package pdftex.def Info: imgs/landing4.jpg used on input line 130.
 (pdftex.def)             Requested size: 176.33629pt x 87.63953pt.
 
-[52 <./imgs/busqueda_real1.jpg> <./imgs/busqueda_real3.jpg> <./imgs/busqueda_re
+[47 <./imgs/busqueda_real1.jpg> <./imgs/busqueda_real3.jpg> <./imgs/busqueda_re
 al5.jpg> <./imgs/busqueda_real6.jpg> <./imgs/busqueda_real7.jpg>]
-<imgs/aterrizaje_real1.jpg, id=650, 331.83975pt x 188.50426pt>
+<imgs/aterrizaje_real1.jpg, id=665, 331.83975pt x 188.50426pt>
 File: imgs/aterrizaje_real1.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real1.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real1.jpg used on input line 142.
 (pdftex.def)             Requested size: 145.48045pt x 82.64297pt.
 
-<imgs/aterrizaje_real2.jpg, id=651, 338.4645pt x 189.70876pt>
+<imgs/aterrizaje_real2.jpg, id=666, 338.4645pt x 189.70876pt>
 File: imgs/aterrizaje_real2.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real2.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real2.jpg used on input line 145.
 (pdftex.def)             Requested size: 145.48045pt x 81.54132pt.
 
-<imgs/aterrizaje_real3.jpg, id=652, 335.45325pt x 190.311pt>
+<imgs/aterrizaje_real3.jpg, id=667, 335.45325pt x 190.311pt>
 File: imgs/aterrizaje_real3.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real3.jpg>
@@ -1669,21 +1609,21 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 142--148
  [][][][][][] 
  []
 
-<imgs/aterrizaje_real4.jpg, id=653, 333.6465pt x 193.9245pt>
+<imgs/aterrizaje_real4.jpg, id=668, 333.6465pt x 193.9245pt>
 File: imgs/aterrizaje_real4.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real4.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real4.jpg used on input line 151.
 (pdftex.def)             Requested size: 145.48045pt x 84.55768pt.
 
-<imgs/aterrizaje_real5.jpg, id=654, 334.851pt x 184.2885pt>
+<imgs/aterrizaje_real5.jpg, id=669, 334.851pt x 184.2885pt>
 File: imgs/aterrizaje_real5.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real5.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real5.jpg used on input line 154.
 (pdftex.def)             Requested size: 145.48045pt x 80.06642pt.
 
-<imgs/aterrizaje_real6.jpg, id=655, 335.45325pt x 189.70876pt>
+<imgs/aterrizaje_real6.jpg, id=670, 335.45325pt x 189.70876pt>
 File: imgs/aterrizaje_real6.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real6.jpg>
@@ -1694,29 +1634,29 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 151--158
  [][][][][][] 
  []
 
-[53 <./imgs/landing1.jpg> <./imgs/landing2.jpg> <./imgs/landing3.jpg> <./imgs/l
-anding4.jpg>] [54 <./imgs/aterrizaje_real1.jpg> <./imgs/aterrizaje_real2.jpg> <
+[48 <./imgs/landing1.jpg> <./imgs/landing2.jpg> <./imgs/landing3.jpg> <./imgs/l
+anding4.jpg>] [49 <./imgs/aterrizaje_real1.jpg> <./imgs/aterrizaje_real2.jpg> <
 ./imgs/aterrizaje_real3.jpg> <./imgs/aterrizaje_real4.jpg> <./imgs/aterrizaje_r
 eal5.jpg> <./imgs/aterrizaje_real6.jpg>]
-<imgs/total1.jpg, id=677, 186.09525pt x 90.3375pt>
+<imgs/total1.jpg, id=696, 186.09525pt x 90.3375pt>
 File: imgs/total1.jpg Graphic file (type jpg)
  <use imgs/total1.jpg>
 Package pdftex.def Info: imgs/total1.jpg used on input line 173.
 (pdftex.def)             Requested size: 110.21185pt x 53.4999pt.
 
-<imgs/total2.jpg, id=678, 224.63925pt x 104.18925pt>
+<imgs/total2.jpg, id=697, 224.63925pt x 104.18925pt>
 File: imgs/total2.jpg Graphic file (type jpg)
  <use imgs/total2.jpg>
 Package pdftex.def Info: imgs/total2.jpg used on input line 176.
 (pdftex.def)             Requested size: 110.21185pt x 51.11835pt.
 
-<imgs/total3.jpg, id=679, 189.70876pt x 103.587pt>
+<imgs/total3.jpg, id=698, 189.70876pt x 103.587pt>
 File: imgs/total3.jpg Graphic file (type jpg)
  <use imgs/total3.jpg>
 Package pdftex.def Info: imgs/total3.jpg used on input line 179.
 (pdftex.def)             Requested size: 110.21185pt x 60.18007pt.
 
-<imgs/total4.jpg, id=680, 190.311pt x 90.3375pt>
+<imgs/total4.jpg, id=699, 190.311pt x 90.3375pt>
 File: imgs/total4.jpg Graphic file (type jpg)
  <use imgs/total4.jpg>
 Package pdftex.def Info: imgs/total4.jpg used on input line 182.
@@ -1726,62 +1666,89 @@ Overfull \hbox (15.6664pt too wide) in paragraph at lines 173--182
  [][][][][][][][] 
  []
 
-<imgs/total5.jpg, id=681, 186.6975pt x 95.75775pt>
+<imgs/total5.jpg, id=700, 186.6975pt x 95.75775pt>
 File: imgs/total5.jpg Graphic file (type jpg)
  <use imgs/total5.jpg>
 Package pdftex.def Info: imgs/total5.jpg used on input line 185.
 (pdftex.def)             Requested size: 110.21185pt x 56.52725pt.
 )
-[55 <./imgs/total1.jpg> <./imgs/total2.jpg> <./imgs/total3.jpg> <./imgs/total4.
+[50 <./imgs/total1.jpg> <./imgs/total2.jpg> <./imgs/total3.jpg> <./imgs/total4.
 jpg> <./imgs/total5.jpg>]
 \openout2 = `6-Conclusiones.aux'.
 
  (./6-Conclusiones.tex
 Chapter 6.
-[56
+[51
 
 
 
-] [57] [58]) [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+]
+
+LaTeX Warning: Reference `sec.control' on page 52 undefined on input line 18.
+
+[52] [53]) [54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./Memoria.aux (./Portada.aux) (./Resumen.aux)
 (./1-Introduccion.aux) (./2-Objetivos.aux) (./3-Infraestructura.aux)
-(./4-Algoritmo.aux) (./5-Experimentos.aux) (./6-Conclusiones.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
-Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 57415599DEF8C6B1CBAE71232579FE8C;2974.
+(./4-Algoritmo.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.8 ... {\~n}o}{{4.1}{30}{Diseño}{section.4.1}{}}
+                                                  
+? 
+) (./5-Experimentos.aux) (./6-Conclusiones.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+
+
+Package rerunfilecheck Warning: File `Memoria.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Memoria.out':
+(rerunfilecheck)             Before: FDCA9D83D661E7375A22DFE6E857014E;2681
+(rerunfilecheck)             After:  620B405A9AED54F79417E44AC35B9722;3233.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 11310 strings out of 494953
- 168445 string characters out of 6180977
- 264781 words of memory out of 5000000
- 14126 multiletter control sequences out of 15000+600000
- 68598 words of font info for 44 fonts, out of 8000000 for 9000
+ 11640 strings out of 494953
+ 171323 string characters out of 6180977
+ 274331 words of memory out of 5000000
+ 14388 multiletter control sequences out of 15000+600000
+ 71852 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,13n,51p,2194b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (65 pages, 6565369 bytes).
+ 36i,13n,51p,2194b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.4.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmtt12.pfb>
+Output written on Memoria.pdf (59 pages, 6754723 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 187 named destinations out of 1000 (max. 500000)
- 656 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 701 compressed objects within 8 object streams
+ 254 named destinations out of 1000 (max. 500000)
+ 616 words of extra memory for PDF output out of 10000 (max. 10000000)
 
