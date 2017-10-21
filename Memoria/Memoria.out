@@ -16,35 +16,31 @@
 \BOOKMARK [1][-]{section.2.2}{Requisitos}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.3}{Metodolog\355a}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.4}{Plan de trabajo}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.4.1}{Formaci\363n}{section.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.4.2}{Desarrollo de la percepci\363n robusta de la baliza}{section.2.4}% 20
-\BOOKMARK [2][-]{subsection.2.4.3}{Desarrollo de control visual de aterrizaje y despegue}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.4}{Desarrollo del control de b\372squeda}{section.2.4}% 22
-\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Parrot AR.Drone 2.0 }{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Simulador Gazebo }{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{Entorno JdeRobot}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.1}{Driver ArDroneServer}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.2}{Plugin modelo de cuadricoptero Gazebo}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.3}{Herramienta UAVviewer}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.4}{Herramienta ColorTuner}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.5}{JdeRobot Academy}{section.3.3}% 31
-\BOOKMARK [1][-]{section.3.4}{Biblioteca OpenCV}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Dise\361o}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Percepci\363n}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.2.1}{Pre-procesado}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.2}{Detecci\363n de la baliza}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{Control}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.3.1}{Despegue}{section.4.3}% 39
-\BOOKMARK [2][-]{subsection.4.3.2}{B\372squeda}{section.4.3}% 40
-\BOOKMARK [2][-]{subsection.4.3.3}{Aterrizaje}{section.4.3}% 41
-\BOOKMARK [0][-]{chapter.5}{Experimentos}{}% 42
-\BOOKMARK [1][-]{section.5.1}{Percepci\363n }{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.2}{Despegue}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.3}{B\372squeda }{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.4}{Aterrizaje}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.5}{Algoritmo completo}{chapter.5}% 47
-\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 48
-\BOOKMARK [1][-]{section.6.1}{L\355neas futuras}{chapter.6}% 49
-\BOOKMARK [0][-]{chapter*.31}{Bibliograf\355a}{}% 50
+\BOOKMARK [0][-]{chapter.3}{Infraestructura utilizada}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Parrot AR.Drone 2.0 }{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Simulador Gazebo }{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Entorno JdeRobot}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Driver ArDroneServer}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Plugin modelo de cuadricoptero Gazebo}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Herramienta UAVviewer}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Herramienta ColorTuner}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.5}{JdeRobot Academy}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Biblioteca OpenCV}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Dise\361o}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Percepci\363n}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.2.1}{Pre-procesado}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{Detecci\363n de la baliza}{section.4.2}% 33
+\BOOKMARK [1][-]{section.4.3}{Control}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Despegue}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.2}{B\372squeda}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.3}{Aterrizaje}{section.4.3}% 37
+\BOOKMARK [0][-]{chapter.5}{Experimentos}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Percepci\363n }{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{Despegue}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.3}{B\372squeda }{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Aterrizaje}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Algoritmo completo}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 44
+\BOOKMARK [1][-]{section.6.1}{L\355neas futuras}{chapter.6}% 45
+\BOOKMARK [0][-]{chapter*.31}{Bibliograf\355a}{}% 46
