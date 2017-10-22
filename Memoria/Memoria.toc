@@ -41,6 +41,6 @@
 \contentsline {section}{\numberline {5.3}B\'usqueda }{45}{section.5.3}
 \contentsline {section}{\numberline {5.4}Aterrizaje}{47}{section.5.4}
 \contentsline {section}{\numberline {5.5}Algoritmo completo}{49}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}L\'ineas futuras}{53}{section.6.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{56}{chapter*.31}
+\contentsline {chapter}{\numberline {6}Conclusiones}{52}{chapter.6}
+\contentsline {section}{\numberline {6.1}L\'ineas futuras}{54}{section.6.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{57}{chapter*.32}
