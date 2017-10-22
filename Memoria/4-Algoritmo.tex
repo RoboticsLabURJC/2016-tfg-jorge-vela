@@ -2,14 +2,14 @@
 
 \hspace{1 cm} En este cap\'itulo se describe el modo por el cual, con la infraestructura que se tiene, se llega a una soluci\'on para lo planteado en los objetivos. 
 
-\hspace{1 cm} Este algoritmo tiene que permitir al drone despegar de forma controlada, realizar una navegaci\'on autonoma para encontrar una baliza sobre la que aterrizar. La organizaci\'on de este cap\'itulo tiene primero una secci\'on de diseño, en el que se explica el funcionamiento del programa. Tras esto una secci\'on de percepci\'on para explicar los datos que se obtienen a trav\'es de los sensores, y para finalizar una secci\'on de control, para explicar los distintos movimientos del drone y de que dependen estos.
+\hspace{1 cm} Este algoritmo tiene que permitir al drone despegar de forma controlada, realizar una navegaci\'on aut\'onoma para encontrar una baliza sobre la que aterrizar. La organizaci\'on de este cap\'itulo tiene primero una secci\'on de diseño, en el que se explica el funcionamiento del programa. Tras esto una secci\'on de percepci\'on para explicar los datos que se obtienen a trav\'es de los sensores, y para finalizar una secci\'on de control, para explicar los distintos movimientos del drone y de que dependen estos.
 
 \section{Diseño}
 \label{sec.Design}
 
 \hspace{1 cm} El diseño de este algoritmo consta de un comportamiento reactivo de iteraciones continuas. Es un proceso basado en adquisici\'on-procesado-env\'io de datos. La adquisici\'on de los datos se realizan mediante los sensores del drone. Estos datos ser\'an transmitidos al dispositivo para que lo procese y tras estos se enviar\'an las instrucciones al drone para que este las ejecute. El sensor utilizado en este proyecto ha sido la c\'amara, y los movimientos del drone depender\'an de lo que esta capte en cada momento. 
 
-\hspace{1 cm} Por otro lado, la parte es un aut\'omata finito de estados, el cual comienza en un estado inicial (despegue), y en funci\'on de lo que recibe a la entrada (imagen del sensor), realizar\'a el procesamiento necesario para producir la informaci\'on que enviar al drone, y en ocasiones le llevar\'a a pasar de un estado a otro. Destacar que este aut\'omata est\'a compuesto por 6 estados: despegue, busqueda, posible baliza, centr\'andose en la baliza, aterrizando y aterrizado. A excepci\'on del primero, los dem\'as estados depender\'an de lo que detecte el drone en cada momento. El primer estado esta controlado por tiempo, pues son 10 segundos al iniciarse en los que el drone inicia el vuelo sobre una baliza y trata de estar centrado sobre esta, para as\'i tener un despegue controlado y evitar que el drone se mueva en caso de tener alguna deriva o haya factores externos que produzcan esto. Una vez transcurridos los 10 segundos se pasar\'a al estado de b\'usqueda e ira pasando por los distintos estados hasta su aterrizaje. 
+\hspace{1 cm} Por otro lado, la parte es un aut\'omata finito de estados, el cual comienza en un estado inicial (despegue), y en funci\'on de lo que recibe a la entrada (imagen del sensor), realizar\'a el procesamiento necesario para producir la informaci\'on que enviar al drone, y en ocasiones le llevar\'a a pasar de un estado a otro. Destacar que este aut\'omata est\'a compuesto por 6 estados: despegando, buscando, posible baliza, centr\'andose en la baliza, aterrizando y aterrizado. A excepci\'on del primero, los dem\'as estados depender\'an de lo que detecte el drone en cada momento. El primer estado est\'a controlado por tiempo, pues son 10 segundos al iniciarse en los que el drone inicia el vuelo sobre una baliza y trata de estar centrado sobre \'esta, para as\'i tener un despegue controlado y evitar que el drone se mueva en caso de tener alguna deriva o haya factores externos que produzcan esto. Una vez transcurridos los 10 segundos se pasar\'a al estado de b\'usqueda e ir\'a pasando por los distintos estados hasta su aterrizaje. 
 
 \begin{figure}[H]
 	\centering
@@ -32,14 +32,14 @@
 
 \section{Percepci\'on}
 
-\hspace{1 cm} En \'esta secci\'on se va a tratar la obtenci\'on de la imagen de la c\'amara y el procesamiento que se realiza sobre \'esta. Gracias a lo que el drone ve en todo momento, sabe el punto del proceso en el que se encuentra y la informaci\'on que debe enviar. En primer lugar, se obtiene una imagen de entrada, esta imagen es procesada con filtros de color y operadores morfol\'ogicos, obteniendo una imagen de salida. A partir de los datos de \'esta imagen, se detecta si hay objetos de inter\'es o no, y por tanto se env\'ia unas instrucciones u otras al drone. 
+\hspace{1 cm} En \'esta secci\'on se va a tratar la obtenci\'on de la imagen de la c\'amara y el procesamiento que se realiza sobre \'esta. Gracias a lo que el drone ve en todo momento, sabe el punto del proceso en el que se encuentra y la informaci\'on que debe enviar. En primer lugar, se obtiene una imagen de entrada. Esta imagen es procesada con filtros de color y operadores morfol\'ogicos, obteniendo una imagen de salida. A partir de los datos de \'esta imagen, se detecta si hay objetos de inter\'es o no, y por tanto se env\'ia unas instrucciones u otras al drone. 
 
 
 \subsection{Pre-procesado}
 
 \hspace{1 cm} Una vez tenemos la imagen de entrada, hay que detectar la informaci\'on de interes que nos aporta. 
  
-\hspace{1 cm} En primer lugar, la imagen que est\'a en RGB se transforma a HSV, para que sea mas facil su interpretaci\'on, ya que en lugar de trabajar en funci\'on de tres colores (rojo, verde y azul), se trabaja en funci\'on de tres par\'ametros (tono, saturaci\'on y valor). De \'esta forma, se depende menos de la luz que haya en cada momento y en cada lugar. En el filtro, a cada uno de los parametros se le asigna un rango de valores entre 0 y 255. La herramienta colorTuner permite, a partir de una imagen de entrada, dar valores a estos parametros, viendo que objetos cumplen estos requisitos y dejandolos en primer plano, y cuales no, dejando estas zonas en negro como p\'ixeles de fondo. Una vez se obtienen estos valores se añaden al filtro, obteniendo a la salida una imagen que solo muestra los objetos de los colores de inter\'es, dejando el fondo negro. 
+\hspace{1 cm} En primer lugar, la imagen que est\'a en RGB se transforma a HSV, para que sea m\'as facil su interpretaci\'on, ya que en lugar de trabajar en funci\'on de tres colores (rojo, verde y azul), se trabaja en funci\'on de tres par\'ametros (tono, saturaci\'on y valor). De \'esta forma, se depende menos de la luz que haya en cada momento y en cada lugar. En el filtro, a cada uno de los par\'ametros se le asigna un rango de valores entre 0 y 255. La herramienta colorTuner permite, a partir de una imagen de entrada, dar valores a estos par\'ametros, viendo que objetos cumplen estos requisitos y dejandolos en primer plano, y cuales no, dejando estas zonas en negro como p\'ixeles de fondo. Una vez se obtienen estos valores se añaden al filtro, obteniendo a la salida una imagen que solo muestra los objetos de los colores de inter\'es. 
 
 \hspace{1 cm} El siguiente c\'odigo es un ejemplo de como, a partir de una imagen de entrada en RGB, se transforma a HSV y se filtran los objetos de color naranja. 
 
@@ -56,11 +56,11 @@ maskRGBOrange = cv2.bitwise_and(input_image,input_image, mask= maskOrange)
 
 \begin{itemize}
 	\item \textbf{Erosi\'on:} Dada una imagen y un elemento estructural, la erosi\'on es el conjunto de los elementos \textit{x} para los cuales el elemento estructural trasladado por \textit{x} est\'a contenido en la imagen. 
-	\newline\hspace{1 cm} Aplicaci\'on: Cuando un p\'ixel que parece pasar el filtro, pero los elementos de su alrededor(en concordancia con el elemento estructurante) no lo pasan, este pasa a ser parte del fondo. 
-	\item \textbf{Dilataci\'on:} Transformaci\'on dual a la erosi\'on. El resultado de esta es el conjunto de elementos tal que al menos alg\'un elemento del conjunto estructurante esta contenido en \textit{x}, cuando el elemento estructurante se desplaza sobre \textit{x}
+	\newline\hspace{1 cm} Aplicaci\'on: Cuando un p\'ixel que parece pasar el filtro, pero los elementos de su alrededor (en concordancia con el elemento estructurante) no lo pasan, \'este pasa a ser parte del fondo. 
+	\item \textbf{Dilataci\'on:} Transformaci\'on dual a la erosi\'on. El resultado de \'esta es el conjunto de elementos tal que al menos alg\'un elemento del conjunto estructurante esta contenido en \textit{x}, cuando el elemento estructurante se desplaza sobre \textit{x}
 	\newline\hspace{1 cm} Aplicaci\'on: p\'ixeles que parecen de fondo, pasan a ser de la figura si est\'an cerca de p\'ixeles que pasan el filtro.
 	\item \textbf{Cierre:} Se trata de realizar una dilataci\'on en la imagen seguida de una erosi\'on.
-	\item \textbf{Apertura:} Se trata de realizar la erosi\'on en una imagen seguido de la dilataci\'on.
+	\item \textbf{Apertura:} Se trata de realizar la erosi\'on en una imagen seguida de una dilataci\'on.
 \end{itemize}
 
 
@@ -86,10 +86,10 @@ maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 3)
 
 \begin{enumerate}
 	\item Para la imagen de entrada se hacen dos filtros de color, uno por cada color de la baliza.
-	\item De cada imagen se obtienen el n\'umero de objetos, las \'areas y los contornos. En cada objeto se obtiene el valor de su \'area, en caso de ser menor de un valor determinado este se descarta. En caso de tener ese area o mayor, se crea una imagen negra, se pintan los contornos del objeto sobre esta con un valor RGB(0,1,0) y se dilatan. De esta forma, tendremos tantas im\'agenes como objetos. 
-	\item Se suman las im\'agenes obtenidas, por lo tanto, sobre una imagen negra final se pintaran los contornos dilatados de todos los objetos. Cada contorno se pintara con un valor RGB(0,1,0), por lo tanto en el caso de que varios objetos coincidan sumar\'an sus valores. Con esto conseguiremos que el punto donde interseccionen cuatro objetos tenga un valor (0,4,0), y por tanto \'este ser\'a el centro de la cruceta.
+	\item De cada imagen se obtienen el n\'umero de objetos, las \'areas y los contornos. En cada objeto se obtiene el valor de su \'area, en caso de ser menor de un valor determinado, \'este se descarta. En caso de tener ese \'area o mayor, se crea una imagen negra, se pintan los contornos del objeto sobre esta con un valor RGB(0,1,0) y se dilatan. De esta forma, tendremos tantas im\'agenes como objetos. 
+	\item Se suman las im\'agenes obtenidas, por lo tanto, sobre una imagen negra final se pintaran los contornos dilatados de todos los objetos. Cada contorno se pintar\'a con un valor RGB(0,1,0), por lo tanto en el caso de que varios objetos coincidan sumar\'an sus valores. Con esto conseguiremos que el punto donde interseccionen cuatro objetos tenga un valor (0,4,0), y por tanto \'este ser\'a el centro de la cruceta.
 	
-	El siguiente fragmento de c\'odigo muestra la creaci\'on de una imagen por objeto, la dilataci\'on de los contornos y la suma final de las im\'agenes:
+\hspace{1 cm}El siguiente fragmento de c\'odigo muestra la creaci\'on de una imagen por objeto, la dilataci\'on de los contornos y la suma final de las im\'agenes:
 
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
 f = []
@@ -124,7 +124,7 @@ if(len(f)>0):
 
 	\item Sobre la imagen obtenida, utilizando la funci\'on drawcontours, obtenemos la situaci\'on de estos y p\'ixeles, teniendo as\'i la situaci\'on de la cruceta, y con estos valores se puede marcar el centro de la baliza sobre la imagen real. En caso de haber filtrado la intersecci\'on de dos objetos en lugar de cuatro en el apartado anterior, se podr\'ian marcar tambi\'en posibles objetos de inter\'es, como puede ser la baliza completa. 
 
-En el siguiente fragmento de c\'odigo se muestra, como a partir de la imagen de la suma de objetos, se calcula la posici\'on de la cruceta y se marcan sobre la imagen. En \'este caso, para que se obtuviera una imagen mas clara, a los bordes de los objetos se les da un valor de 30, por lo tanto la intersecci\'on de 3 objetos tendr\'a un valor RGB(0,90,0) y de 4 objetos un valor RGB(0,120,0).
+\hspace{1 cm}En el siguiente fragmento de c\'odigo se muestra, como a partir de la imagen de la suma de objetos, se calcula la posici\'on de la cruceta y se marcan sobre la imagen. En \'este caso, para que se obtuviera una imagen m\'as clara, a los bordes de los objetos se les da un valor de 30, por lo tanto la intersecci\'on de 3 objetos tendr\'a un valor RGB(0,90,0) y de 4 objetos un valor RGB(0,120,0).
 
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
 lower_green = np.array([0,80,0], dtype=np.uint8) 
@@ -152,7 +152,7 @@ for c in contours:
 
 \end{enumerate}
 
-\hspace{1 cm} En el conjunto de im\'agenes siguiente, se observa la imagen de entrada, en la cual esta marcado el centro de la baliza y el objeto de interes, y la suma de los bordes de los distintos objetos, siendo los puntos donde mas contornos se cruzan de un color mas intenso. 
+\hspace{1 cm} En el conjunto de im\'agenes siguiente, se observa la imagen de entrada, en la cual esta marcado el centro de la baliza y el objeto de inter\'es, y la suma de los bordes de los distintos objetos, siendo los puntos donde m\'as contornos se cruzan de un color m\'as intenso. 
 
 \begin{figure}[H]
  \centering
@@ -177,14 +177,14 @@ despegue, b\'usqueda y aterrizaje.
 
 \subsection{Despegue}
 
-\hspace{1 cm} Esta fase est\'a controlada por tiempo. Son los primeros diez segundos del algoritmo, y en ellos el drone despega de forma controlada. Esta fase ser\'a "`Take off"' en el aut\'omata de estados.  Para ello se sit\'ua el drone sobre una baliza sobre la cual tiene que estabilizarse. De esta forma, al despegar detecta \'esta y trata de centrarse, evitando as\'i que se desv\'ie por factores externos y qued\'andose en la situaci\'on correcta. Debido a que el drone va a despegar sobre la baliza, el control en esta parte es un control proporcional, para evitar que tenga que hacer m\'ultiples operaciones, por tanto sea mas r\'apido el algoritmo, y suficiente para ser controlado.
+\hspace{1 cm} Esta fase est\'a controlada por tiempo. Son los primeros diez segundos del algoritmo, y en ellos el drone despega de forma controlada. Esta fase ser\'a "`Take off"' en el aut\'omata de estados. Para ello se sit\'ua el drone sobre una baliza sobre la cual tiene que estabilizarse. De esta forma, al despegar detecta \'esta y trata de centrarse, evitando as\'i que se desv\'ie por factores externos y qued\'andose en la situaci\'on correcta. Debido a que el drone va a despegar sobre la baliza, el control en esta parte es un control proporcional, para evitar que tenga que hacer m\'ultiples operaciones, por tanto sea mas r\'apido el algoritmo, y suficiente para ser controlado.
 
 
 
 \subsection{B\'usqueda}
-\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en busqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ira rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentara centrarse sobre ella. En caso de no tratarse de la baliza continuara con el algoritmo de b\'usqueda, pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PID(progresivo, integral y derivativo). Esto se debe a que solo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza.  Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo se realiza una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \] 
+\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. En caso de no tratarse de la baliza, continuar\'a con el algoritmo de b\'usqueda, pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PID (progresivo, integral y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza.  Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo se realiza una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \] 
 
-\hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad mas continua a la hora de acelerar o frenar.  
+\hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a \'este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto, \'este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad m\'as continua a la hora de acelerar o frenar.  
 
 El siguiente fragmento de c\'odigo consigue que el drone se mueva realizando espirales:
 
@@ -200,7 +200,7 @@ if(numVuelta==100):
 
 \hspace{1cm} Para visualizar el diagrama de estados, se tuvieron que añadir dos paquetes del GUI de JdeRobot, uno que permit\'ia abrir otra ventana y otro que permit\'ia añadir estados y transiciones entre ellos. Para marcarlo, siendo el numero que aparece el numero del estado que queremos marcar, val\'ia con la siguiente linea de c\'odigo:
 
-\begin{lstlisting}
+\begin{lstlisting}[backgroundcolor=\color{yellow}]
 self.machine.setStateActive(2, True)
 \end{lstlisting}
 	
@@ -208,7 +208,7 @@ self.machine.setStateActive(2, True)
 
 \subsection{Aterrizaje}
 
-\hspace{1 cm} Esta fase es un aterrizaje controlado, en el cual, una vez que el drone se ha centrado sobre la baliza comienza a descender, cambiando su estado a "`Landing"', y una vez el area de la baliza es suficiente, como para detectar que el drone est\'a muy pr\'oximo a ella, se env\'ia la instrucci\'on land, aterrizando de \'esta forma el drone, siendo aqu\'i su estado "`Landed"'. El hecho de enviarse la orden de aterrizar cuando se esta a una distancia cercana a la baliza es porque esta instrucci\'on es a ciegas, una vez que se env\'ia el drone solo se encarga de descender hasta que nota que est\'a sobre un lugar sobre el cual posarse. Por lo tanto si se env\'ia esta orden a una distancia lejana, el drone puede perder la referencia y aterrizar en otro sitio. 
+\hspace{1 cm} Esta fase es un aterrizaje controlado, en el cual, una vez que el drone se ha centrado sobre la baliza comienza a descender, cambiando su estado a "`Landing"', y una vez el \'area de la baliza es suficiente, como para detectar que el drone est\'a muy pr\'oximo a ella, se env\'ia la instrucci\'on land, aterrizando de \'esta forma el drone, siendo aqu\'i su estado "`Landed"'. El hecho de enviarse la orden de aterrizar cuando se est\'a a una distancia cercana a la baliza es porque esta instrucci\'on es a ciegas, una vez que se env\'ia el drone solo se encarga de descender hasta que nota que est\'a sobre un lugar sobre el cual posarse. Por lo tanto si se env\'ia esta orden a una distancia lejana, el drone puede perder la referencia y aterrizar en otro sitio. 
 
 
 
