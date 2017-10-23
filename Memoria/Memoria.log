@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  23 OCT 2017 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  23 OCT 2017 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,53 +1136,53 @@ Package pdftex.def Info: imgs/anuncio_television.jpg used on input line 31.
 File: imgs/seguridad_drone.jpg Graphic file (type jpg)
 
 <use imgs/seguridad_drone.jpg>
-Package pdftex.def Info: imgs/seguridad_drone.jpg used on input line 44.
-(pdftex.def)             Requested size: 176.33629pt x 132.25853pt.
- [4 <./imgs/anuncio_television.jpg>]
-<imgs/novadrone.jpg, id=339, 752.8125pt x 401.5pt>
+Package pdftex.def Info: imgs/seguridad_drone.jpg used on input line 45.
+(pdftex.def)             Requested size: 110.21185pt x 82.6586pt.
+ [4 <./imgs/anuncio_television.jpg> <./imgs/seguridad_drone.jpg>] <imgs/novadro
+ne.jpg, id=339, 752.8125pt x 401.5pt>
 File: imgs/novadrone.jpg Graphic file (type jpg)
- <use imgs/novadrone.jpg>
-Package pdftex.def Info: imgs/novadrone.jpg used on input line 54.
-(pdftex.def)             Requested size: 176.33629pt x 94.04619pt.
 
-[5 <./imgs/seguridad_drone.jpg>] [6 <./imgs/novadrone.jpg>]
-<imgs/drone_desfibrilador.jpg, id=348, 427.5975pt x 331.2375pt>
+<use imgs/novadrone.jpg>
+Package pdftex.def Info: imgs/novadrone.jpg used on input line 56.
+(pdftex.def)             Requested size: 176.33629pt x 94.04619pt.
+ [5 <./imgs/novadrone.jpg>]
+<imgs/drone_desfibrilador.jpg, id=344, 427.5975pt x 331.2375pt>
 File: imgs/drone_desfibrilador.jpg Graphic file (type jpg)
 
 <use imgs/drone_desfibrilador.jpg>
-Package pdftex.def Info: imgs/drone_desfibrilador.jpg used on input line 69.
+Package pdftex.def Info: imgs/drone_desfibrilador.jpg used on input line 73.
 (pdftex.def)             Requested size: 176.33629pt x 136.59671pt.
- [7 <./imgs/drone_desfibrilador.jpg>]
+ [6] [7 <./imgs/drone_desfibrilador.jpg>]
 <imgs/amazon.jpg, id=355, 496.85625pt x 279.29344pt>
 File: imgs/amazon.jpg Graphic file (type jpg)
  <use imgs/amazon.jpg>
-Package pdftex.def Info: imgs/amazon.jpg used on input line 87.
+Package pdftex.def Info: imgs/amazon.jpg used on input line 91.
 (pdftex.def)             Requested size: 242.46744pt x 136.29669pt.
 
-[8 <./imgs/amazon.jpg>] <imgs/MIT1.jpg, id=361, 513.117pt x 279.444pt>
+<imgs/MIT1.jpg, id=356, 513.117pt x 279.444pt>
 File: imgs/MIT1.jpg Graphic file (type jpg)
-
-<use imgs/MIT1.jpg>
-Package pdftex.def Info: imgs/MIT1.jpg used on input line 99.
+ <use imgs/MIT1.jpg>
+Package pdftex.def Info: imgs/MIT1.jpg used on input line 103.
 (pdftex.def)             Requested size: 145.48045pt x 79.22876pt.
- <imgs/MIT2.jpg, id=362, 512.51476pt x 298.716pt>
+
+<imgs/MIT2.jpg, id=357, 512.51476pt x 298.716pt>
 File: imgs/MIT2.jpg Graphic file (type jpg)
-
-<use imgs/MIT2.jpg>
-Package pdftex.def Info: imgs/MIT2.jpg used on input line 102.
+ <use imgs/MIT2.jpg>
+Package pdftex.def Info: imgs/MIT2.jpg used on input line 106.
 (pdftex.def)             Requested size: 145.48045pt x 84.79308pt.
- <imgs/MIT3.jpg, id=363, 496.85625pt x 273.4215pt>
-File: imgs/MIT3.jpg Graphic file (type jpg)
 
-<use imgs/MIT3.jpg>
-Package pdftex.def Info: imgs/MIT3.jpg used on input line 105.
+<imgs/MIT3.jpg, id=358, 496.85625pt x 273.4215pt>
+File: imgs/MIT3.jpg Graphic file (type jpg)
+ <use imgs/MIT3.jpg>
+Package pdftex.def Info: imgs/MIT3.jpg used on input line 109.
 (pdftex.def)             Requested size: 145.48045pt x 80.05785pt.
 
-Overfull \hbox (7.34373pt too wide) in paragraph at lines 99--106
+Overfull \hbox (7.34373pt too wide) in paragraph at lines 103--110
  [][][][][][] 
  []
 
-[9 <./imgs/MIT1.jpg> <./imgs/MIT2.jpg> <./imgs/MIT3.jpg>]
+[8 <./imgs/amazon.jpg>] [9 <./imgs/MIT1.jpg> <./imgs/MIT2.jpg> <./imgs/MIT3.jpg
+>]
 Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 (epstopdf)                    date: 2017-09-16 14:33:30
 (epstopdf)                    size: 4289204 bytes
@@ -1191,43 +1191,42 @@ Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 (epstopdf)                    size: 35655 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/ejesdrone-eps-convert
 ed-to.pdf imgs/ejesdrone.eps>
-(epstopdf)             \includegraphics on input line 120.
+(epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-
-<imgs/ejesdrone-eps-converted-to.pdf, id=372, 776.9025pt x 513.92pt>
+ <imgs/ejesdrone-eps-converted-to.pdf, id=372, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/ejesdrone-eps-converted-to.pdf used on input line
- 120.
+ 124.
 (pdftex.def)             Requested size: 132.25557pt x 87.48286pt.
  [10 <./imgs/ejesdrone-eps-converted-to.pdf>] [11]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 149.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 153.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 149.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 153.
  [12] [13]
 <imgs/chasis-drone.jpg, id=394, 301.125pt x 186.6975pt>
 File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
 <use imgs/chasis-drone.jpg>
-Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 171.
+Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 175.
 (pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
 <imgs/helices-drone.jpg, id=395, 276.73387pt x 155.68163pt>
 File: imgs/helices-drone.jpg Graphic file (type jpg)
 
 <use imgs/helices-drone.jpg>
-Package pdftex.def Info: imgs/helices-drone.jpg used on input line 174.
+Package pdftex.def Info: imgs/helices-drone.jpg used on input line 178.
 (pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
  <imgs/motor-drone.jpg, id=396, 803.0pt x 803.0pt>
 File: imgs/motor-drone.jpg Graphic file (type jpg)
 
 <use imgs/motor-drone.jpg>
-Package pdftex.def Info: imgs/motor-drone.jpg used on input line 177.
+Package pdftex.def Info: imgs/motor-drone.jpg used on input line 181.
 (pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
 <imgs/placaControladora-drone.jpg, id=397, 459.7175pt x 459.7175pt>
@@ -1235,10 +1234,10 @@ File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
 <use imgs/placaControladora-drone.jpg>
 Package pdftex.def Info: imgs/placaControladora-drone.jpg used on input line 18
-0.
+4.
 (pdftex.def)             Requested size: 88.16814pt x 88.16795pt.
- [14] [15 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-dr
-one.jpg> <./imgs/placaControladora-drone.jpg>] [16] [17] [18]) [19]
+ [14 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-drone.j
+pg> <./imgs/placaControladora-drone.jpg>] [15] [16] [17] [18]) [19]
 \openout2 = `2-Objetivos.aux'.
 
  (./2-Objetivos.tex
@@ -1811,11 +1810,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
 Here is how much of TeX's memory you used:
  11767 strings out of 494953
  174169 string characters out of 6180977
- 276241 words of memory out of 5000000
+ 276239 words of memory out of 5000000
  14472 multiletter control sequences out of 15000+600000
  80006 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,13n,51p,2194b,1922s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,51p,2198b,1922s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/
@@ -1829,7 +1828,7 @@ re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (63 pages, 12336591 bytes).
+Output written on Memoria.pdf (63 pages, 12336380 bytes).
 PDF statistics:
  975 PDF objects out of 1000 (max. 8388607)
  798 compressed objects within 8 object streams
