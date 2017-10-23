@@ -36,11 +36,11 @@
 \contentsline {subsection}{\numberline {4.3.2}B\'usqueda}{39}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Aterrizaje}{40}{subsection.4.3.3}
 \contentsline {chapter}{\numberline {5}Experimentos}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Percepci\'on }{43}{section.5.1}
+\contentsline {section}{\numberline {5.1}Percepci\'on de la baliza}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}Despegue}{44}{section.5.2}
-\contentsline {section}{\numberline {5.3}B\'usqueda }{45}{section.5.3}
-\contentsline {section}{\numberline {5.4}Aterrizaje}{47}{section.5.4}
-\contentsline {section}{\numberline {5.5}Algoritmo completo}{49}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{52}{chapter.6}
-\contentsline {section}{\numberline {6.1}L\'ineas futuras}{54}{section.6.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{57}{chapter*.32}
+\contentsline {section}{\numberline {5.3}Experimentos de b\'usqueda }{46}{section.5.3}
+\contentsline {section}{\numberline {5.4}Experimentos de aterrizaje}{48}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ejecuci\'on t\'ipica del algoritmo completo}{49}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusiones}{53}{chapter.6}
+\contentsline {section}{\numberline {6.1}L\'ineas futuras}{55}{section.6.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{58}{chapter*.32}

@@ -31,54 +31,35 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen real}}}{38}{subfigure.2.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Suma de objetos}}}{38}{subfigure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Drone detectando objeto.\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Drone detectando objeto en escenario simulado.\relax }}{43}{figure.caption.22}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Percepci\'on posible objeto}}}{43}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Detecta objeto}}}{43}{subfigure.1.2}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Detectando baliza real.\relax }}{44}{figure.caption.23}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Despegue\relax }}{45}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue vista baliza}}}{45}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue vista drone}}}{45}{subfigure.3.2}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces B\'usqueda\relax }}{46}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {B\'usqueda}}}{46}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {B\'usqueda}}}{46}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {B\'usqueda}}}{46}{subfigure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {B\'usqueda}}}{46}{subfigure.4.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {B\'usqueda}}}{46}{subfigure.4.5}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces B\'usqueda\relax }}{47}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {B\'usqueda}}}{47}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {B\'usqueda}}}{47}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {B\'usqueda}}}{47}{subfigure.5.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {B\'usqueda}}}{47}{subfigure.5.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {B\'usqueda}}}{47}{subfigure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Aterrizaje\relax }}{48}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{48}{subfigure.6.4}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Aterrizaje\relax }}{49}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.5}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Aterrizaje}}}{49}{subfigure.7.6}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Algoritmo completo sobre el simulador. \relax }}{50}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{50}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{50}{subfigure.8.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{50}{subfigure.8.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Despegue}}}{50}{subfigure.8.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Alejandose de la baliza}}}{50}{subfigure.8.5}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Algoritmo completo sobre el drone real. \relax }}{51}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{51}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{51}{subfigure.9.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{51}{subfigure.9.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {B\'usqueda}}}{51}{subfigure.9.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {B\'usqueda}}}{51}{subfigure.9.5}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {B\'usqueda}}}{51}{subfigure.9.6}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {B\'usqueda}}}{51}{subfigure.9.7}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {B\'usqueda}}}{51}{subfigure.9.8}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Aterrizaje}}}{51}{subfigure.9.9}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Aterrizaje}}}{51}{subfigure.9.10}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Aterrizaje}}}{51}{subfigure.9.11}
-\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Aterrizaje}}}{51}{subfigure.9.12}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Despegue sobre la baliza del coche.\relax }}{45}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Despegue\relax }}{46}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue vista baliza}}}{46}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue vista drone}}}{46}{subfigure.4.2}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces B\'usqueda en espiral en escenario simulado\relax }}{47}{figure.caption.26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces B\'usqueda en el escenario real\relax }}{48}{figure.caption.27}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Aterrizaje\relax }}{48}{figure.caption.28}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Aterrizaje\relax }}{49}{figure.caption.29}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Algoritmo completo de navegaci\'on en escenario simulado. \relax }}{50}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{50}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{50}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{50}{subfigure.9.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Despegue}}}{50}{subfigure.9.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Alejandose de la baliza}}}{50}{subfigure.9.5}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Algoritmo completo sobre el drone real. \relax }}{52}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Despegue}}}{52}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Despegue}}}{52}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Despegue}}}{52}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {B\'usqueda}}}{52}{subfigure.10.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {B\'usqueda}}}{52}{subfigure.10.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {B\'usqueda}}}{52}{subfigure.10.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {B\'usqueda}}}{52}{subfigure.10.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {B\'usqueda}}}{52}{subfigure.10.8}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Aterrizaje}}}{52}{subfigure.10.9}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Aterrizaje}}}{52}{subfigure.10.10}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Aterrizaje}}}{52}{subfigure.10.11}
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Aterrizado}}}{52}{subfigure.10.12}
 \addvspace {10\p@ }
