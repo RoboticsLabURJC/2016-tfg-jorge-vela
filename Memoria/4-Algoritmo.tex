@@ -182,7 +182,43 @@ despegue, b\'usqueda y aterrizaje.
 
 
 \subsection{B\'usqueda}
-\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. En caso de no tratarse de la baliza, continuar\'a con el algoritmo de b\'usqueda, pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PID (progresivo, integral y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza.  Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo se realiza una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \] 
+\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. Si tras un n\'umero previamente definido de iteraciones, no se trata de una b\'aliza, continuar\'a el algoritmo de b\'usqueda en el punto donde se hab\'ia quedado, siguiendo con la amplitud de las espirales a la que se hab\'ia llegado. Pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PD (progresivo y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza. El algoritmo del control PD es de la siguiente forma:
+
+\begin{itemize}
+\item Por una parte, se tiene el control progresivo. Para \'este se obtiene por un lado el centro de la imagen, y por otro lado el centro de la cruceta o del objeto de interes, segun el punto del algoritmo. Se calcula la diferencia entre el centro de la imagen y el centro de referencia, obteniendo as\'i el error, y como resultados, para el eje x $\Delta_x$,  y para el eje y $\Delta_y$. Estos valores, se multiplican por una constante que sirve para adaptar el resultado a la velocidad del drone. La formula de este control es la siguiente:  \[\Delta_x = centroimagen_x - centroobjeto_x\]   \[\Delta_y = centroimagen_y - centroobjeto_y\]  \[ P_x = \Delta_x * 0.01\]  \[P_y = \Delta_y * 0.01\]
+
+
+
+
+\item Por otro lado, est\'a el control derivativo. Para este caso, al tratarse de iteraciones, se trabaja con las diferentes muestras de cada iteración. Se obtiene el error de la iteraci\'on actual y de la iteraci\'on anterior para ambos ejes, y se resta el error anterior al actual: \[\Delta_d_i_f_e_r_e_n_c_i_a_x =  \Delta_x [n] - \Delta_x [n-1] \] \[\Delta_d_i_f_e_r_e_n_c_i_a_y =  \Delta_y [n] - \Delta_y [n-1] \]
+
+\end{itemize}
+
+\hspace{1 cm} Una vez se ha obtenido esto, se envian las instrucciones de velocidad al drone, utilizando el comando:
+\begin{lstlisting}[backgroundcolor=\color{yellow}]
+vely = (y_img-positionX)                        
+velx = (x_img-positionY)
+
+vytot= vely*0.01 
+vxtot= velx*0.01
+
+velxa=1-abs(xanterior-velx)/50 #10
+if(velxa<0.1):    
+    velxa=0.1
+
+velya=1-abs(yanterior-vely)/50 #10
+if(velya<0.1):
+    velya=0.1
+self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0) 
+\end{lstlisting}
+	
+
+ %$\\ Calculo \Delta_x : \[\Delta_x = centroimagen_x - centroobjeto_x\] \\ Calculo \Delta_x : \[\Delta_y = centroimagen_y - centroobjeto_y\] \\ Calculo del control proporcional P_x : \[ P_x = \Delta_x * 0.01\] \\ Calculo del control proporcional P_y : \[P_y = \Delta_y * 0.01\] 
+
+
+
+
+%\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. En caso de no tratarse de la baliza, continuar\'a con el algoritmo de b\'usqueda, pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PID (progresivo, integral y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza.  Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo se realiza una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \] 
 
 \hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a \'este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto, \'este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad m\'as continua a la hora de acelerar o frenar.  
 
@@ -198,6 +234,14 @@ if(numVuelta==100):
         wSearch=wSearch+0.2
 \end{lstlisting}
 
+\hspace{1 cm} El esquema de este control es el siguiente:
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=1\textwidth]{imgs/esquemapd2.png}
+	\label{fig:Esquema_control}
+\end{figure}
+
+
 \hspace{1cm} Para visualizar el diagrama de estados, se tuvieron que añadir dos paquetes del GUI de JdeRobot, uno que permit\'ia abrir otra ventana y otro que permit\'ia añadir estados y transiciones entre ellos. Para marcarlo, siendo el numero que aparece el numero del estado que queremos marcar, val\'ia con la siguiente linea de c\'odigo:
 
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
@@ -208,7 +252,18 @@ self.machine.setStateActive(2, True)
 
 \subsection{Aterrizaje}
 
-\hspace{1 cm} Esta fase es un aterrizaje controlado, en el cual, una vez que el drone se ha centrado sobre la baliza comienza a descender, cambiando su estado a "`Landing"', y una vez el \'area de la baliza es suficiente, como para detectar que el drone est\'a muy pr\'oximo a ella, se env\'ia la instrucci\'on land, aterrizando de \'esta forma el drone, siendo aqu\'i su estado "`Landed"'. El hecho de enviarse la orden de aterrizar cuando se est\'a a una distancia cercana a la baliza es porque esta instrucci\'on es a ciegas, una vez que se env\'ia el drone solo se encarga de descender hasta que nota que est\'a sobre un lugar sobre el cual posarse. Por lo tanto si se env\'ia esta orden a una distancia lejana, el drone puede perder la referencia y aterrizar en otro sitio. 
+\hspace{1 cm} Esta fase es un aterrizaje controlado. Una vez el drone se ha centrado sobre la baliza comienza a descender de forma constante , cambiando el estado a "`Landing"'. Una vez el \'area es menor a 19272135.0, se manda la instrucci\'on de parar motores. En este momento el drone desciende hasta posarse en el suelo, entonces para los motores y el estado cambia a "`Landed"'. La raz\'on de ir descendiendo poco a poco hasta detectar determinado \'area, es por si la baliza est\'a lejos del drone, puede interferir alg\'un objeto moment\'aneamente o darse alg\'un factor externo que altere la posici\'on del drone respecto de la baliza, y al enviar la instrucci\'on de aterrizar se perder\'ia este control. El \'area elegido es porque en ese momento la baliza ocupa pr\'acticamente por completo la imagen, y si se le indicara al drone que siguiera descendiendo las corrientes que se producir\'ian con el suelo podr\'ian afectarle y desviar su trayector\'ia, pudiendo perder la referencia.
+
+
+\hspace{1 cm} Una vez finalizada la descripci\'on del algoritmo completo, un esquema del control completo es el siguiente:
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=1\textwidth]{imgs/EsquemaAlgoritmo.jpg}
+	\label{fig:Esquema_control}
+\end{figure}
+
+
+%Esta fase es un aterrizaje controlado, en el cual, una vez que el drone se ha centrado sobre la baliza comienza a descender, cambiando su estado a "`Landing"', y una vez el \'area de la baliza es suficiente, como para detectar que el drone est\'a muy pr\'oximo a ella, se env\'ia la instrucci\'on land, aterrizando de \'esta forma el drone, siendo aqu\'i su estado "`Landed"'. El hecho de enviarse la orden de aterrizar cuando se est\'a a una distancia cercana a la baliza es porque esta instrucci\'on es a ciegas, una vez que se env\'ia el drone solo se encarga de descender hasta que nota que est\'a sobre un lugar sobre el cual posarse. Por lo tanto si se env\'ia esta orden a una distancia lejana, el drone puede perder la referencia y aterrizar en otro sitio. 
 
 
 
