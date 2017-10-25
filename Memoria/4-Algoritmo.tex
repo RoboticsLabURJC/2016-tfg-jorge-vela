@@ -188,28 +188,45 @@ despegue, b\'usqueda y aterrizaje.
 \item Por una parte, se tiene el control progresivo. Para \'este se obtiene por un lado el centro de la imagen, y por otro lado el centro de la cruceta o del objeto de interes, segun el punto del algoritmo. Se calcula la diferencia entre el centro de la imagen y el centro de referencia, obteniendo as\'i el error, y como resultados, para el eje x $\Delta_x$,  y para el eje y $\Delta_y$. Estos valores, se multiplican por una constante que sirve para adaptar el resultado a la velocidad del drone. La formula de este control es la siguiente:  \[\Delta_x = centroimagen_x - centroobjeto_x\]   \[\Delta_y = centroimagen_y - centroobjeto_y\]  \[ P_x = \Delta_x * 0.01\]  \[P_y = \Delta_y * 0.01\]
 
 
-
-
 \item Por otro lado, est\'a el control derivativo. Para este caso, al tratarse de iteraciones, se trabaja con las diferentes muestras de cada iteración. Se obtiene el error de la iteraci\'on actual y de la iteraci\'on anterior para ambos ejes, y se resta el error anterior al actual: \[\Delta_d_i_f_e_r_e_n_c_i_a_x =  \Delta_x [n] - \Delta_x [n-1] \] \[\Delta_d_i_f_e_r_e_n_c_i_a_y =  \Delta_y [n] - \Delta_y [n-1] \]
 
 \end{itemize}
 
 \hspace{1 cm} Una vez se ha obtenido esto, se envian las instrucciones de velocidad al drone, utilizando el comando:
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
-vely = (y_img-positionX)                        
-velx = (x_img-positionY)
+vely = (y_img-positionY)                        
+velx = (x_img-positionX)
 
-vytot= vely*0.01 
-vxtot= velx*0.01
+Kp=0.01
+vy_P = vely*Kp 
+vx_P = velx*Kp
 
-velxa=1-abs(xanterior-velx)/50 #10
-if(velxa<0.1):    
-    velxa=0.1
+Kd = 0.003
+vx_D = abs(xanterior-velx)*Kd
+vy_D = abs(yanterior-vely)*Kd
 
-velya=1-abs(yanterior-vely)/50 #10
-if(velya<0.1):
-    velya=0.1
-self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0) 
+Vy_tot = vy_P + vy_D
+Vx_tot = vx_P + vy_D
+self.cmdvel.sendCMDVel(Vy_tot,Vx_tot,0,0,0,0) 
+
+xanterior = velx
+yanterior = vely
+
+if(abs(Vx_tot-xanteriorTot)>0.3):
+   if(Vx_tot<xanteriorTot):
+      Vx_tot = xanteriorTot-0.3
+   else:
+      Vx_tot = xanteriorTot+0.3                                 
+
+if(abs(Vy_tot-yanteriorTot)>0.3):
+   if(Vy_tot<yanteriorTot):
+      Vy_tot = yanteriorTot-0.3
+   else:
+      Vy_tot = yanteriorTot+0.3                                 
+yanteriorTot = vytot
+xanteriorTot = vxtot
+
+self.cmdvel.sendCMDVel(Vy_tot,Vx_tot,0,0,0,0) 
 \end{lstlisting}
 	
 
@@ -222,7 +239,7 @@ self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0)
 
 \hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a \'este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto, \'este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad m\'as continua a la hora de acelerar o frenar.  
 
-El siguiente fragmento de c\'odigo consigue que el drone se mueva realizando espirales:
+El siguiente fragmento de c\'odigo consigue que el drone se mueva realizando espirales: \\
 
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
 self.cmdvel.sendCMDVel(1.8+wSearch,0,0,0,0,1.5 - wSearch)
@@ -234,7 +251,7 @@ if(numVuelta==100):
         wSearch=wSearch+0.2
 \end{lstlisting}
 
-\hspace{1 cm} El esquema de este control es el siguiente:
+\hspace{1 cm} El esquema de este control cuando el drone est\'a en proceso de b\'usqueda y detecta una imagen es el siguiente:
 \begin{figure}[ht]
 	\centering
 		\includegraphics[width=1\textwidth]{imgs/esquemapd2.png}
