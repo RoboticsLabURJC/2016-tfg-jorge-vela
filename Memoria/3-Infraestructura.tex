@@ -45,6 +45,7 @@
 
 
 \subsection{Herramienta UAVviewer}
+\label{sec:uavviewer}
 \hspace{1 cm} Esta herramienta permite el control del drone y obtener los datos de sus sensores. Su interfaz ICE tiene los drivers de C\'amara, Pose3D, CMDVel, NAVData y ArDrone\_Extra. 
 
 \begin{figure}[H]
@@ -66,18 +67,33 @@
 \subsection{Herramienta ColorTuner}
 \hspace{1 cm} Al inicio del proyecto era la herramienta ColorFilter. Esta herramienta permite, a partir de una imagen o v\'ideo, trabajar en los distintos espacios de color (como puede ser RGB, HSV, HSI...) y poder ir variando los par\'ametros m\'aximo y m\'inimo (entre 0 y 255) de cada uno para ver que colores cumplen las caracter\'isticas y cuales no, viendose de esta forma, en otra imagen, s\'olo los colores que pasan este filtro dejando el resto como un fondo negro. 
 
-\subsection{JdeRobot Academy}
+%\subsection{JdeRobot Academy}
+%\label{sec.JdeRobotAcademy}
+%\hspace{1 cm} Con esta herramienta se ha trabajado en dos secciones.
+\subsection{Pr\'actica choca-gira con aut\'omatas.}
 \label{sec.JdeRobotAcademy}
-\hspace{1 cm} Con esta herramienta se ha trabajado en dos secciones.
-\begin{itemize}
-\item 1ª Por una parte se ha utilizado para la pr\'actica de aut\'omatas. \'Esta permite crear un diagrama de estados para saber en cada momento en que punto del algoritmo nos encontramos.
+\hspace{1 cm} De esta pr\'actica se ha obtenido la m\'aquina de estados, la cual permite crear diferentes estados, crear transiciones de unos a otros y marcar un estado u otro para saber en que punto se encuentra la aplicaci\'on. Con los siguienes comandos en el codigo python, la aplicaci\'on crea una m\'aquina (indicando el n\'umero de estados que tendra), añade un estado (indicando el nombre de este), añade una transici\'on (indicando origen, destino y el nombre) y marca el estado en el que se encuentra(indicando el numero del estado y TRUE para activarlo). 
+
+\begin{lstlisting}[backgroundcolor=\color{yellow}]
+ Machine(n)
+ machine.addState(name) 
+ machine.addTransition(orig, fin, name) 
+ machine.setStateActive(n, flag) 
+\end{lstlisting}
+
 
 \begin{figure}[ht]
 	\centering
-		\includegraphics[width=0.3\textwidth]{imgs/states.eps}
+		\includegraphics[width=0.3\textwidth]{imgs/ChocaGiraAutomata.png}
 		\caption{Diagrama de estados.}
 	\label{fig:Diag_estados}
 \end{figure}
+
+Esta pr\'actica se encuentra en el GitHub de Jderobot Academy  \url{https://github.com/JdeRobot/Academy/tree/master/src/bump_and_go_py}
+
+
+\subsection{Pr\'actica follow\_turtlebot.}
+\hspace{1 cm} Esta pr\'actica la hemos utilizado debido a su interfaz, pues al igual que UAV\_Viewer \ref{sec:uavviewer}, nos permite controlar el movimiento del drone, as\'i como ver los datos de sus sensores. A esta interfaz se le ha añadido la implementaci\'on de la maquina de estados obtenida de la pr\'actica de choca-gira, teniendo de esta forma el control del drone y poder visualizar el estado en el que se encuentra.
 
 \item 2ª Por otro lado se ha utilizado follow\_turtlebot, al igual que UAVviewer, permite controlar el drone y obtener los datos de sus sensores, adem\'as de poder indicar un algoritmo a ejecutar.
  \begin{figure}[H]
@@ -86,6 +102,27 @@
 		\caption{Follow Turtlebot.}
 	\label{fig:FollowTurtlebot}
 \end{figure}
+
+\hspace{1 cm}Esta pr\'actica se encuentra en el GitHub de Jderobot Academy \url{https://github.com/JdeRobot/Academy/tree/master/src/follow_turtlebot}
+
+\hspace{1 cm}Con la aplicaci\'on de la pr\'actica de follow\_turtleboot mas el componente añadido, el componente sobre el que se ejecuta el algoritmo est\'a compuesto por tres hilos. El primer hilo es el encargado de la ejecuci\'on del algoritmo. El segundo hilo es el encargado del interfaz gr\'afico para el control del drone, la c\'amara y los sensores. El tercer hilo es la ventana que permite ver el diagrama de estados. 
+%\begin{itemize}
+%\item 1ª Por una parte se ha utilizado para la pr\'actica de aut\'omatas. \'Esta permite crear un diagrama de estados para saber en cada momento en que punto del algoritmo nos encontramos.
+
+%\begin{figure}[ht]
+%	\centering
+%		\includegraphics[width=0.3\textwidth]{imgs/states.eps}
+%		\caption{Diagrama de estados.}
+%	\label{fig:Diag_estados}
+%\end{figure}
+
+%\item 2ª Por otro lado se ha utilizado follow\_turtlebot, al igual que UAVviewer, permite controlar el drone y obtener los datos de sus sensores, adem\'as de poder indicar un algoritmo a ejecutar.
+% \begin{figure}[H]
+%	\centering
+%		\includegraphics[width=0.5\textwidth]{imgs/follow_turtlebot.png}
+%		\caption{Follow Turtlebot.}
+%	\label{fig:FollowTurtlebot}
+%\end{figure}
 
 
 \end{itemize}
@@ -108,7 +145,7 @@
     \includegraphics[width=0.29\textwidth]{imgs/opencv.png}}
   \subfloat[Procesamiento con OpenCV]{
    \label{f:OpenCVProcess}
-    \includegraphics[width=0.33\textwidth]{imgs/opencvP.png}} 
+    \includegraphics[width=0.7\textwidth]{imgs/opencvP.png}} 
  \caption{OpenCV}
  \label{f:OpenCV}
 \end{figure} 

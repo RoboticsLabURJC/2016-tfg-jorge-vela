@@ -8,9 +8,9 @@
 \BOOKMARK [2][-]{subsection.1.2.4}{Inspecci\363n}{section.1.2}% 8
 \BOOKMARK [2][-]{subsection.1.2.5}{Emergencias}{section.1.2}% 9
 \BOOKMARK [2][-]{subsection.1.2.6}{Proyectos de empresas }{section.1.2}% 10
-\BOOKMARK [1][-]{section.1.3}{Hardware}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.4}{Software}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.5}{Rob\363tica a\351rea en el laboratorio de la URJC}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.3}{Hardware de drones}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Software de drones}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Rob\363tica a\351rea en RoboticsLab de la URJC}{chapter.1}% 13
 \BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 14
 \BOOKMARK [1][-]{section.2.1}{Objetivo principal}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.2}{Requisitos}{chapter.2}% 16
@@ -24,23 +24,25 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Plugin modelo de cuadricoptero Gazebo}{section.3.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.3}{Herramienta UAVviewer}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.4}{Herramienta ColorTuner}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.5}{JdeRobot Academy}{section.3.3}% 27
-\BOOKMARK [1][-]{section.3.4}{Biblioteca OpenCV}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Dise\361o}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Percepci\363n}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Pre-procesado}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{Detecci\363n de la baliza}{section.4.2}% 33
-\BOOKMARK [1][-]{section.4.3}{Control}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.3.1}{Despegue}{section.4.3}% 35
-\BOOKMARK [2][-]{subsection.4.3.2}{B\372squeda}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.3}{Aterrizaje}{section.4.3}% 37
-\BOOKMARK [0][-]{chapter.5}{Experimentos}{}% 38
-\BOOKMARK [1][-]{section.5.1}{Percepci\363n de la baliza}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.2}{Despegue}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.3}{Experimentos de b\372squeda }{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.4}{Experimentos de aterrizaje}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.5}{Ejecuci\363n t\355pica del algoritmo completo}{chapter.5}% 43
-\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 44
-\BOOKMARK [1][-]{section.6.1}{L\355neas futuras}{chapter.6}% 45
-\BOOKMARK [0][-]{chapter*.34}{Bibliograf\355a}{}% 46
+\BOOKMARK [2][-]{subsection.3.3.5}{Pr\341ctica choca-gira con aut\363matas.}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.6}{Pr\341ctica follow\137turtlebot.}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Biblioteca OpenCV}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Algoritmo}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Dise\361o}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Percepci\363n}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Pre-procesado}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{Detecci\363n de la baliza}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{Control}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Despegue}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{B\372squeda}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{Aterrizaje}{section.4.3}% 38
+\BOOKMARK [1][-]{section.4.4}{Arquitectura software}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{Experimentos}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Percepci\363n de la baliza}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Despegue}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Experimentos de b\372squeda }{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.4}{Experimentos de aterrizaje}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.5}{Ejecuci\363n t\355pica del algoritmo completo}{chapter.5}% 45
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 46
+\BOOKMARK [1][-]{section.6.1}{L\355neas futuras}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter*.39}{Bibliograf\355a}{}% 48

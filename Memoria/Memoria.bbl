@@ -61,29 +61,28 @@
 
 
 
-\bibitem{MediaWiki Alberto Martin Florido}
+\bibitem{MediaWikiAlbertoMartinFlorido}
 {MediaWiki Alberto Mart\'in Florido}.
 \newblock \url{http://jderobot.org/Amartinflorido-tfm}.
 
-\bibitem{MediaWiki Alberto Pavo Blas}
-{MediaWiki Alberto Pavo Blas}.
-\newblock \url{http://jderobot.org/Apavo-tfg}.
-
-\bibitem{MediaWiki Daniel Yague Sanchez}
-{MediaWiki Daniel Ya\"ue Sanchez}.
-\newblock \url{http://jderobot.org/Daniyague-pfc}.
-
-\bibitem{MediaWiki Manuel Zafra Villar}
-{MediaWiki Manuel Zafra Villar}.
-\newblock \url{http://jderobot.org/Mazafrav-pfc}.
-
-\bibitem{MediaWiki Arturo Velez Duque}
+\bibitem{MediaWikiArturoVelezDuque}
 {MediaWiki Arturo V\'elez Duque}.
 \newblock \url{http://jderobot.org/Avelez-tfg}.
 
-\bibitem{MediaWiki Jorge Cano Martinez}
+\bibitem{MediaWikiManuelZafraVillar}
+{MediaWiki Manuel Zafra Villar}.
+\newblock \url{http://jderobot.org/Mazafrav-pfc}.
+
+\bibitem{MediaWikiDanielYagueSanchez}
+{MediaWiki Daniel Ya\"ue Sanchez}.
+\newblock \url{http://jderobot.org/Daniyague-pfc}.
+
+
+\bibitem{MediaWikiJorgeCanoMartinez}
 {MediaWiki Jorge Cano Mart\'inez}.
 \newblock \url{http://jderobot.org/J.canoma-tfg}.
+
+
 
 
 \bibitem{Drones Amazon}
@@ -108,6 +107,27 @@
 \bibitem{Walmart drones}
 {P\'agina de tododrone. Uso de drones en Walmart}.
 \newblock \url{http://www.todrone.com/drones-dentro-de-tiendas/}.
+
+
+
+\bibitem{Chocagira}
+{P\'agina de GitHub de la pr\'actica choca-gira}.
+\newblock \url{https://github.com/JdeRobot/Academy/tree/master/src/bump_and_go_py}.
+
+
+
+\bibitem{followturtleboot}
+{P\'agina de GitHub de la pr\'actica follow\_turtleboot}.
+\newblock \url{https://github.com/JdeRobot/Academy/tree/master/src/follow_turtlebot}.
+
+
+
+
+
+
+
+
+
 
 
 \end{thebibliography}

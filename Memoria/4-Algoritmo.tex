@@ -37,7 +37,7 @@
 
 \subsection{Pre-procesado}
 
-\hspace{1 cm} Una vez tenemos la imagen de entrada, hay que detectar la informaci\'on de interes que nos aporta. 
+\hspace{1 cm} Una vez tenemos la imagen de entrada, hay que detectar la informaci\'on de inter\'es que nos aporta. 
  
 \hspace{1 cm} En primer lugar, la imagen que est\'a en RGB se transforma a HSV, para que sea m\'as facil su interpretaci\'on, ya que en lugar de trabajar en funci\'on de tres colores (rojo, verde y azul), se trabaja en funci\'on de tres par\'ametros (tono, saturaci\'on y valor). De \'esta forma, se depende menos de la luz que haya en cada momento y en cada lugar. En el filtro, a cada uno de los par\'ametros se le asigna un rango de valores entre 0 y 255. La herramienta colorTuner permite, a partir de una imagen de entrada, dar valores a estos par\'ametros, viendo que objetos cumplen estos requisitos y dejandolos en primer plano, y cuales no, dejando estas zonas en negro como p\'ixeles de fondo. Una vez se obtienen estos valores se añaden al filtro, obteniendo a la salida una imagen que solo muestra los objetos de los colores de inter\'es. 
 
@@ -64,7 +64,7 @@ maskRGBOrange = cv2.bitwise_and(input_image,input_image, mask= maskOrange)
 \end{itemize}
 
 
-\hspace{1 cm} De esta forma, al obtener una imagen sin apenas ruido, evitando as\'i que objetos de no inter\'es los detecte como tal y que los objetos de interes los trate como p\'ixeles de fondo. Una im\'agen en la que se observa la realizaci\'on de un filtro de color y el uso de operadores morfol\'ogicos es la siguiente:
+\hspace{1 cm} De esta forma, al obtener una imagen sin apenas ruido, evitando as\'i que objetos de no inter\'es los detecte como tal y que los objetos de inter\'es los trate como p\'ixeles de fondo. Una im\'agen en la que se observa la realizaci\'on de un filtro de color y el uso de operadores morfol\'ogicos es la siguiente:
 
 \begin{figure}[ht]
 	\centering
@@ -171,7 +171,7 @@ for c in contours:
 \section{Control}
 \label{sec.control}
 
-\hspace{1 cm} En \'esta secci\'on se explica el control sobre el drone en funci\'on del momento en el que se encuentra y la imagen que se obtiene. Se puede dividir \'esta secci\'on en tres partes:
+\hspace{1 cm} En \'esta secci\'on se explica el control sobre el drone en funci\'on del momento en el que se encuentra y la imagen que se obtiene. Se puede dividir en tres partes:
 despegue, b\'usqueda y aterrizaje.
 
 
@@ -185,14 +185,14 @@ despegue, b\'usqueda y aterrizaje.
 \hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. Si tras un n\'umero previamente definido de iteraciones, no se trata de una b\'aliza, continuar\'a el algoritmo de b\'usqueda en el punto donde se hab\'ia quedado, siguiendo con la amplitud de las espirales a la que se hab\'ia llegado. Pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PD (progresivo y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza. El algoritmo del control PD es de la siguiente forma:
 
 \begin{itemize}
-\item Por una parte, se tiene el control progresivo. Para \'este se obtiene por un lado el centro de la imagen, y por otro lado el centro de la cruceta o del objeto de interes, segun el punto del algoritmo. Se calcula la diferencia entre el centro de la imagen y el centro de referencia, obteniendo as\'i el error, y como resultados, para el eje x $\Delta_x$,  y para el eje y $\Delta_y$. Estos valores, se multiplican por una constante que sirve para adaptar el resultado a la velocidad del drone. La formula de este control es la siguiente:  \[\Delta_x = centroimagen_x - centroobjeto_x\]   \[\Delta_y = centroimagen_y - centroobjeto_y\]  \[ P_x = \Delta_x * 0.01\]  \[P_y = \Delta_y * 0.01\]
+\item Por una parte, se tiene el control progresivo. Para \'este se obtiene por un lado el centro de la imagen, y por otro lado el centro de la cruceta o del objeto de interes, seg\'un el punto del algoritmo. Se calcula la diferencia entre el centro de la imagen y el centro de referencia, obteniendo as\'i el error, y como resultados, para el eje x $\Delta_x$,  y para el eje y $\Delta_y$. Estos valores, se multiplican por una constante que sirve para adaptar el resultado a la velocidad del drone. La formula de este control es la siguiente:  \[\Delta_x = centroimagen_x - centroobjeto_x\]   \[\Delta_y = centroimagen_y - centroobjeto_y\]  \[ P_x = \Delta_x * 0.01\]  \[P_y = \Delta_y * 0.01\]
 
 
 \item Por otro lado, est\'a el control derivativo. Para este caso, al tratarse de iteraciones, se trabaja con las diferentes muestras de cada iteración. Se obtiene el error de la iteraci\'on actual y de la iteraci\'on anterior para ambos ejes, y se resta el error anterior al actual: \[\Delta_d_i_f_e_r_e_n_c_i_a_x =  \Delta_x [n] - \Delta_x [n-1] \] \[\Delta_d_i_f_e_r_e_n_c_i_a_y =  \Delta_y [n] - \Delta_y [n-1] \]
 
 \end{itemize}
 
-\hspace{1 cm} Una vez se ha obtenido esto, se envian las instrucciones de velocidad al drone, utilizando el comando:
+\hspace{1 cm} Una vez se ha obtenido esto, se env\'ian las instrucciones de velocidad al drone, utilizando el comando:
 \begin{lstlisting}[backgroundcolor=\color{yellow}]
 vely = (y_img-positionY)                        
 velx = (x_img-positionX)
@@ -273,7 +273,7 @@ self.machine.setStateActive(2, True)
 
 
 \hspace{1 cm} Una vez finalizada la descripci\'on del algoritmo completo, un esquema del control completo es el siguiente:
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{imgs/EsquemaAlgoritmo.jpg}
 	\label{fig:Esquema_control}
@@ -284,9 +284,18 @@ self.machine.setStateActive(2, True)
 
 
 
+\section{Arquitectura software}
+
+\hspace{1 cm} El programa tiene que funcionar con fluidez, permitiendo enviar y recibir datos a la vez que se visualizan los datos que ya se tienen. Para ello, la aplicaci\'on follow\_turtlebot tiene una estructura que sigue el siguiente esquema:
 
 
+\hspace{1 cm} Primero est\'a el programa principal follow\_turtleboot.py. \'Este es el encargado de crear la m\'aquina de estados, decir el n\'umero de estados que este va a tener y las posibles transiciones entre unos y otros. Tambi\'en se encarga de definir las distintas herramientas de configuraci\'on que vaya a utilizar el algoritmo(c\'amara, datos de navegaci\'on, datos de posici\'on, comandos de velocidad y comandos extra para despegar y aterrizar) para pas\'arselos como par\'ametro a este. Una vez se tenga todo definido, se pasa a la creaci\'on de los distintos hilos.
 
+\hspace{1 cm} Por un lado se crea el interfaz gr\'afica y la ventana en la que se muestra el diagrama de estados. Se hace que \'este se ejecute en un hilo y se le manda comenzar.
+
+\hspace{1 cm} Por otro lado, se crea el interfaz de control, el cual crea una ventana que permite el control del drone y muestra la informaci\'on de sus sensores. A este se le pasan como datos las distintas herramientas anteriormente definidas para que pueda utilizarlas, como son la c\'amara para visualizar las imagenes o el cmdvel para enviar las instrucciones de velocidad. Esta ventana tambi\'en tiene los botones de "Play" y "Stop", los cuales permiten que ejecute el algoritmo creado o que pare su ejecuci\'on.
+
+\hspace{1 cm} Para finalizar, se llama a la funci\'on que ejecutar\'a el algoritmo principal. A esta funci\'on se le pasan como parametros todo lo hasta ahora creado, para que as\'i pueda acceder a los datos de la c\'amara, los distintos sensores y el diagrama de estados. Esta funci\'on permitir\'a obtener los datos deseados de los sensores, enviar instrucciones a los motores y al diagrama de estados. Este algoritmo, adem\'as de tener la funci\'on principal y las creadas para el funcionamiento de este, tiene cuatro funciones esenciales para su funcionamiento. Por un lado est\'an las de "play" y "stop", las cuales mandan el evento de iniciar (en caso de la funci\'on Play), de parar (en caso de la funci\'on Stop), que se ejecutaran principalmente cuando se pulsen los botones del interfaz de control. Por otro lado est\'a la funci\'on "kill"", que se encarga de matar el proceso. Por ultimo est\'a la funci\'on "run", que es la encargada de llamar de forma continua al algoritmo a ejecutar mientras no se mate a la aplicaci\'on. Esta funci\'on, mientras se haya mandado la instrucci\'on de iniciar y no la de parar, se encontrar\'a en un bucle continuo obteniendo a final de cada iteraci\'on el tiempo que ha tardado en ejecutarse, en caso de no llegar a un m\'inimo de tiempo, la funci\'on parara la cantidad de tiempo necesaria para llegar a ese m\'inimo, y entonces dejar\'a continuar con la ejecuci\'on. De esta forma, la velocidad del algoritmo no solo depender\'a del algoritmo y las funciones en si, sino que en caso de tardar muy poco tendr\'a determinados tiempos de espera.
 
 
 
