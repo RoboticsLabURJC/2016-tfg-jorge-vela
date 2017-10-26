@@ -1,8 +1,8 @@
-\chapter{Algoritmo}\label{cap.algoritmo}
+\chapter{Algoritmo}\label{cap.algoritmo} %Algoritmo de Navegaci\'on aut\'onoma
 
 \hspace{1 cm} En este cap\'itulo se describe el modo por el cual, con la infraestructura que se tiene, se llega a una soluci\'on para lo planteado en los objetivos. 
 
-\hspace{1 cm} Este algoritmo tiene que permitir al drone despegar de forma controlada, realizar una navegaci\'on aut\'onoma para encontrar una baliza sobre la que aterrizar. La organizaci\'on de este cap\'itulo tiene primero una secci\'on de diseño, en el que se explica el funcionamiento del programa. Tras esto una secci\'on de percepci\'on para explicar los datos que se obtienen a trav\'es de los sensores, y para finalizar una secci\'on de control, para explicar los distintos movimientos del drone y de que dependen estos.
+\hspace{1 cm} Este algoritmo tiene que permitir al drone despegar de forma controlada, realizar una navegaci\'on aut\'onoma para encontrar una baliza sobre la que aterrizar. La organizaci\'on de este cap\'itulo tiene primero una secci\'on de diseño, en el que se explica el funcionamiento del programa. Tras esto una secci\'on de percepci\'on para explicar los datos que se obtienen a trav\'es de los sensores, y para finalizar una secci\'on de control, para explicar los distintos movimientos del drone y de que dependen estos. %añadir algoritmo de control
 
 \section{Diseño}
 \label{sec.Design}
@@ -237,7 +237,7 @@ self.cmdvel.sendCMDVel(Vy_tot,Vx_tot,0,0,0,0)
 
 %\hspace{1 cm} Esta fase comenzar\'a cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello comenzar\'a un algoritmo en espiral, estado "`Search"', de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' e intentar\'a centrarse sobre ella. En caso de no tratarse de la baliza, continuar\'a con el algoritmo de b\'usqueda, pero en caso de serlo pasar\'a al estado "`Centering beacon"', haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PID (progresivo, integral y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza.  Este control se basa en derivar el error con respecto al tiempo y multiplicarlo por una constante. Dado que nuestro algoritmo ejecuta una vez cada cierto tiempo y no esta continuamente pasando por este punto, podemos considerar que se trata de un sistema en tiempo discreto, y por tanto en lugar de trabajar con derivadas trabajaremos con sumatorios. De esta forma, para añadir un control derivativo se realiza una operaci\'on que depende de la velocidad anterior y la que tenemos ahora: \[v_{derivativa} =1-(v_{anterior}-v_{nueva})/50 \] 
 
-\hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a \'este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto, \'este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad m\'as continua a la hora de acelerar o frenar.  
+%\hspace{1cm}Para evitar que el valor sea 0 y al multiplicarlo por el valor progresivo se quede en el sitio, en caso de ser un valor menor a 0.1 se iguala a \'este. Este resultado lo multiplicamos a la velocidad final, y lo que conseguimos es que si el valor entre dos velocidades continuas es muy alto, \'este se aten\'ue de forma que el drone no cambie mucho y vaya oscilando, sino que lleve una velocidad m\'as continua a la hora de acelerar o frenar.  
 
 El siguiente fragmento de c\'odigo consigue que el drone se mueva realizando espirales: \\
 
@@ -287,7 +287,7 @@ self.machine.setStateActive(2, True)
 \section{Arquitectura software}
 
 \hspace{1 cm} El programa tiene que funcionar con fluidez, permitiendo enviar y recibir datos a la vez que se visualizan los datos que ya se tienen. Para ello, la aplicaci\'on follow\_turtlebot tiene una estructura que sigue el siguiente esquema:
-
+%ENVIAR DATOS Y RECIBIR ORDENES
 
 \hspace{1 cm} Primero est\'a el programa principal follow\_turtleboot.py. \'Este es el encargado de crear la m\'aquina de estados, decir el n\'umero de estados que este va a tener y las posibles transiciones entre unos y otros. Tambi\'en se encarga de definir las distintas herramientas de configuraci\'on que vaya a utilizar el algoritmo(c\'amara, datos de navegaci\'on, datos de posici\'on, comandos de velocidad y comandos extra para despegar y aterrizar) para pas\'arselos como par\'ametro a este. Una vez se tenga todo definido, se pasa a la creaci\'on de los distintos hilos.
 
