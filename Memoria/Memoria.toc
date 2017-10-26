@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {3.3.5}Pr\'actica choca-gira con aut\'omatas.}{29}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}Pr\'actica follow\_turtlebot.}{29}{subsection.3.3.6}
 \contentsline {section}{\numberline {3.4}Biblioteca OpenCV}{30}{section.3.4}
-\contentsline {chapter}{\numberline {4}Algoritmo}{32}{chapter.4}
+\contentsline {chapter}{\numberline {4}Algoritmo de Navegaci\'on aut\'onoma}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{32}{section.4.1}
 \contentsline {section}{\numberline {4.2}Percepci\'on}{34}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Pre-procesado}{35}{subsection.4.2.1}
