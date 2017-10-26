@@ -29,20 +29,20 @@
 \contentsline {section}{\numberline {3.4}Biblioteca OpenCV}{30}{section.3.4}
 \contentsline {chapter}{\numberline {4}Algoritmo de Navegaci\'on aut\'onoma}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Percepci\'on}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Pre-procesado}{35}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Detecci\'on de la baliza}{37}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Control}{40}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Despegue}{40}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}B\'usqueda}{41}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Aterrizaje}{44}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Arquitectura software}{46}{section.4.4}
-\contentsline {chapter}{\numberline {5}Experimentos}{48}{chapter.5}
-\contentsline {section}{\numberline {5.1}Percepci\'on de la baliza}{49}{section.5.1}
-\contentsline {section}{\numberline {5.2}Despegue}{50}{section.5.2}
-\contentsline {section}{\numberline {5.3}Experimentos de b\'usqueda }{52}{section.5.3}
-\contentsline {section}{\numberline {5.4}Experimentos de aterrizaje}{53}{section.5.4}
-\contentsline {section}{\numberline {5.5}Ejecuci\'on t\'ipica del algoritmo completo}{55}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{58}{chapter.6}
-\contentsline {section}{\numberline {6.1}L\'ineas futuras}{60}{section.6.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{63}{chapter*.39}
+\contentsline {section}{\numberline {4.2}Percepci\'on}{35}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Pre-procesado}{36}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Detecci\'on de la baliza}{38}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Control}{41}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Despegue}{41}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}B\'usqueda}{42}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Aterrizaje}{46}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Arquitectura software de la implementaci\'on}{47}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experimentos}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Percepci\'on de la baliza}{50}{section.5.1}
+\contentsline {section}{\numberline {5.2}Despegue}{51}{section.5.2}
+\contentsline {section}{\numberline {5.3}Experimentos de b\'usqueda }{53}{section.5.3}
+\contentsline {section}{\numberline {5.4}Experimentos de aterrizaje}{54}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ejecuci\'on t\'ipica del algoritmo completo}{56}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusiones}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}L\'ineas futuras}{61}{section.6.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{64}{chapter*.40}
