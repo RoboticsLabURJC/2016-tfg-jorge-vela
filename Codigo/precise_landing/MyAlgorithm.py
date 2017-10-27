@@ -243,11 +243,12 @@ class MyAlgorithm(threading.Thread):
 
             kernel = np.ones((3,3),np.uint8)
 
-            maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 2)
-            maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 2)
+            maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 4)
+            maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 3)
 
-            maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 2)
-            maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 2)
+            maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 4)
+            maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 3)
+
             '''
             kernel = np.ones((3,3),np.uint8)
             #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 4)
@@ -262,6 +263,8 @@ class MyAlgorithm(threading.Thread):
             maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 9)
             maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 15)
             '''
+            kp=0.01
+            kd=0.003
 
             maskRGBTot = maskRGBOrange+maskRGBGreen
             global x_img
@@ -296,8 +299,8 @@ class MyAlgorithm(threading.Thread):
                         vely = (y_img-positionYarr[0])                        
                         velx = (x_img-positionXarr[0])
     
-                        vytot= vely*0.01 #0.01
-                        vxtot= velx*0.01 #0.01
+                        vytot= vely*kp #0.01
+                        vxtot= velx*kp #0.01
                     
                         velxa=1-abs(xanterior-velx)/50 #10
                         if(velxa<0.1):    
@@ -336,7 +339,8 @@ class MyAlgorithm(threading.Thread):
                 global yanterior
                 global xanterior
                 global var_beacon_status
-                if(areaOrange > 0 and areaGreen==0):
+                if(areaOrange > 0 and areaGreen==0 and numIteracionesOrange<50):
+                    numIteracionesOrange=numIteracionesOrange+1
                     self.machine.setStateActive(2, True)
 
                     xOrange = int(momentsOrange['m10']/momentsOrange['m00'])
@@ -345,11 +349,11 @@ class MyAlgorithm(threading.Thread):
                     vely = (y_img-yOrange)                        
                     velx = (x_img-xOrange)
 
-                    vytot= vely*0.01
-                    vxtot= velx*0.01
+                    vytot= vely*kp
+                    vxtot= velx*kp
 
-                    velxa=abs(xanterior-velx)*0.003
-                    velya=abs(yanterior-vely)*0.003
+                    velxa=abs(xanterior-velx)*kd
+                    velya=abs(yanterior-vely)*kd
 
                     vytot=(vytot+velya)
                     vxtot=(vxtot+velxa)
@@ -376,7 +380,7 @@ class MyAlgorithm(threading.Thread):
                         yTot = int(momentsTot['m01']/momentsTot['m00'])
 
 
-                        if((abs(y_img-yTot)<=10 and abs(x_img-xTot)<=10)): #abs(y_img-yTot)<5 and abs(x_img-xTot)<5 and 
+                        if((abs(y_img-yTot)<=6 and abs(x_img-xTot)<=6)): 
                             global turnland
                             self.extra.land()
                             if(turnland==0):
@@ -384,6 +388,8 @@ class MyAlgorithm(threading.Thread):
                                 if(areaTot>19272135.0):
                                     turnland=1
                                     landed=time.time()
+                                else:
+                                    self.cmdvel.sendCMDVel(0,0,-0.5,0,0,0) 
                             else:
                                 if(time.time()-landed>4.5):
                                     self.machine.setStateActive(5, True)
@@ -399,8 +405,8 @@ class MyAlgorithm(threading.Thread):
                             vely = (y_img-yTot)                        
                             velx = (x_img-xTot)
 
-                            vytot= vely*0.01
-                            vxtot= velx*0.01
+                            vytot= vely*kp
+                            vxtot= velx*kp
 
                             velxa=1-abs(xanterior-velx)/10
                             if(velxa<0.1):
@@ -433,11 +439,11 @@ class MyAlgorithm(threading.Thread):
                                     vely = (y_img-positionYarr[0])                        
                                     velx = (x_img-positionXarr[0])
     
-                                    vytot= vely*0.01 
-                                    vxtot= velx*0.01
+                                    vytot= vely*kp
+                                    vxtot= velx*kp
 
-                                    velxa=abs(xanterior-velx)*0.03
-                                    velya=abs(yanterior-vely)*0.03
+                                    velxa=abs(xanterior-velx)*kd
+                                    velya=abs(yanterior-vely)*kd
 
 
                                     if(abs(vxtot-xanteriorTot)>0.3):
@@ -475,8 +481,8 @@ class MyAlgorithm(threading.Thread):
                                     xanteriorTot=vxtot
 
                             else:
-                                velxa=abs(xanterior-velx)*0.003
-                                velya=abs(yanterior-vely)*0.003
+                                velxa=abs(xanterior-velx)*kd
+                                velya=abs(yanterior-vely)*kd
                                 print(vytot+velya)
                                 vytot=(vytot+velya)
                                 vxtot=(vxtot+velxa)
@@ -497,12 +503,12 @@ class MyAlgorithm(threading.Thread):
                                 xanteriorTot=vxtot
                                 self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0) 
                 elif(areaOrange == 0 and areaGreen>0):
+                    numIteracionesGreen=numIteracionesGreen+1
                     self.machine.setStateActive(2, True)
                     var_beacon_status = 1
                     xGreen = int(momentsGreen['m10']/momentsGreen['m00'])
                     yGreen = int(momentsGreen['m01']/momentsGreen['m00'])
                     if(yanterior==0 and xanterior==0):
-                        #self.cmdvel.sendCMDVel(0,0,0,0,0,0)
                         yanterior = (y_img-yGreen)*0.02
                         xanterior = (x_img-xGreen)*0.02
                         self.cmdvel.sendCMDVel(yanterior,xanterior,0,0,0,0) 
@@ -510,11 +516,11 @@ class MyAlgorithm(threading.Thread):
                         vely = (y_img-yGreen)                        
                         velx = (x_img-xGreen)
 
-                    vytot= vely*0.01
-                    vxtot= velx*0.01
+                    vytot= vely*kp
+                    vxtot= velx*kp
 
-                    velxa=abs(xanterior-velx)*0.003
-                    velya=abs(yanterior-vely)*0.003
+                    velxa=abs(xanterior-velx)*kd
+                    velya=abs(yanterior-vely)*kd
 
                     vytot=(vytot+velya)
                     vxtot=(vxtot+velxa)
@@ -544,6 +550,8 @@ class MyAlgorithm(threading.Thread):
                             numVuelta=0
                         if(wSearch<1 and numVuelta==101):
                            wSearch=wSearch+0.2
+                           numIteracionesGreen=0
+                           numIteracionesOrange=0
                     else:
                         self.cmdvel.sendCMDVel(1.8+wSearch,0,0,0,0,1.5 - wSearch)
 
