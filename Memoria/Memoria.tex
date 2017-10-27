@@ -16,6 +16,7 @@
 \usepackage[all]{xy}
 %\usepackage[a4paper,top=3cm, bottom=3cm, inner=2.5cm, outer=2.5cm]{geometry}
 
+
 \usepackage[%
     left=1.2in,%
     right=1.2in,%
@@ -37,6 +38,8 @@
 \usepackage[spanish]{babel}
 \usepackage{enumerate}
 \usepackage{subfig}
+
+\usepackage{afterpage}
 
 \usepackage[acronym, nonumberlist]{glossaries}
 \lstset{escapeinside={<@}{@>}}
@@ -93,6 +96,9 @@
 
 \begin{document}
 \include{Portada}
+
+\clearpage\null\newpage
+
 \pagenumbering{Roman}
 \include{Resumen}
 \cleardoublepage
