@@ -163,10 +163,10 @@ for c in contours:
  \centering
   \subfloat[Imagen real]{
    \label{f:imagen real}
-    \includegraphics[width=0.29\textwidth]{imgs/k_beacon21.png}}
+    \includegraphics[width=7cm, height=3cm]{imgs/k_beacon21.png}}
   \subfloat[Suma de objetos]{
    \label{f:sumaobjetos}
-    \includegraphics[width=0.33\textwidth]{imgs/k_Beacon1.eps}} 
+    \includegraphics[width=7cm, height=3cm]{imgs/k_Beacon1.eps}} 
  \caption{Procesamiento de imagen de la baliza}
  \label{f:ColorFilterTotal}
 \end{figure} 
@@ -177,7 +177,7 @@ for c in contours:
 \label{sec.control}
 
 \hspace{1 cm} En esta secci\'on se explica el control sobre el drone en funci\'on del momento del comportamiento en el que se encuentra y la imagen que se obtiene. Se puede dividir en tres partes:
-despegue, b\'usqueda y aterrizaje. La figura \ref{fig:Esquema_control2} indica el esquema de control que sigue el algoritmo
+despegue, b\'usqueda y aterrizaje. La figura \ref{fig:Esquema_control2} indica el esquema de control que sigue el algoritmo, los estados que est\'an en el mismo color, pertenecen a la parte de b\'usqueda, los otros dos, al despegue y aterrizaje:
 
 \begin{figure}[H]
 	\centering
@@ -201,7 +201,7 @@ despegue, b\'usqueda y aterrizaje. La figura \ref{fig:Esquema_control2} indica e
 
 
 \subsection{B\'usqueda}
-\hspace{1 cm} Esta fase empieza cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello sigue una navegaci\'on en espiral, estado "`Search"' de la figura \ref{fig:Diag_estados2}, de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' de la figura \ref{fig:Diag_estados2} e intentar\'a centrarse sobre ella. Si tras un n\'umero definido de iteraciones, no se detecta una b\'aliza, continuar\'a el algoritmo de b\'usqueda en el punto donde se hab\'ia quedado, aumentando con la amplitud de las espirales a la que se hab\'ia llegado. Pero en caso de detectarla pasar\'a al estado "`Centering beacon"' de la figura \ref{fig:Diag_estados2}, haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PD (proporcional y derivativo). Esto se debe a que s\'olo con el control progresivo, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza. El algoritmo del control PD es de la siguiente forma:
+\hspace{1 cm} Esta fase empieza cuando finalicen los diez segundos de despegue. El drone comenzar\'a a navegar de forma aut\'onoma en b\'usqueda de una baliza sobre la cual aterrizar. Para ello sigue una navegaci\'on en espiral, estado "`Search"' de la figura \ref{fig:Diag_estados2}, de forma que ir\'a rastreando la zona ampliando su giro de forma continua, hasta que detecte una posible baliza. En el momento que la detecte, pasar\'a al estado "`Possibly beacon"' de la figura \ref{fig:Diag_estados2} e intentar\'a centrarse sobre ella. Si tras un n\'umero definido de iteraciones, no se detecta una b\'aliza, continuar\'a el algoritmo de b\'usqueda en el punto donde se hab\'ia quedado, aumentando con la amplitud de las espirales a la que se hab\'ia llegado. Pero en caso de detectarla pasar\'a al estado "`Centering beacon"' de la figura \ref{fig:Diag_estados2}, haciendo que coincida el centro de la baliza con el centro de la imagen de la c\'amara. Para realizar el movimiento de centrarse en la baliza se ha utilizado un control PD (proporcional y derivativo). Esto se debe a que s\'olo con el control proporcional, se produc\'ia una gran diferencia de velocidad y el drone cambiaba sus giros de forma muy brusca, lo que le llevaba a desestabilizarse y perder con facilidad la baliza. El algoritmo del control PD es de la siguiente forma:
 
 \begin{itemize}
 \item Por una parte, se tiene el control proporcional. Para \'este se obtiene el centro de la cruceta o del objeto de inter\'es. Se calcula la diferencia entre el centro de la imagen y el centro del objeto o la cruceta, obteniendo as\'i el error, y como resultados, para el eje x $\Delta_x$,  y para el eje y $\Delta_y$. Estos valores se multiplican por una constante que sirve para adaptar el resultado a la velocidad del drone. La f\'ormula de este control es la siguiente:  \[\Delta_x = centroimagen_x - centroobjeto_x\]   \[\Delta_y = centroimagen_y - centroobjeto_y\]  \[ P_x = \Delta_x * 0.01\]  \[P_y = \Delta_y * 0.01\]
@@ -297,7 +297,7 @@ if(numVuelta==100):
 \hspace{1 cm} El programa tiene que funcionar con fluidez, permitiendo enviar y recibir datos a la vez que se visualizan los datos que ya se tienen. Para ello, la aplicaci\'on PreciseLanding tiene una estructura que sigue el siguiente esquema:
 %ENVIAR DATOS Y RECIBIR ORDENES
 
-\hspace{1 cm} Primero est\'a el programa principal precise_landing.py. \'Este es el encargado de crear la m\'aquina de estados, decir el n\'umero de estados que va a tener y las posibles transiciones entre unos y otros. Tambi\'en se conecta con los sensores y actuadores a trav\'es de las interfaces ICE creando los manejadores respectivos (c\'amara, datos de navegaci\'on, datos de posici\'on, comandos de velocidad y comandos extra para despegar y aterrizar) para pas\'arselos como par\'ametro a este. Una vez se tenga todo definido, se pasa a la creaci\'on de los distintos hilos.
+\hspace{1 cm} Primero est\'a el programa principal precise\_landing.py. \'Este es el encargado de crear la m\'aquina de estados, decir el n\'umero de estados que va a tener y las posibles transiciones entre unos y otros. Tambi\'en se conecta con los sensores y actuadores a trav\'es de las interfaces ICE creando los manejadores respectivos (c\'amara, datos de navegaci\'on, datos de posici\'on, comandos de velocidad y comandos extra para despegar y aterrizar) para pas\'arselos como par\'ametro a este. Una vez se tenga todo definido, se pasa a la creaci\'on de los distintos hilos.
 
 \hspace{1 cm} Por un lado se crea el interfaz gr\'afica y la ventana en la que se muestra el diagrama de estados. Se hace que \'este se ejecute en un hilo y se le manda comenzar.
 
@@ -319,10 +319,10 @@ self.machine.setStateActive(2, True)
  \centering
   \subfloat[Precise Landing]{
    \label{f:pl1}
-    \includegraphics[width=0.44\textwidth]{imgs/PreciseLanding1.png}}
+    \includegraphics[width=7cm, height=3.7cm]{imgs/PreciseLanding1.png}}
   \subfloat[Diagrama de Estados]{
    \label{f:pl2}
-    \includegraphics[width=0.40\textwidth]{imgs/PreciseLanding2.png}} 
+    \includegraphics[width=7cm, height=3.7cm]{imgs/PreciseLanding2.png}} 
  \caption{Interfaces que se abren al iniciar la aplicaci\'on.}
  \label{f:PreciseLanging}
 \end{figure}

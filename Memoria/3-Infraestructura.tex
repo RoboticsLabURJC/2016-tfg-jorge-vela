@@ -1,5 +1,5 @@
 \chapter{Infraestructura utilizada}\label{cap.infraestructura}
-\hspace{1 cm} Despues de fijar los objetivos concretos de este TFG, en este cap\'itulo se va a hablar sobre las distintas tecnolog\'ias utilizadas, tanto hardware como software, y el uso que han tenido en este proyecto. 
+\hspace{1 cm} Despu\'es de fijar los objetivos concretos de este TFG, en este cap\'itulo se va a hablar sobre las distintas tecnolog\'ias utilizadas, tanto hardware como software, y el uso que han tenido en este proyecto. 
 
 \section{Parrot AR.Drone 2.0 }
 \hspace{1 cm} \'Este ha sido el drone utilizado para hacer las pruebas en un entorno real y comprobar as\'i que el desarrollo del algoritmo era el correcto. 
@@ -8,19 +8,19 @@
 
 \hspace{1 cm} El \textsl{alcance} que tiene \'este con la estaci\'on tierra es de 50 metros, suficiente para las pruebas que han sido realizadas en este proyecto. 
 
-\hspace{1 cm} Este dron tiene una \textsl{placa base} ARM Cortex A8 de 1Ghz y un DSP de v\'ideo de 8Ghz. Tambi\'en posee una memoria RAM DDR2 de 1GB y 200Mhz. Este chip es el encargado de levantar una red WiFi, a la cual nos podemos conectar mediante el smartphone (hay una aplicacion espec\'ifica para ello), o como en este caso, mediante el ordenador, y de esta forma poder controlarlo. Esta placa base funciona con Linux. 
+\hspace{1 cm} Este drone tiene una \textsl{placa base} ARM Cortex A8 de 1Ghz y un DSP de v\'ideo de 8Ghz. Tambi\'en posee una memoria RAM DDR2 de 1GB y 200Mhz. Este chip es el encargado de levantar una red WiFi, a la cual nos podemos conectar mediante el smartphone (hay una aplicaci\'on espec\'ifica para ello), o como en este caso, mediante el ordenador, y de esta forma poder controlarlo. Esta placa base funciona con Linux. 
 
-\hspace{1 cm} Adem\'as, dicho dron cuenta con dos \textsl{c\'amaras}, una horizontal y otra vertical, lo que nos permite ver diversos planos en todo momento. Estas c\'amaras est\'an conectadas a la placa base, lo que permite en todo momento la transmisi\'on de im\'agenes en directo.
+\hspace{1 cm} Adem\'as, dicho drone cuenta con dos \textsl{c\'amaras}, una horizontal y otra vertical, lo que nos permite ver diversos planos en todo momento. Estas c\'amaras est\'an conectadas a la placa base, lo que permite en todo momento la transmisi\'on de im\'agenes en directo.
 
 %gracias a las cuales podremos trabajar, ser\'a la informaci\'on gracias a la cual podremos darle instrucciones al dron. Cabe destacar la diferencia de calidad que hay entre las c\'amaras, algo que se notaba al realizar pruebas con una c\'amara, y cuando todo era correcto y quer\'ias cambiar de c\'amara para realizar otra prueba, se pod\'ia observar como los colores perd\'ian nitidez y se despreciaban algunos detalles, lo que te llevaba a cambiar cosas de los algoritmos que en un principio no se esperaban. 
 
-\hspace{1 cm} Ya para terminar, la \textsl{velocidad} de este drone puede llegar a alcanzar los 18km/h, algo que en este proyecto nunca he llegado a probar, pero ser\'ia algo poco aconsejable teniendo en cuenta la distancia de alcance, pues los 50 metros que tiene, si la estaci\'on terrena de comunicaci\'on esta en un punto fijo, el dron tardar\'ia 10 segundos en salirse de este rango. 
+\hspace{1 cm} Ya para terminar, la \textsl{velocidad} de este drone puede llegar a alcanzar los 18km/h, algo que en este proyecto nunca se ha llegado a probar, pero ser\'ia algo poco aconsejable teniendo en cuenta la distancia de alcance, pues los 50 metros que tiene, si la estaci\'on terrena de comunicaci\'on esta en un punto fijo, el drone tardar\'ia 10 segundos en salirse de este rango. 
 
 
 \section{Simulador Gazebo }
 \hspace{1 cm} Es un proyecto de Open Source Robotics Fundation distribuido bajo la licencia Apache 2.0. Durante este trabajo se ha trabajado con Gazebo 7. 
 
-\hspace{1 cm}Tiene la capacidad de simular de forma precisa ambientes con robots, objetos y sensores en distintos tipos de entornos. \'Esto permite trabajar con el Parrot ArDrone y realizar pruebas. Gazebo permite la creaci\'on de entornos de manera precisa y poder probar los robots en distintos tipos de ambientes. Se trata de un programa OpenSource, lo que ha permitido su expansi\'on con facilidad, y muchos añadidos como plugins o repositorios con robots comerciales para poder acceder a su uso. Esta plataforma ha sido en la que se ha trabajado principalmente durante todo el proyecto, pues existe en \'esta un simulador de ArDrone. El escenario principal aqu\'i utilizado consist\'ia en el dron y un coche con una baliza, el cual ten\'ia que encontrar, centrarse sobre ella y aterrizar.
+\hspace{1 cm}Tiene la capacidad de simular de forma precisa ambientes con robots, objetos y sensores en distintos tipos de entornos. \'Esto permite trabajar con el Parrot ArDrone y realizar pruebas. Gazebo permite la creaci\'on de entornos de manera precisa y poder probar los robots en distintos tipos de ambientes. Se trata de un programa OpenSource, lo que ha permitido su expansi\'on con facilidad, y muchos añadidos como plugins o repositorios con robots comerciales para poder acceder a su uso. Esta plataforma ha sido en la que se ha trabajado principalmente durante todo el proyecto, pues existe en \'esta un simulador de ArDrone. El escenario principal aqu\'i utilizado consist\'ia en el drone y un coche con una baliza, el cual ten\'ia que encontrar, centrarse sobre ella y aterrizar.
 
 \hspace{1 cm} Destacar que este simulador se utiliz\'o en el DARPA Robotics Challenge, programa que trata de abordar problemas de operaciones humanitarias, como son casos de socorro en desastres naturales, que pueden ser demasiado grandes para que el ser humano se enfrente a ellos y responda de forma adecuada.
 
@@ -32,14 +32,14 @@
 \end{figure}
 
 \section{Entorno JdeRobot}
-\hspace{1 cm} Este es el software principal con el que se ha trabajado, cuya web oficial es \underline{\url{www.jderobot.org}}. Se trata de un proyecto de software libre que se centra en la rob\'otica y en la visi\'on por computaci\'on. Este software cuenta con distintas herramientas como filtro de color o control de los diferentes robots, que ha permitido un continuo desarrollo desde el inicio. 
+\hspace{1 cm} \'Este es el software principal con el que se ha trabajado, cuya web oficial es \underline{\url{www.jderobot.org}}. Se trata de un proyecto de software libre que se centra en la rob\'otica y en la visi\'on por computaci\'on. Este software cuenta con distintas herramientas como filtro de color o control de los diferentes robots, que ha permitido un continuo desarrollo desde el inicio. 
 
 
 \subsection{Driver ArDroneServer}
-\hspace{1 cm} Este es el servidor que permite comunicar nuestra aplicaci\'on con el drone. Tiene dos partes principales. Por un lado se encuentra el ArDrone SDK, el cual se comunica con el robot a\'ereo mediante WiFi. Por otro lado se encuentra el envoltorio C++, el cual se comunica con la aplicaci\'on mediante las interfaces ICE, permitiendo de esta forma la comunicaci\'on de nuestra aplicacio\'on con el cuadricoptero. 
+\hspace{1 cm} \'Este es el servidor que permite comunicar nuestra aplicaci\'on con el drone. Tiene dos partes principales. Por un lado se encuentra el ArDrone SDK, el cual se comunica con el robot a\'ereo mediante WiFi. Por otro lado se encuentra el envoltorio C++, el cual se comunica con la aplicaci\'on mediante las interfaces ICE, permitiendo de esta forma la comunicaci\'on de nuestra aplicacio\'on con el cuadricoptero. 
 
 \subsection{Plugin modelo de cuadricoptero Gazebo}
-\hspace{1 cm} Plugin que permite tener un ArDrone2 de Parrot en el simulador. \'Este tiene distintos sensores con los que trabajar (Sonar, IMU y C\'amara), adem\'as de contar con los distintos controles (cargar,iniciar, actualizar,despegue, velocidad y aterrizaje). Por otro lado, cuenta con la interfaz ICE para poder comunicar con los distintos elementos. 
+\hspace{1 cm} Plugin que permite tener un ArDrone2 de Parrot en el simulador. \'Este tiene distintos sensores con los que trabajar (sonar, IMU y c\'amara), adem\'as de contar con los distintos controles (cargar,iniciar, actualizar,despegue, velocidad y aterrizaje). Por otro lado, cuenta con la interfaz ICE para poder comunicar con los distintos elementos. 
 
 
 
@@ -65,7 +65,7 @@
 
 
 \subsection{Herramienta ColorTuner}
-\hspace{1 cm} Al inicio del proyecto era la herramienta ColorFilter. Esta herramienta permite, a partir de una imagen o v\'ideo, trabajar en los distintos espacios de color (como puede ser RGB, HSV, HSI...) y poder ir variando los par\'ametros m\'aximo y m\'inimo (entre 0 y 255) de cada uno para ver que colores cumplen las caracter\'isticas y cuales no, viendose de esta forma, en otra imagen, s\'olo los colores que pasan este filtro dejando el resto como un fondo negro. 
+\hspace{1 cm} Al inicio del proyecto era la herramienta \textit{ColorFilter}. Esta herramienta permite, a partir de una imagen o v\'ideo, trabajar en los distintos espacios de color (RGB, HSV, HSI...) y poder ir variando los par\'ametros m\'aximo y m\'inimo (entre 0 y 255) de cada uno para ver que colores cumplen las caracter\'isticas y cu\'ales no, viendose de esta forma, en otra imagen, s\'olo los colores que pasan este filtro dejando el resto como un fondo negro. 
 
 %\subsection{JdeRobot Academy}
 %\label{sec.JdeRobotAcademy}
@@ -84,7 +84,7 @@
 
 \begin{figure}[ht]
 	\centering
-		\includegraphics[width=0.3\textwidth]{imgs/ChocaGiraAutomata.png}
+		\includegraphics[width=9cm,height=7cm]{imgs/ChocaGiraAutomata.png}
 		\caption{Diagrama de estados.}
 	\label{fig:Diag_estados}
 \end{figure}
@@ -93,9 +93,9 @@ Esta pr\'actica se encuentra en el GitHub de Jderobot Academy  \url{https://gith
 
 
 \subsection{Pr\'actica follow\_turtlebot.}
-\hspace{1 cm} Esta pr\'actica la hemos utilizado debido a su interfaz, pues al igual que UAV\_Viewer \ref{sec:uavviewer}, nos permite controlar el movimiento del drone, as\'i como ver los datos de sus sensores. A esta interfaz se le ha añadido la implementaci\'on de la maquina de estados obtenida de la pr\'actica de choca-gira, teniendo de esta forma el control del drone y poder visualizar el estado en el que se encuentra.
+\hspace{1 cm} Al igual que UAV\_Viewer \ref{sec:uavviewer}, permite controlar el movimiento del drone, as\'i como ver los datos de sus sensores. A esta interfaz se le ha añadido la implementaci\'on de la maquina de estados obtenida de la pr\'actica de choca-gira, teniendo de esta forma el control del drone y poder visualizar el estado en el que se encuentra.
 
-\item 2ª Por otro lado se ha utilizado follow\_turtlebot, al igual que UAVviewer, permite controlar el drone y obtener los datos de sus sensores, adem\'as de poder indicar un algoritmo a ejecutar.
+
  \begin{figure}[H]
 	\centering
 		\includegraphics[width=0.5\textwidth]{imgs/follow_turtlebot.png}
@@ -105,7 +105,7 @@ Esta pr\'actica se encuentra en el GitHub de Jderobot Academy  \url{https://gith
 
 \hspace{1 cm}Esta pr\'actica se encuentra en el GitHub de Jderobot Academy \url{https://github.com/JdeRobot/Academy/tree/master/src/follow_turtlebot}
 
-\hspace{1 cm}Con la aplicaci\'on de la pr\'actica de follow\_turtleboot mas el componente añadido, el componente sobre el que se ejecuta el algoritmo est\'a compuesto por tres hilos. El primer hilo es el encargado de la ejecuci\'on del algoritmo. El segundo hilo es el encargado del interfaz gr\'afico para el control del drone, la c\'amara y los sensores. El tercer hilo es la ventana que permite ver el diagrama de estados. 
+\hspace{1 cm}Con la aplicaci\'on de la pr\'actica de follow\_turtleboot como interfaz, mas el componente añadido, el componente sobre el que se ejecuta el algoritmo est\'a compuesto por tres hilos. El primer hilo es el encargado de la ejecuci\'on del algoritmo. El segundo hilo es el encargado del interfaz gr\'afico para el control del drone, la c\'amara y los sensores. El tercer hilo es la ventana que permite ver el diagrama de estados. 
 %\begin{itemize}
 %\item 1ª Por una parte se ha utilizado para la pr\'actica de aut\'omatas. \'Esta permite crear un diagrama de estados para saber en cada momento en que punto del algoritmo nos encontramos.
 
@@ -134,7 +134,7 @@ Esta pr\'actica se encuentra en el GitHub de Jderobot Academy  \url{https://gith
 
 \section{Biblioteca OpenCV}
 \label{sec:BibliotecaOpenCV} 
-\hspace{1 cm} Esta librer\'ia tiene un conjunto de funciones que sirven para el procesamiento de im\'agenes y visi\'on computerizada, cuya web oficial es \underline{\url{https://opencv.org/}}. Esta programada en C++ y es un estandar de facto en la visi\'on artifical. Para el procesamiento de im\'agenes nos hemos apoyado principalmente sobre esta, trabajando en la versi\'on 3.1. Gracias a \'esta, al obtener la imagen que nos transmit\'ia el drone pod\'iamos tanto detectar objetos como aplicar cambios sobre ella, para marcar las zonas de interes o diferentes objetos. Esta librer\'ia sirve para el procesamiento de im\'agenes y visi\'on computerizada. Nos ha permitido la realizaci\'on de filtros de color, para eliminar objetos no deseados dependiendo el momento. Adem\'as permite el uso de operadores morfol\'ogicos (erosi\'on y dilataci\'on) gracias a los cuales se evitan imperfecciones en las im\'agenes como puede ser el ruido, que clasifica objetos inexistentes o de no inter\'es como objetos de inter\'es, as\'i como zonas importantes las detectaba como p\'ixeles de fondo. Tambi\'en han sido de gran utilidad funciones como \textit{drawContours} \'o \textit{findContours}, las cuales permiten encontrar los bordes de los objetos e indicar sobre una imagen final, con otro color, donde se encuentran dichos objetos. 
+\hspace{1 cm} Esta librer\'ia tiene un conjunto de funciones que sirven para el procesamiento de im\'agenes y visi\'on computerizada, cuya web oficial es \underline{\url{https://opencv.org/}}. Est\'a programada en C++ y es un estandar de facto en la visi\'on artifical. Para el procesamiento de im\'agenes nos hemos apoyado principalmente sobre \'esta, trabajando en la versi\'on 3.1. Gracias a \'esta, al obtener la imagen que transmite el drone se puede tanto detectar objetos como aplicar cambios sobre ella, para marcar las zonas de interes o diferentes objetos. Permite la realizaci\'on de filtros de color, para eliminar objetos no deseados dependiendo el momento. Adem\'as permite el uso de operadores morfol\'ogicos (erosi\'on y dilataci\'on) gracias a los cuales se evitan imperfecciones en las im\'agenes como puede ser el ruido, que clasifica objetos inexistentes o de no inter\'es como objetos de inter\'es, as\'i como zonas importantes las detectaba como p\'ixeles de fondo. Tambi\'en han sido de gran utilidad funciones como \textit{drawContours} \'o \textit{findContours}, las cuales permiten encontrar los bordes de los objetos e indicar sobre una imagen final, con otro color, donde se encuentran dichos objetos. 
 
 
 

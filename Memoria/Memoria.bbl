@@ -2,10 +2,38 @@
 
 
 
+\bibitem{MediaWikiAlbertoMartinFlorido}
+{Alberto Mart\'in Florido}.
+\newblock Navegación visual en un cuadricóptero para el seguimiento de objetos.
+\newblock  {\em Proyecto Fin de Carrera, URJC}, 2014.
+
+
+\bibitem{MediaWikiArturoVelezDuque}
+{Arturo V\'elez}.
+\newblock Seguimiento de un objeto con textura desde un drone con c\'amara.
+\newblock {\em Trabajo de Fin de Grado, URJC}, 2017.
+
+
+\bibitem{MediaWikiManuelZafraVillar}
+{MediaWiki Manuel Zafra Villar}.
+\newblock Seguimiento de rutas 3D por un drone con autolocalizaci\'on visual con balizas.
+\newblock {\em Proyecto Fin de Carrera, URJC}, 2016.
+
+
+\bibitem{MediaWikiDanielYagueSanchez}
+ {Daniel Yag\"ue}.
+\newblock Cuadricóptero ar.drone en gazebo y jderobot.
+\newblock {\em Proyecto Fin de Carrera, URJC}, 2015.
+
+\bibitem{MediaWikiJorgeCanoMartinez}
+ {Jorge Cano}.
+\newblock Building of an uav: from the hardware to the driver and autonomous applications.
+\newblock {\em Trabajo de Fin de Grado, ETSIT-URJC}, 2016.
+
+
 \bibitem{Pagina oficial de JdeRobot}
 {P\'agina oficial de JdeRobot}.
 \newblock \url{http://jderobot.org/Main_Page}.
-
 
 
 \bibitem{Pagina oficial de OpenCV}
@@ -60,30 +88,9 @@
 \newblock \url{https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html}.
 
 
-
-\bibitem{MediaWikiAlbertoMartinFlorido}
-{MediaWiki Alberto Mart\'in Florido}.
-\newblock \url{http://jderobot.org/Amartinflorido-tfm}.
-
-\bibitem{MediaWikiArturoVelezDuque}
-{MediaWiki Arturo V\'elez Duque}.
-\newblock \url{http://jderobot.org/Avelez-tfg}.
-
-\bibitem{MediaWikiManuelZafraVillar}
-{MediaWiki Manuel Zafra Villar}.
-\newblock \url{http://jderobot.org/Mazafrav-pfc}.
-
-\bibitem{MediaWikiDanielYagueSanchez}
-{MediaWiki Daniel Ya\"ue Sanchez}.
-\newblock \url{http://jderobot.org/Daniyague-pfc}.
-
-
-\bibitem{MediaWikiJorgeCanoMartinez}
-{MediaWiki Jorge Cano Mart\'inez}.
-\newblock \url{http://jderobot.org/J.canoma-tfg}.
-
-
-
+\bibitem{ROS drones}
+{P\'agina de ROS de sus avances con los drones}.
+\newblock \url{http://www.ros.org/news/robots/uavs/}.
 
 \bibitem{Drones Amazon}
 {P\'agina de Dronica. Informaci\'on reparto de paquetes con drones}.
