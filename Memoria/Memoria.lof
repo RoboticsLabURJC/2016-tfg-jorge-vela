@@ -33,9 +33,9 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Procesamiento con OpenCV}}}{31}{subfigure.5.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema que muestra la adquisici\'on, proceso y envio de ordenes\relax }}{34}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Baliza utilizada para el drone real.\relax }}{35}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de percepcion del algoritmo\relax }}{36}{figure.caption.25}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Ejemplo de un filtro de color y uso de operadores morfol\'ogicos para eliminar ruido.\relax }}{38}{figure.caption.26}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Baliza utilizada para el drone real.\relax }}{34}{figure.caption.24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de percepcion del algoritmo\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ejemplo de un filtro de color y uso de operadores morfol\'ogicos para eliminar ruido.\relax }}{37}{figure.caption.26}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Procesamiento de imagen de la baliza\relax }}{41}{figure.caption.27}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Imagen real}}}{41}{subfigure.5.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Suma de objetos}}}{41}{subfigure.5.2}
