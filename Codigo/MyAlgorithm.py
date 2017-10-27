@@ -22,19 +22,11 @@ from gui.machine import Machine
 
 
 time_cycle = 80
-var_beacon_status=0 #Estado (anterior), 0 si no habia/hay baliza y 2 si habia/hay baliza.
-var_beacon = 0  # 0=No hay baliza;1=Posible baliza;2=Es Baliza;3=No vemos baliza entera pero es baliza
 numVuelta=50;
 
-ejex=1
-ejey=0
 wSearch=0
 
 timerW=10;
-string="NODTECTO"
-
-globalTime=0
-pTime=0
 
 initTime=0
 initialTime=0
@@ -42,28 +34,19 @@ initialTime=0
 yanterior=0
 xanterior=0
 
-
 yanteriorTot=0
 xanteriorTot=0
 m=0
 x_img=0
 y_img=0
 
-findBeacon=0
 
 landed=0
 turnland=0
 
 numIteracionesOrange=0
 numIteracionesGreen=0
-iteracion=0
-class estado(Enum):
-    NoBeacon=1
-    PBeacon=2
-    LBeacon=3
-    Beacon=4
-   
-
+ 
 class MyAlgorithm(threading.Thread):
 
     def __init__(self, camera, navdata, pose, cmdvel, machine, extra):
@@ -199,14 +182,13 @@ class MyAlgorithm(threading.Thread):
 
                         positionXarr.append(positionX)
                         positionYarr.append(positionY)
-                        #print(show_image2[positionY,positionX])
 
 
                 show_image2=f[0]
                 for k in range(len(f)-1):
                     show_image2=show_image2+f[k+1]
 
-                lower_green = np.array([0,20,0], dtype=np.uint8) #0,40,0
+                lower_green = np.array([0,90,0], dtype=np.uint8) 
                 upper_green = np.array([0, 255,0], dtype=np.uint8) 
                 maskSHI = cv2.inRange(show_image2, lower_green, upper_green)
                 show_image2 = cv2.bitwise_and(show_image2,show_image2, mask= maskSHI)
@@ -230,9 +212,7 @@ class MyAlgorithm(threading.Thread):
         input_image = self.camera.getImage()
         global initialTime
         global initTime
-        #global iteracion
-        #iteracion=iteracion+1
-        #print(iteracion)
+
         if input_image is not None:   
             hsv = cv2.cvtColor(input_image, cv2.COLOR_BGR2HSV)
             show_image=input_image+1-1
@@ -244,12 +224,6 @@ class MyAlgorithm(threading.Thread):
             maskRGBOrange = cv2.bitwise_and(input_image,input_image, mask= maskOrange)
             momentsOrange = cv2.moments(maskOrange)
             areaOrange = momentsOrange['m00']
-
-
-            #blank_image=maskRGBOrange
-            #kernel = np.ones((3,3),np.uint8)
-            #maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 4)
-            #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 6)
 
 
             lower_green = np.array([20,193,65], dtype=np.uint8) #20,193,65 DELANTERA REAL 10,20,0 ABAJO REAL 0,0,0
@@ -318,7 +292,6 @@ class MyAlgorithm(threading.Thread):
                 if(len(f)>0):
                     positionXarr,positionYarr,show_image = self.printAndCoord(getImage,swi,f)
                 if(len(positionXarr)>0):
-                    print(positionXarr[0])
                     if(positionXarr[0] != -20 and positionYarr[0]!=-20): 
                         vely = (y_img-positionYarr[0])                        
                         velx = (x_img-positionXarr[0])
@@ -363,7 +336,6 @@ class MyAlgorithm(threading.Thread):
                 global yanterior
                 global xanterior
                 global var_beacon_status
-                global findBeacon
                 if(areaOrange > 0 and areaGreen==0):
                     self.machine.setStateActive(2, True)
 
@@ -378,7 +350,7 @@ class MyAlgorithm(threading.Thread):
 
                     velxa=abs(xanterior-velx)*0.003
                     velya=abs(yanterior-vely)*0.003
-                    print(vytot+velya)
+
                     vytot=(vytot+velya)
                     vxtot=(vxtot+velxa)
 
@@ -458,7 +430,6 @@ class MyAlgorithm(threading.Thread):
                                 positionY=positionYarr[0]
 	    		
                                 if(positionX != 0 ):  
-                                    print("CENTRANDO")
                                     vely = (y_img-positionYarr[0])                        
                                     velx = (x_img-positionXarr[0])
     
@@ -544,7 +515,7 @@ class MyAlgorithm(threading.Thread):
 
                     velxa=abs(xanterior-velx)*0.003
                     velya=abs(yanterior-vely)*0.003
-                    print(vytot+velya)
+
                     vytot=(vytot+velya)
                     vxtot=(vxtot+velxa)
 
@@ -578,7 +549,7 @@ class MyAlgorithm(threading.Thread):
 
 
             self.camera.setColorImage(show_image)
-            #self.camera.setColorImage(maskRGBOrange)
+
 
 
 
