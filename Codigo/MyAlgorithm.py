@@ -41,6 +41,10 @@ initialTime=0
 
 yanterior=0
 xanterior=0
+
+
+yanteriorTot=0
+xanteriorTot=0
 m=0
 x_img=0
 y_img=0
@@ -50,6 +54,9 @@ findBeacon=0
 landed=0
 turnland=0
 
+numIteracionesOrange=0
+numIteracionesGreen=0
+iteracion=0
 class estado(Enum):
     NoBeacon=1
     PBeacon=2
@@ -131,7 +138,7 @@ class MyAlgorithm(threading.Thread):
         _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
         areas = [cv2.contourArea(c) for c in contours]
         for extension in areas:
-            if extension > 100:
+            if extension > 4000:
                 img = np.zeros((y_img*2,x_img*2,3), np.uint8)
                 actual = contours[i]
                 approx = cv2.approxPolyDP(actual,0.05*cv2.arcLength(actual,True),True)
@@ -146,7 +153,7 @@ class MyAlgorithm(threading.Thread):
         _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
         areas = [cv2.contourArea(c) for c in contours]
         for extension in areas:
-           if extension > 100:
+           if extension > 4000:
                img = np.zeros((y_img*2,x_img*2,3), np.uint8)
                actual = contours[i]
                approx = cv2.approxPolyDP(actual,0.05*cv2.arcLength(actual,True),True)
@@ -154,15 +161,15 @@ class MyAlgorithm(threading.Thread):
                f.append(img)
                i=i+1
             
-        kernel = np.ones((3,3),np.uint8)
-
+        kernel = np.ones((5,5),np.uint8)
+        show_image2=show_image+1-1
         if(len(f)>0):
             f[0] = cv2.dilate(f[0],kernel,iterations = 4)
             show_image2=f[0]
             for k in range(len(f)-1):
                 f[k+1] = cv2.dilate(f[k+1],kernel,iterations = 4)
                 show_image2=show_image2+f[k+1]
-
+ 
         
         return show_image2,f
 
@@ -199,7 +206,7 @@ class MyAlgorithm(threading.Thread):
                 for k in range(len(f)-1):
                     show_image2=show_image2+f[k+1]
 
-                lower_green = np.array([0,40,0], dtype=np.uint8) 
+                lower_green = np.array([0,20,0], dtype=np.uint8) #0,40,0
                 upper_green = np.array([0, 255,0], dtype=np.uint8) 
                 maskSHI = cv2.inRange(show_image2, lower_green, upper_green)
                 show_image2 = cv2.bitwise_and(show_image2,show_image2, mask= maskSHI)
@@ -223,6 +230,9 @@ class MyAlgorithm(threading.Thread):
         input_image = self.camera.getImage()
         global initialTime
         global initTime
+        #global iteracion
+        #iteracion=iteracion+1
+        #print(iteracion)
         if input_image is not None:   
             hsv = cv2.cvtColor(input_image, cv2.COLOR_BGR2HSV)
             show_image=input_image+1-1
@@ -236,11 +246,11 @@ class MyAlgorithm(threading.Thread):
             areaOrange = momentsOrange['m00']
 
 
-
             #blank_image=maskRGBOrange
             #kernel = np.ones((3,3),np.uint8)
-            #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 4)
             #maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 4)
+            #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 6)
+
 
             lower_green = np.array([20,193,65], dtype=np.uint8) #20,193,65 DELANTERA REAL 10,20,0 ABAJO REAL 0,0,0
             upper_green = np.array([70, 227,100], dtype=np.uint8) #70, 227,100 DELANTERA REAL 40, 200,255 ABAJO REAL 140,100,255
@@ -249,62 +259,103 @@ class MyAlgorithm(threading.Thread):
             momentsGreen = cv2.moments(maskGreen)
             areaGreen = momentsGreen['m00']
 
-            kernel2 = np.ones((10,10),np.uint8)
-            maskRGBOrange = cv2.morphologyEx(maskRGBOrange,cv2.MORPH_OPEN,kernel2)
-            maskRGBGreen = cv2.morphologyEx(maskRGBGreen,cv2.MORPH_OPEN,kernel2)
+            #kernel2 = np.ones((10,10),np.uint8)
+            #maskRGBOrange = cv2.morphologyEx(maskRGBOrange,cv2.MORPH_OPEN,kernel2)
+            #maskRGBGreen = cv2.morphologyEx(maskRGBGreen,cv2.MORPH_OPEN,kernel2)
 
+
+
+
+
+            kernel = np.ones((3,3),np.uint8)
+
+            maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 2)
+            maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 2)
+
+            maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 2)
+            maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 2)
+            '''
             kernel = np.ones((3,3),np.uint8)
             #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 4)
             #maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 4)
             #maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 4)
             #maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 3)
 
+            maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 10)
+            maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 6)
 
-            #maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 6)
             #maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 7)
-            #maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 2)
+            maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 9)
+            maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 15)
+            '''
 
-            #maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 2)
-            
             maskRGBTot = maskRGBOrange+maskRGBGreen
             global x_img
             global y_img
-            if(-initialTime+time.time()<5 or initTime==0):
+            global yanterior
+            global xanterior
+            global landed
+            global yanteriorTot
+            global xanteriorTot
+            global numIteracionesOrange
+            global numIteracionesGreen
+            if(time.time()-landed>4.5 and landed!=0):
+                self.machine.setStateActive(5, True)
+            elif(-initialTime+time.time()<10 or initTime==0):
                 if(initTime==0):
                     initialTime=time.time()
                     initTime=1
-                    #self.extra.takeoff()
+                    self.extra.takeoff()
                     self.centroImagen(input_image, hsv)
 
-                '''
-                #print(areaOrange)
-                if(areaOrange>10000):
-                    xOrange = int(momentsOrange['m10']/momentsOrange['m00'])
-                    yOrange = int(momentsOrange['m01']/momentsOrange['m00'])
-                    vely = (y_img-yOrange)                        
-                    velx = (x_img-xOrange)
-                    #self.cmdvel.sendCMDVel(0.0001*vely,0.0001*velx,0,0,0,0) #para simulador en 0.01
-                    #self.cmdvel.sendCMDVel(0,0.0002*velx,0,0,0,0)
-                    self.cmdvel.sendCMDVel(0,0,0,0,0,0) #para simulador en 0.01
+                momentsTot = cv2.moments(maskGreen+maskOrange)
+                areaTot = areaGreen + areaOrange
+                xTot = int(momentsTot['m10']/momentsTot['m00'])
+                yTot = int(momentsTot['m01']/momentsTot['m00'])
+                swi=show_image+1-1
+                getImage,f = self.center(show_image,maskRGBOrange,maskRGBGreen)
+                positionXarr=[]
+                if(len(f)>0):
+                    positionXarr,positionYarr,show_image = self.printAndCoord(getImage,swi,f)
+                if(len(positionXarr)>0):
+                    print(positionXarr[0])
+                    if(positionXarr[0] != -20 and positionYarr[0]!=-20): 
+                        vely = (y_img-positionYarr[0])                        
+                        velx = (x_img-positionXarr[0])
+    
+                        vytot= vely*0.01 #0.01
+                        vxtot= velx*0.01 #0.01
+                    
+                        velxa=1-abs(xanterior-velx)/50 #10
+                        if(velxa<0.1):    
+                            velxa=0.1
+  
+                        velya=1-abs(yanterior-vely)/50 #10
+                        if(velya<0.1):
+                            velya=0.1
+                       
+                        #self.cmdvel.sendCMDVel(0,0,0,0,0,0)
+                        if(y_img-positionYarr[0]<25):
+                            vy=0
+                        else:
+                            vy=vytot*velya*1.4
+
+                        if(x_img-positionXarr[0]<25):
+                            vx=0
+                        else:
+                            vx=vxtot*velxa*1.4
+
+                        self.cmdvel.sendCMDVel(vy*0.01,vx*0.01,0,0,0,0) 
+                    else:
+                        self.cmdvel.sendCMDVel(0,0,0,0,0,0)
                 else:
-                    self.cmdvel.sendCMDVel(0,0,0,0,0,0) #para simulador en 0.01
-                '''
+                    self.cmdvel.sendCMDVel(0,0,0,0,0,0)
 
-                self.cmdvel.sendCMDVel(0,0,0.5,0,0,0) #para simulador en 0.01
-                #show_image2,f = self.center(show_image, maskRGBOrange,maskRGBGreen)
-                #positionX,positionY, show_image = self.printAndCoord(show_image2,show_image,f)
-                '''
-                if(len(positionY)>0):
-                    vely = (y_img-positionY[0])                        
-                    velx = (x_img-positionX[0])
-
-                    vytot= vely*0.001
-                    vxtot= velx*0.001
-
-                    self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0)
-                '''
-                self.machine.setStateActive(1, True)
-       
+                self.machine.setStateActive(0, True)
+            elif(-initialTime+time.time()>10 and -initialTime+time.time()<25):
+                self.cmdvel.sendCMDVel(0,2.5,0,0,0,0)
+                yanterior=0
+                xanterior=0 
             else:
                 global wSearch
                 global numVuelta
@@ -315,39 +366,36 @@ class MyAlgorithm(threading.Thread):
                 global findBeacon
                 if(areaOrange > 0 and areaGreen==0):
                     self.machine.setStateActive(2, True)
-                    var_beacon_status = 1
+
                     xOrange = int(momentsOrange['m10']/momentsOrange['m00'])
                     yOrange = int(momentsOrange['m01']/momentsOrange['m00'])
-                    if(yanterior==0 and xanterior==0):
-                        self.cmdvel.sendCMDVel(0,0,0,0,0,0)
-                        yanterior = (y_img-yOrange)*0.02
-                        xanterior = (x_img-xOrange)*0.02
-                    else:
-                        vely = (y_img-yOrange)                        
-                        velx = (x_img-xOrange)
 
-                        vytot= vely*0.01
-                        vxtot= velx*0.01
+                    vely = (y_img-yOrange)                        
+                    velx = (x_img-xOrange)
 
-                        velxa=1-abs(xanterior-velx)/20
-                        if(velxa<0.1):
-                            velxa=0.1
-   
-                        velya=1-abs(yanterior-vely)/20
-                        if(velya<0.1):
-                            velya=0.1
+                    vytot= vely*0.01
+                    vxtot= velx*0.01
 
-                        self.cmdvel.sendCMDVel(vely*0.01,velx*0.01,0,0,0,0) #para simulador en 0.01/ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-                        #self.cmdvel.sendCMDVel(vytot*velya*0.01,vxtot*velxa*0.01,0,0,0,0) #para simulador en 0.01/ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-                        #self.cmdvel.sendCMDVel(0,0,0,0,0,0) 
-                        yanterior = y_img-yOrange
-                        xanterior = x_img-xOrange 
- 
-                        #imgray = cv2.cvtColor(maskRGBOrange,cv2.COLOR_BGR2GRAY)
-                        #ret,thresh = cv2.threshold(imgray,255,255,255)
-                        #_,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+                    velxa=abs(xanterior-velx)*0.003
+                    velya=abs(yanterior-vely)*0.003
+                    print(vytot+velya)
+                    vytot=(vytot+velya)
+                    vxtot=(vxtot+velxa)
 
-                        #cv2.drawContours(maskRGBOrange, contours, -1, (0,255,0), 3)
+                    if(abs(vxtot-xanteriorTot)>0.3):
+                        if(vxtot<xanteriorTot):
+                             vxtot = xanteriorTot-0.3
+                        else:
+                            vxtot = xanteriorTot+0.3                                 
+
+                        if(abs(vytot-yanteriorTot)>0.3):
+                             if(vytot<yanteriorTot):
+                                 vytot = yanteriorTot-0.3
+                             else:
+                                 vytot = yanteriorTot+0.3                                 
+                             yanteriorTot=vytot
+                             xanteriorTot=vxtot
+                             self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0) 
 
                 elif(areaOrange > 0 and areaGreen>0):
                         momentsTot = cv2.moments(maskGreen+maskOrange)
@@ -355,28 +403,26 @@ class MyAlgorithm(threading.Thread):
                         xTot = int(momentsTot['m10']/momentsTot['m00'])
                         yTot = int(momentsTot['m01']/momentsTot['m00'])
 
-                        if(abs(y_img-yTot)<5 and abs(x_img-xTot)<5):
-                            global landed
+
+                        if((abs(y_img-yTot)<=10 and abs(x_img-xTot)<=10)): #abs(y_img-yTot)<5 and abs(x_img-xTot)<5 and 
                             global turnland
                             self.extra.land()
                             if(turnland==0):
                                 self.machine.setStateActive(4, True)
-                                turnland=1
-                                landed=time.time()
+                                if(areaTot>19272135.0):
+                                    turnland=1
+                                    landed=time.time()
                             else:
-                                if(time.time()-landed>5):
+                                if(time.time()-landed>4.5):
                                     self.machine.setStateActive(5, True)
                                 else:
                                     self.machine.setStateActive(4, True)
-
-                        else:
+                        elif(landed==0):
                             kernel = np.ones((3,3),np.uint8)
                             maskRGBTot = cv2.erode(maskRGBTot,kernel,iterations =2)
                             maskRGBTot = cv2.dilate(maskRGBTot,kernel,iterations =2)
 
-
                             self.machine.setStateActive(3, True)
-
 
                             vely = (y_img-yTot)                        
                             velx = (x_img-xTot)
@@ -393,90 +439,92 @@ class MyAlgorithm(threading.Thread):
                                 velya=0.1
 
 
-                        #self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0)  #ESTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-
                             yanterior = y_img-yTot
                             xanterior = x_img-xTot 
  
                             swi=show_image+1-1
                             getImage,f = self.center(show_image,maskRGBOrange,maskRGBGreen)
-                            positionXarr,positionYarr,show_image = self.printAndCoord(getImage,swi,f)
-                            '''
-                            if(positionX != -20 and positionY!=-20): #Prueba si hay centro de la imagen
-                                vely = (y_img-positionY)                        
-                                velx = (x_img-positionX)
-
-                                vytot= vely*0.01
-                                vxtot= velx*0.01
-
-                                velxa=1-abs(xanterior-velx)/10
-                                if(velxa<0.1):
-                                    velxa=0.1
-   
-                                velya=1-abs(yanterior-vely)/10
-                                if(velya<0.1):
-                                    velya=0.1
-                            '''
-
+                            show_image4=getImage
+                            positionXarr=[]
+                            if(len(f) >0):
+                                positionXarr,positionYarr,show_image = self.printAndCoord(getImage,swi,f)
+  
                             blank_image = np.zeros((y_img*2,x_img*2,3), np.uint8)
-                        
-                            kernel = np.ones((2,2),np.uint8)
-                            maskRGBOrange = cv2.erode(maskRGBOrange,kernel,iterations = 1)
-                            maskRGBGreen = cv2.erode(maskRGBGreen,kernel,iterations = 1)
-    
-                            #maskRGBOrange = cv2.dilate(maskRGBOrange,kernel,iterations = 2)
-                            #maskRGBGreen = cv2.dilate(maskRGBGreen,kernel,iterations = 2)
-
-
-                            imgray1 = cv2.cvtColor(maskRGBOrange+maskRGBGreen,cv2.COLOR_BGR2GRAY)
-                            ret,thresh = cv2.threshold(imgray1,255,255,255)
-                            _,contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-                            #cv2.drawContours(show_image, contours, -1, (0,255,0), 5)
-                            cv2.drawContours(maskRGBTot, contours, -1, (0,255,0), 5)
-                            cv2.drawContours(blank_image, contours, -1, (0,255,0), 6)
-
-                            imgray = cv2.cvtColor(maskRGBTot,cv2.COLOR_BGR2GRAY)
-                            ret,thresh = cv2.threshold(imgray,255,255,255)
-                            _,contours1, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)    
-                            #cv2.drawContours(maskRGBTot, contours1, -1, (255,0,0), 8)
-                            x = cv2.drawContours(blank_image, contours1, -1, (0,255,0), 6)
-                        
 
                             positionX = -20 
                             positionY = -20
-                            #if(len(positionXarr)>0):
-                            #    positionX=positionXarr[0]
-                            #    positionY=positionYarr[0]
-        
-                            for k in range(len(positionXarr)):
-                                if(blank_image[positionYarr[k],positionXarr[k]][0]==0 and blank_image[positionYarr[k],positionXarr[k]][1]==255 and blank_image[positionYarr[k],positionXarr[k]][2]==0):
-                                    positionX=positionXarr[k]
-                                    positionY=positionYarr[k]
-                                    break
+                            if(len(positionXarr)>0):
+                                positionX=positionXarr[0]
+                                positionY=positionYarr[0]
 	    		
-                            if(positionX != -20 and positionY!=-20 ): 
-                                vely = (y_img-positionYarr[0])                        
-                                velx = (x_img-positionXarr[0])
+                                if(positionX != 0 ):  
+                                    print("CENTRANDO")
+                                    vely = (y_img-positionYarr[0])                        
+                                    velx = (x_img-positionXarr[0])
     
-                                vytot= vely*0.01 #0.01
-                                vxtot= velx*0.01#0.01
-    
-                                velxa=1-abs(xanterior-velx)/50 #10
-                                if(velxa<0.1):    
-                                    velxa=0.1
-  
-                                velya=1-abs(yanterior-vely)/50 #10
-                                if(velya<0.1):
-                                    velya=0.1
-                            
-                                self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0) 
-                                #self.cmdvel.sendCMDVel(vytot*velya*0.001,vxtot*velxa*0.001,0,0,0,0) 
+                                    vytot= vely*0.01 
+                                    vxtot= velx*0.01
+
+                                    velxa=abs(xanterior-velx)*0.03
+                                    velya=abs(yanterior-vely)*0.03
+
+
+                                    if(abs(vxtot-xanteriorTot)>0.3):
+                                       if(vxtot<xanteriorTot):
+                                          vxtot = xanteriorTot-0.3
+                                       else:
+                                          vxtot = xanteriorTot+0.3                                 
+
+                                    if(abs(vytot-yanteriorTot)>0.3):
+                                       if(vytot<yanteriorTot):
+                                          vytot = yanteriorTot-0.3
+                                       else:
+                                          vytot = yanteriorTot+0.3                                 
+                                    yanterior=velya
+                                    xanterior=velxa
+                                    self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0) 
+                                    yanteriorTot=vytot
+                                    xanteriorTot=vxtot
+                                else:
+                                    if(abs(vxtot-xanteriorTot)>0.3):
+                                       if(vxtot<xanteriorTot):
+                                          vxtot = xanteriorTot-0.3
+                                       else:
+                                          vxtot = xanteriorTot+0.3                                 
+
+                                    if(abs(vytot-yanteriorTot)>0.3):
+                                       if(vytot<yanteriorTot):
+                                          vytot = yanteriorTot-0.3
+                                       else:
+                                          vytot = yanteriorTot+0.3                                 
+                                    yanterior=velya
+                                    xanterior=velxa
+                                    self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0) 
+                                    yanteriorTot=vytot
+                                    xanteriorTot=vxtot
+
                             else:
-                                self.cmdvel.sendCMDVel(vytot*velya,vxtot*velxa,0,0,0,0) 
+                                velxa=abs(xanterior-velx)*0.003
+                                velya=abs(yanterior-vely)*0.003
+                                print(vytot+velya)
+                                vytot=(vytot+velya)
+                                vxtot=(vxtot+velxa)
 
-                            maskRGBOrange=blank_image
 
+                                if(abs(vxtot-xanteriorTot)>0.3):
+                                   if(vxtot<xanteriorTot):
+                                      vxtot = xanteriorTot-0.3
+                                   else:
+                                      vxtot = xanteriorTot+0.3                                 
 
+                                if(abs(vytot-yanteriorTot)>0.3):
+                                   if(vytot<yanteriorTot):
+                                      vytot = yanteriorTot-0.3
+                                   else:
+                                      vytot = yanteriorTot+0.3                                 
+                                yanteriorTot=vytot
+                                xanteriorTot=vxtot
+                                self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0) 
                 elif(areaOrange == 0 and areaGreen>0):
                     self.machine.setStateActive(2, True)
                     var_beacon_status = 1
@@ -486,47 +534,51 @@ class MyAlgorithm(threading.Thread):
                         #self.cmdvel.sendCMDVel(0,0,0,0,0,0)
                         yanterior = (y_img-yGreen)*0.02
                         xanterior = (x_img-xGreen)*0.02
+                        self.cmdvel.sendCMDVel(yanterior,xanterior,0,0,0,0) 
                     else:
                         vely = (y_img-yGreen)                        
                         velx = (x_img-xGreen)
 
-                        vytot= vely*0.01
-                        vxtot= velx*0.01
+                    vytot= vely*0.01
+                    vxtot= velx*0.01
 
-                        velxa=1-abs(xanterior-velx)/20
-                        if(velxa<0.1):
-                            velxa=0.1
+                    velxa=abs(xanterior-velx)*0.003
+                    velya=abs(yanterior-vely)*0.003
+                    print(vytot+velya)
+                    vytot=(vytot+velya)
+                    vxtot=(vxtot+velxa)
+
+                    if(abs(vxtot-xanteriorTot)>0.3):
+                        if(vxtot<xanteriorTot):
+                             vxtot = xanteriorTot-0.3
+                        else:
+                            vxtot = xanteriorTot+0.3                                 
+
+                        if(abs(vytot-yanteriorTot)>0.3):
+                             if(vytot<yanteriorTot):
+                                 vytot = yanteriorTot-0.3
+                             else:
+                                 vytot = yanteriorTot+0.3                                 
+                             yanteriorTot=vytot
+                             xanteriorTot=vxtot
+                             self.cmdvel.sendCMDVel(vytot,vxtot,0,0,0,0)   
    
-                        velya=1-abs(yanterior-vely)/20
-                        if(velya<0.1):
-                            velya=0.1
-
-                        self.cmdvel.sendCMDVel(vytot*velya*0.01,vxtot*velxa*0.01,0,0,0,0) 
-                        #self.cmdvel.sendCMDVel(0,0,0,0,0,0) 
-
-                        yanterior = y_img-yGreen
-                        xanterior = x_img-xGreen       
-
                 else:
-                    if(var_beacon_status==1):
-                        findBeacon=findBeacon+1
-                        if(findBeacon==100):
-                            var_beacon_status=0
-                            findBeacon=0
+                    self.machine.setStateActive(1, True)
+                    numVuelta=numVuelta+1
+                    if(numVuelta>100 and numVuelta < 120):
+                        self.cmdvel.sendCMDVel(1.8+wSearch,0,0,0,0,-1.5)
+                        timerW=timerW+(timerW/8)
+                        if(numVuelta==119):
+                            numVuelta=0
+                        if(wSearch<1 and numVuelta==101):
+                           wSearch=wSearch+0.2
                     else:
                         self.cmdvel.sendCMDVel(1.8+wSearch,0,0,0,0,1.5 - wSearch)
-                        #self.cmdvel.sendCMDVel(0,0,0,0,0,0)
-                        numVuelta=numVuelta+1
-                        if(numVuelta==100):
-                            timerW=timerW+(timerW/8)
-                            numVuelta=0
-                            if(wSearch<1):
-                                wSearch=wSearch+0.2
-         
 
 
             self.camera.setColorImage(show_image)
-            #self.camera.setColorImage(maskRGBGreen)
+            #self.camera.setColorImage(maskRGBOrange)
 
 
 
