@@ -71,7 +71,7 @@ if __name__ == '__main__':
     machine.addTransition(5, 0,'')
 
 
-    ic = EasyIce.initialize(sys.argv)
+    ic = EasyIce.initialize(sys.argv) #Establece conexiones con los servidores de los conectores y actuadores
     cameraCli = CameraClient(ic, "Introrob.Camera", True)
     camera = CameraFilter(cameraCli)
     navdata = NavDataClient(ic, "Introrob.Navdata", True)
