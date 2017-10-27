@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  27 OCT 2017 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  27 OCT 2017 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1275,12 +1275,12 @@ File: imgs/amazon.jpg Graphic file (type jpg)
 Package pdftex.def Info: imgs/amazon.jpg used on input line 92.
 (pdftex.def)             Requested size: 242.46744pt x 136.29669pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 96.
+(Font)              <10> on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 96.
+(Font)              <7> on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 96.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 96.
+(Font)              <5> on input line 97.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 97.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
@@ -1289,22 +1289,22 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 444pt>
 File: imgs/MIT1.jpg Graphic file (type jpg)
  <use imgs/MIT1.jpg>
-Package pdftex.def Info: imgs/MIT1.jpg used on input line 109.
+Package pdftex.def Info: imgs/MIT1.jpg used on input line 110.
 (pdftex.def)             Requested size: 145.48045pt x 79.22876pt.
 
 <imgs/MIT2.jpg, id=401, 512.51476pt x 298.716pt>
 File: imgs/MIT2.jpg Graphic file (type jpg)
  <use imgs/MIT2.jpg>
-Package pdftex.def Info: imgs/MIT2.jpg used on input line 112.
+Package pdftex.def Info: imgs/MIT2.jpg used on input line 113.
 (pdftex.def)             Requested size: 145.48045pt x 84.79308pt.
 
 <imgs/MIT3.jpg, id=402, 496.85625pt x 273.4215pt>
 File: imgs/MIT3.jpg Graphic file (type jpg)
  <use imgs/MIT3.jpg>
-Package pdftex.def Info: imgs/MIT3.jpg used on input line 115.
+Package pdftex.def Info: imgs/MIT3.jpg used on input line 116.
 (pdftex.def)             Requested size: 145.48045pt x 80.05785pt.
 
-Overfull \hbox (7.34373pt too wide) in paragraph at lines 109--116
+Overfull \hbox (7.34373pt too wide) in paragraph at lines 110--117
  [][][][][][] 
  []
 
@@ -1318,42 +1318,42 @@ Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 (epstopdf)                    size: 35655 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/ejesdrone-eps-convert
 ed-to.pdf imgs/ejesdrone.eps>
-(epstopdf)             \includegraphics on input line 129.
+(epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
  <imgs/ejesdrone-eps-converted-to.pdf, id=420, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/ejesdrone-eps-converted-to.pdf used on input line
- 129.
+ 130.
 (pdftex.def)             Requested size: 308.59187pt x 204.13715pt.
  [10 <./imgs/ejesdrone-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 143.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 144.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 143.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 144.
  [11] [12] [13]
 <imgs/chasis-drone.jpg, id=445, 301.125pt x 186.6975pt>
 File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
 <use imgs/chasis-drone.jpg>
-Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 184.
+Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 185.
 (pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
 <imgs/helices-drone.jpg, id=446, 276.73387pt x 155.68163pt>
 File: imgs/helices-drone.jpg Graphic file (type jpg)
 
 <use imgs/helices-drone.jpg>
-Package pdftex.def Info: imgs/helices-drone.jpg used on input line 187.
+Package pdftex.def Info: imgs/helices-drone.jpg used on input line 188.
 (pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
  <imgs/motor-drone.jpg, id=447, 803.0pt x 803.0pt>
 File: imgs/motor-drone.jpg Graphic file (type jpg)
 
 <use imgs/motor-drone.jpg>
-Package pdftex.def Info: imgs/motor-drone.jpg used on input line 190.
+Package pdftex.def Info: imgs/motor-drone.jpg used on input line 191.
 (pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
 <imgs/placaControladora-drone.jpg, id=448, 459.7175pt x 459.7175pt>
@@ -1361,7 +1361,7 @@ File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
 <use imgs/placaControladora-drone.jpg>
 Package pdftex.def Info: imgs/placaControladora-drone.jpg used on input line 19
-3.
+4.
 (pdftex.def)             Requested size: 88.16814pt x 88.16795pt.
  [14 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-drone.j
 pg> <./imgs/placaControladora-drone.jpg>] [15] [16] <imgs/AlbertoMartin1_1.png,
@@ -1369,42 +1369,42 @@ pg> <./imgs/placaControladora-drone.jpg>] [15] [16] <imgs/AlbertoMartin1_1.png,
 File: imgs/AlbertoMartin1_1.png Graphic file (type png)
 
 <use imgs/AlbertoMartin1_1.png>
-Package pdftex.def Info: imgs/AlbertoMartin1_1.png used on input line 234.
+Package pdftex.def Info: imgs/AlbertoMartin1_1.png used on input line 235.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
 <imgs/AlbertoMartin2_1.png, id=473, 501.875pt x 301.125pt>
 File: imgs/AlbertoMartin2_1.png Graphic file (type png)
 
 <use imgs/AlbertoMartin2_1.png>
-Package pdftex.def Info: imgs/AlbertoMartin2_1.png used on input line 235.
+Package pdftex.def Info: imgs/AlbertoMartin2_1.png used on input line 236.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [17]
 <imgs/ArturoVelez1_1.png, id=485, 501.875pt x 301.125pt>
 File: imgs/ArturoVelez1_1.png Graphic file (type png)
 
 <use imgs/ArturoVelez1_1.png>
-Package pdftex.def Info: imgs/ArturoVelez1_1.png used on input line 244.
+Package pdftex.def Info: imgs/ArturoVelez1_1.png used on input line 245.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
 <imgs/ArturoVelez2_1.png, id=486, 501.875pt x 301.125pt>
 File: imgs/ArturoVelez2_1.png Graphic file (type png)
 
 <use imgs/ArturoVelez2_1.png>
-Package pdftex.def Info: imgs/ArturoVelez2_1.png used on input line 245.
+Package pdftex.def Info: imgs/ArturoVelez2_1.png used on input line 246.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
 <imgs/ManuelZafra1_1.png, id=491, 501.875pt x 301.125pt>
 File: imgs/ManuelZafra1_1.png Graphic file (type png)
 
 <use imgs/ManuelZafra1_1.png>
-Package pdftex.def Info: imgs/ManuelZafra1_1.png used on input line 254.
+Package pdftex.def Info: imgs/ManuelZafra1_1.png used on input line 255.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
 <imgs/ManuelZafra2_1.png, id=492, 501.875pt x 301.125pt>
 File: imgs/ManuelZafra2_1.png Graphic file (type png)
 
 <use imgs/ManuelZafra2_1.png>
-Package pdftex.def Info: imgs/ManuelZafra2_1.png used on input line 255.
+Package pdftex.def Info: imgs/ManuelZafra2_1.png used on input line 256.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [18 <./imgs/AlbertoMartin1_1.png> <./imgs/AlbertoMartin2_1.png> <./imgs/Arturo
 Velez1_1.png> <./imgs/ArturoVelez2_1.png>]
@@ -1412,14 +1412,14 @@ Velez1_1.png> <./imgs/ArturoVelez2_1.png>]
 File: imgs/DaniYague1_1.png Graphic file (type png)
 
 <use imgs/DaniYague1_1.png>
-Package pdftex.def Info: imgs/DaniYague1_1.png used on input line 263.
+Package pdftex.def Info: imgs/DaniYague1_1.png used on input line 264.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
 <imgs/DaniYague2_1.png, id=507, 501.875pt x 301.125pt>
 File: imgs/DaniYague2_1.png Graphic file (type png)
 
 <use imgs/DaniYague2_1.png>
-Package pdftex.def Info: imgs/DaniYague2_1.png used on input line 264.
+Package pdftex.def Info: imgs/DaniYague2_1.png used on input line 265.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [19 <./imgs/ManuelZafra1_1.png> <./imgs/ManuelZafra2_1.png> <./imgs/DaniYague1
 _1.png> <./imgs/DaniYague2_1.png>]
@@ -1427,21 +1427,21 @@ _1.png> <./imgs/DaniYague2_1.png>]
 File: imgs/JorgeCano1_1.jpg Graphic file (type jpg)
 
 <use imgs/JorgeCano1_1.jpg>
-Package pdftex.def Info: imgs/JorgeCano1_1.jpg used on input line 274.
+Package pdftex.def Info: imgs/JorgeCano1_1.jpg used on input line 275.
 (pdftex.def)             Requested size: 142.26239pt x 85.35744pt.
 
 <imgs/JorgeCano2_1.jpg, id=520, 501.875pt x 301.125pt>
 File: imgs/JorgeCano2_1.jpg Graphic file (type jpg)
 
 <use imgs/JorgeCano2_1.jpg>
-Package pdftex.def Info: imgs/JorgeCano2_1.jpg used on input line 275.
+Package pdftex.def Info: imgs/JorgeCano2_1.jpg used on input line 276.
 (pdftex.def)             Requested size: 142.26239pt x 85.35744pt.
 
 <imgs/JorgeCano3_1.png, id=521, 501.875pt x 301.125pt>
 File: imgs/JorgeCano3_1.png Graphic file (type png)
 
 <use imgs/JorgeCano3_1.png>
-Package pdftex.def Info: imgs/JorgeCano3_1.png used on input line 276.
+Package pdftex.def Info: imgs/JorgeCano3_1.png used on input line 277.
 (pdftex.def)             Requested size: 142.26239pt x 85.35744pt.
 ) [20 <./imgs/JorgeCano1_1.jpg> <./imgs/JorgeCano2_1.jpg> <./imgs/JorgeCano3_1.
 png>]
@@ -2254,7 +2254,7 @@ re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (73 pages, 14222495 bytes).
+Output written on Memoria.pdf (73 pages, 14222567 bytes).
 PDF statistics:
  1184 PDF objects out of 1200 (max. 8388607)
  978 compressed objects within 10 object streams
