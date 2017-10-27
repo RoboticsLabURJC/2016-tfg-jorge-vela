@@ -4,45 +4,45 @@
 \contentsline {section}{\numberline {1.2}Aplicaciones actuales }{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Medios Audiovisuales}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Seguridad}{4}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Sector agr\'icola}{4}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.3}Sector agr\'icola}{5}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Inspecci\'on}{5}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Emergencias}{6}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}Prototipos de investigaci\'on }{7}{subsection.1.2.6}
 \contentsline {section}{\numberline {1.3}Hardware de drones}{9}{section.1.3}
 \contentsline {section}{\numberline {1.4}Software de drones}{15}{section.1.4}
 \contentsline {section}{\numberline {1.5}Rob\'otica a\'erea en RoboticsLab de la URJC}{17}{section.1.5}
-\contentsline {chapter}{\numberline {2}Objetivos}{22}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivo principal}{22}{section.2.1}
-\contentsline {section}{\numberline {2.2}Requisitos}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\'ia}{23}{section.2.3}
-\contentsline {section}{\numberline {2.4}Plan de trabajo}{24}{section.2.4}
-\contentsline {chapter}{\numberline {3}Infraestructura utilizada}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Parrot AR.Drone 2.0 }{26}{section.3.1}
-\contentsline {section}{\numberline {3.2}Simulador Gazebo }{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}Entorno JdeRobot}{28}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Driver ArDroneServer}{28}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Plugin modelo de cuadricoptero Gazebo}{28}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Herramienta UAVviewer}{29}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Herramienta ColorTuner}{29}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Pr\'actica choca-gira con aut\'omatas.}{30}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Pr\'actica follow\_turtlebot.}{31}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Biblioteca OpenCV}{31}{section.3.4}
-\contentsline {chapter}{\numberline {4}Algoritmo de Navegaci\'on aut\'onoma}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Percepci\'on}{36}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Pre-procesado}{37}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Detecci\'on de la baliza}{39}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Control}{42}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Despegue}{43}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}B\'usqueda}{43}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Aterrizaje}{47}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Arquitectura software de la implementaci\'on}{48}{section.4.4}
-\contentsline {chapter}{\numberline {5}Experimentos}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pruebas de percepci\'on de la baliza}{52}{section.5.1}
-\contentsline {section}{\numberline {5.2}Experimentos de despegue}{53}{section.5.2}
-\contentsline {section}{\numberline {5.3}Experimentos de b\'usqueda }{55}{section.5.3}
-\contentsline {section}{\numberline {5.4}Experimentos de aterrizaje}{57}{section.5.4}
-\contentsline {section}{\numberline {5.5}Ejecuci\'on t\'ipica del algoritmo completo}{59}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{62}{chapter.6}
-\contentsline {section}{\numberline {6.1}L\'ineas futuras}{64}{section.6.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{67}{chapter*.42}
+\contentsline {chapter}{\numberline {2}Objetivos}{21}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivo principal}{21}{section.2.1}
+\contentsline {section}{\numberline {2.2}Requisitos}{22}{section.2.2}
+\contentsline {section}{\numberline {2.3}Metodolog\'ia}{22}{section.2.3}
+\contentsline {section}{\numberline {2.4}Plan de trabajo}{23}{section.2.4}
+\contentsline {chapter}{\numberline {3}Infraestructura utilizada}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parrot AR.Drone 2.0 }{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}Simulador Gazebo }{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}Entorno JdeRobot}{27}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Driver ArDroneServer}{27}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Plugin modelo de cuadricoptero Gazebo}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Herramienta UAVviewer}{28}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Herramienta ColorTuner}{28}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Pr\'actica choca-gira con aut\'omatas.}{29}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Pr\'actica follow\_turtlebot.}{30}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Biblioteca OpenCV}{30}{section.3.4}
+\contentsline {chapter}{\numberline {4}Algoritmo de Navegaci\'on aut\'onoma}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}Percepci\'on}{35}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Pre-procesado}{36}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Detecci\'on de la baliza}{38}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Control}{41}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Despegue}{42}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}B\'usqueda}{42}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Aterrizaje}{46}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Arquitectura software de la implementaci\'on}{47}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experimentos}{50}{chapter.5}
+\contentsline {section}{\numberline {5.1}Pruebas de percepci\'on de la baliza}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Experimentos de despegue}{52}{section.5.2}
+\contentsline {section}{\numberline {5.3}Experimentos de b\'usqueda }{54}{section.5.3}
+\contentsline {section}{\numberline {5.4}Experimentos de aterrizaje}{56}{section.5.4}
+\contentsline {section}{\numberline {5.5}Ejecuci\'on t\'ipica del algoritmo completo}{58}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusiones}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}L\'ineas futuras}{63}{section.6.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{66}{chapter*.42}
