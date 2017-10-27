@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  27 OCT 2017 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.19)  27 OCT 2017 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,11 +974,8 @@ l.45 \makeglossaries
                     
 ? 
 (./Memoria.aux (./Portada.aux) (./Resumen.aux) (./1-Introduccion.aux)
-(./2-Objetivos.aux) (./3-Infraestructura.aux) (./4-Algoritmo.aux
-
-LaTeX Warning: Label `fig:esquema_d' multiply defined.
-
-) (./5-Experimentos.aux
+(./2-Objetivos.aux) (./3-Infraestructura.aux) (./4-Algoritmo.aux)
+(./5-Experimentos.aux
 
 LaTeX Warning: Label `f:Despegue' multiply defined.
 
@@ -1244,35 +1241,35 @@ l.9
 
 
 
-] [2] <imgs/anuncio_television.jpg, id=368, 481.8pt x 321.2pt>
+] [2] <imgs/anuncio_television.jpg, id=370, 481.8pt x 321.2pt>
 File: imgs/anuncio_television.jpg Graphic file (type jpg)
 
 <use imgs/anuncio_television.jpg>
 Package pdftex.def Info: imgs/anuncio_television.jpg used on input line 32.
 (pdftex.def)             Requested size: 176.33629pt x 117.55315pt.
  [3]
-<imgs/seguridad_drone.jpg, id=373, 231.264pt x 173.448pt>
+<imgs/seguridad_drone.jpg, id=375, 231.264pt x 173.448pt>
 File: imgs/seguridad_drone.jpg Graphic file (type jpg)
 
 <use imgs/seguridad_drone.jpg>
 Package pdftex.def Info: imgs/seguridad_drone.jpg used on input line 46.
 (pdftex.def)             Requested size: 176.33629pt x 132.25853pt.
  [4 <./imgs/anuncio_television.jpg> <./imgs/seguridad_drone.jpg>] <imgs/novadro
-ne.jpg, id=378, 752.8125pt x 401.5pt>
+ne.jpg, id=380, 752.8125pt x 401.5pt>
 File: imgs/novadrone.jpg Graphic file (type jpg)
 
 <use imgs/novadrone.jpg>
 Package pdftex.def Info: imgs/novadrone.jpg used on input line 57.
 (pdftex.def)             Requested size: 264.51115pt x 141.07234pt.
  [5 <./imgs/novadrone.jpg>]
-<imgs/drone_desfibrilador.jpg, id=383, 427.5975pt x 331.2375pt>
+<imgs/drone_desfibrilador.jpg, id=385, 427.5975pt x 331.2375pt>
 File: imgs/drone_desfibrilador.jpg Graphic file (type jpg)
 
 <use imgs/drone_desfibrilador.jpg>
 Package pdftex.def Info: imgs/drone_desfibrilador.jpg used on input line 74.
 (pdftex.def)             Requested size: 176.33629pt x 136.59671pt.
  [6]
-<imgs/amazon.jpg, id=390, 496.85625pt x 279.29344pt>
+<imgs/amazon.jpg, id=392, 496.85625pt x 279.29344pt>
 File: imgs/amazon.jpg Graphic file (type jpg)
  <use imgs/amazon.jpg>
 Package pdftex.def Info: imgs/amazon.jpg used on input line 92.
@@ -1288,20 +1285,20 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 96.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [7 <./imgs/drone_desfibrilador.jpg>] <imgs/MIT1.jpg, id=398, 513.117pt x 279.
+) [7 <./imgs/drone_desfibrilador.jpg>] <imgs/MIT1.jpg, id=400, 513.117pt x 279.
 444pt>
 File: imgs/MIT1.jpg Graphic file (type jpg)
  <use imgs/MIT1.jpg>
 Package pdftex.def Info: imgs/MIT1.jpg used on input line 109.
 (pdftex.def)             Requested size: 145.48045pt x 79.22876pt.
 
-<imgs/MIT2.jpg, id=399, 512.51476pt x 298.716pt>
+<imgs/MIT2.jpg, id=401, 512.51476pt x 298.716pt>
 File: imgs/MIT2.jpg Graphic file (type jpg)
  <use imgs/MIT2.jpg>
 Package pdftex.def Info: imgs/MIT2.jpg used on input line 112.
 (pdftex.def)             Requested size: 145.48045pt x 84.79308pt.
 
-<imgs/MIT3.jpg, id=400, 496.85625pt x 273.4215pt>
+<imgs/MIT3.jpg, id=402, 496.85625pt x 273.4215pt>
 File: imgs/MIT3.jpg Graphic file (type jpg)
  <use imgs/MIT3.jpg>
 Package pdftex.def Info: imgs/MIT3.jpg used on input line 115.
@@ -1323,7 +1320,7 @@ Package epstopdf Info: Source file: <imgs/ejesdrone.eps>
 ed-to.pdf imgs/ejesdrone.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
- <imgs/ejesdrone-eps-converted-to.pdf, id=418, 776.9025pt x 513.92pt>
+ <imgs/ejesdrone-eps-converted-to.pdf, id=420, 776.9025pt x 513.92pt>
 File: imgs/ejesdrone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/ejesdrone-eps-converted-to.pdf>
@@ -1339,27 +1336,27 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 143.
  [11] [12] [13]
-<imgs/chasis-drone.jpg, id=443, 301.125pt x 186.6975pt>
+<imgs/chasis-drone.jpg, id=445, 301.125pt x 186.6975pt>
 File: imgs/chasis-drone.jpg Graphic file (type jpg)
 
 <use imgs/chasis-drone.jpg>
 Package pdftex.def Info: imgs/chasis-drone.jpg used on input line 184.
 (pdftex.def)             Requested size: 88.16814pt x 54.66505pt.
 
-<imgs/helices-drone.jpg, id=444, 276.73387pt x 155.68163pt>
+<imgs/helices-drone.jpg, id=446, 276.73387pt x 155.68163pt>
 File: imgs/helices-drone.jpg Graphic file (type jpg)
 
 <use imgs/helices-drone.jpg>
 Package pdftex.def Info: imgs/helices-drone.jpg used on input line 187.
 (pdftex.def)             Requested size: 88.16814pt x 49.60059pt.
- <imgs/motor-drone.jpg, id=445, 803.0pt x 803.0pt>
+ <imgs/motor-drone.jpg, id=447, 803.0pt x 803.0pt>
 File: imgs/motor-drone.jpg Graphic file (type jpg)
 
 <use imgs/motor-drone.jpg>
 Package pdftex.def Info: imgs/motor-drone.jpg used on input line 190.
 (pdftex.def)             Requested size: 88.16814pt x 88.15872pt.
 
-<imgs/placaControladora-drone.jpg, id=446, 459.7175pt x 459.7175pt>
+<imgs/placaControladora-drone.jpg, id=448, 459.7175pt x 459.7175pt>
 File: imgs/placaControladora-drone.jpg Graphic file (type jpg)
 
 <use imgs/placaControladora-drone.jpg>
@@ -1368,42 +1365,42 @@ Package pdftex.def Info: imgs/placaControladora-drone.jpg used on input line 19
 (pdftex.def)             Requested size: 88.16814pt x 88.16795pt.
  [14 <./imgs/chasis-drone.jpg> <./imgs/helices-drone.jpg> <./imgs/motor-drone.j
 pg> <./imgs/placaControladora-drone.jpg>] [15] [16] <imgs/AlbertoMartin1_1.png,
- id=470, 501.875pt x 301.125pt>
+ id=472, 501.875pt x 301.125pt>
 File: imgs/AlbertoMartin1_1.png Graphic file (type png)
 
 <use imgs/AlbertoMartin1_1.png>
 Package pdftex.def Info: imgs/AlbertoMartin1_1.png used on input line 234.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
-<imgs/AlbertoMartin2_1.png, id=471, 501.875pt x 301.125pt>
+<imgs/AlbertoMartin2_1.png, id=473, 501.875pt x 301.125pt>
 File: imgs/AlbertoMartin2_1.png Graphic file (type png)
 
 <use imgs/AlbertoMartin2_1.png>
 Package pdftex.def Info: imgs/AlbertoMartin2_1.png used on input line 235.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [17]
-<imgs/ArturoVelez1_1.png, id=483, 501.875pt x 301.125pt>
+<imgs/ArturoVelez1_1.png, id=485, 501.875pt x 301.125pt>
 File: imgs/ArturoVelez1_1.png Graphic file (type png)
 
 <use imgs/ArturoVelez1_1.png>
 Package pdftex.def Info: imgs/ArturoVelez1_1.png used on input line 244.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
-<imgs/ArturoVelez2_1.png, id=484, 501.875pt x 301.125pt>
+<imgs/ArturoVelez2_1.png, id=486, 501.875pt x 301.125pt>
 File: imgs/ArturoVelez2_1.png Graphic file (type png)
 
 <use imgs/ArturoVelez2_1.png>
 Package pdftex.def Info: imgs/ArturoVelez2_1.png used on input line 245.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
-<imgs/ManuelZafra1_1.png, id=489, 501.875pt x 301.125pt>
+<imgs/ManuelZafra1_1.png, id=491, 501.875pt x 301.125pt>
 File: imgs/ManuelZafra1_1.png Graphic file (type png)
 
 <use imgs/ManuelZafra1_1.png>
 Package pdftex.def Info: imgs/ManuelZafra1_1.png used on input line 254.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
-<imgs/ManuelZafra2_1.png, id=490, 501.875pt x 301.125pt>
+<imgs/ManuelZafra2_1.png, id=492, 501.875pt x 301.125pt>
 File: imgs/ManuelZafra2_1.png Graphic file (type png)
 
 <use imgs/ManuelZafra2_1.png>
@@ -1411,14 +1408,14 @@ Package pdftex.def Info: imgs/ManuelZafra2_1.png used on input line 255.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [18 <./imgs/AlbertoMartin1_1.png> <./imgs/AlbertoMartin2_1.png> <./imgs/Arturo
 Velez1_1.png> <./imgs/ArturoVelez2_1.png>]
-<imgs/DaniYague1_1.png, id=504, 501.875pt x 301.125pt>
+<imgs/DaniYague1_1.png, id=506, 501.875pt x 301.125pt>
 File: imgs/DaniYague1_1.png Graphic file (type png)
 
 <use imgs/DaniYague1_1.png>
 Package pdftex.def Info: imgs/DaniYague1_1.png used on input line 263.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
 
-<imgs/DaniYague2_1.png, id=505, 501.875pt x 301.125pt>
+<imgs/DaniYague2_1.png, id=507, 501.875pt x 301.125pt>
 File: imgs/DaniYague2_1.png Graphic file (type png)
 
 <use imgs/DaniYague2_1.png>
@@ -1426,21 +1423,21 @@ Package pdftex.def Info: imgs/DaniYague2_1.png used on input line 264.
 (pdftex.def)             Requested size: 199.16888pt x 113.81297pt.
  [19 <./imgs/ManuelZafra1_1.png> <./imgs/ManuelZafra2_1.png> <./imgs/DaniYague1
 _1.png> <./imgs/DaniYague2_1.png>]
-<imgs/JorgeCano1_1.jpg, id=517, 501.875pt x 301.125pt>
+<imgs/JorgeCano1_1.jpg, id=519, 501.875pt x 301.125pt>
 File: imgs/JorgeCano1_1.jpg Graphic file (type jpg)
 
 <use imgs/JorgeCano1_1.jpg>
 Package pdftex.def Info: imgs/JorgeCano1_1.jpg used on input line 274.
 (pdftex.def)             Requested size: 142.26239pt x 85.35744pt.
 
-<imgs/JorgeCano2_1.jpg, id=518, 501.875pt x 301.125pt>
+<imgs/JorgeCano2_1.jpg, id=520, 501.875pt x 301.125pt>
 File: imgs/JorgeCano2_1.jpg Graphic file (type jpg)
 
 <use imgs/JorgeCano2_1.jpg>
 Package pdftex.def Info: imgs/JorgeCano2_1.jpg used on input line 275.
 (pdftex.def)             Requested size: 142.26239pt x 85.35744pt.
 
-<imgs/JorgeCano3_1.png, id=519, 501.875pt x 301.125pt>
+<imgs/JorgeCano3_1.png, id=521, 501.875pt x 301.125pt>
 File: imgs/JorgeCano3_1.png Graphic file (type png)
 
 <use imgs/JorgeCano3_1.png>
@@ -1456,7 +1453,7 @@ Chapter 2.
 
 
 
-] [22] <imgs/metodologia-espiral.jpg, id=534, 347.04657pt x 184.43906pt>
+] [22] <imgs/metodologia-espiral.jpg, id=536, 347.04657pt x 184.43906pt>
 File: imgs/metodologia-espiral.jpg Graphic file (type jpg)
 
 <use imgs/metodologia-espiral.jpg>
@@ -1472,39 +1469,39 @@ Chapter 3.
 
 
 
-] <imgs/gazeboworld.png, id=552, 1311.90125pt x 743.77875pt>
+] <imgs/gazeboworld.png, id=553, 1311.90125pt x 743.77875pt>
 File: imgs/gazeboworld.png Graphic file (type png)
 
 <use imgs/gazeboworld.png>
 Package pdftex.def Info: imgs/gazeboworld.png used on input line 29.
 (pdftex.def)             Requested size: 220.42372pt x 124.96532pt.
  [26] [27 <./imgs/gazeboworld.png>]
-<imgs/UAV1.png, id=563, 504.88625pt x 533.995pt>
+<imgs/UAV1.png, id=564, 504.88625pt x 533.995pt>
 File: imgs/UAV1.png Graphic file (type png)
  <use imgs/UAV1.png>
 Package pdftex.def Info: imgs/UAV1.png used on input line 55.
 (pdftex.def)             Requested size: 127.84279pt x 135.20952pt.
 
-<imgs/UAV2.png, id=564, 706.64pt x 652.4375pt>
+<imgs/UAV2.png, id=565, 706.64pt x 652.4375pt>
 File: imgs/UAV2.png Graphic file (type png)
  <use imgs/UAV2.png>
 Package pdftex.def Info: imgs/UAV2.png used on input line 58.
 (pdftex.def)             Requested size: 145.48045pt x 134.31801pt.
 
-<imgs/UAV3.png, id=565, 707.64375pt x 331.2375pt>
+<imgs/UAV3.png, id=566, 707.64375pt x 331.2375pt>
 File: imgs/UAV3.png Graphic file (type png)
  <use imgs/UAV3.png>
 Package pdftex.def Info: imgs/UAV3.png used on input line 61.
 (pdftex.def)             Requested size: 110.21185pt x 51.58388pt.
  [28 <./imgs/UAV1.png> <./imgs/UAV2.png> <./imgs/UAV3.png>]
-<imgs/ChocaGiraAutomata.png, id=573, 425.59pt x 344.28625pt>
+<imgs/ChocaGiraAutomata.png, id=574, 425.59pt x 344.28625pt>
 File: imgs/ChocaGiraAutomata.png Graphic file (type png)
 
 <use imgs/ChocaGiraAutomata.png>
 Package pdftex.def Info: imgs/ChocaGiraAutomata.png used on input line 87.
 (pdftex.def)             Requested size: 256.08977pt x 199.17133pt.
  [29 <./imgs/ChocaGiraAutomata.png>]
-<imgs/follow_turtlebot.png, id=586, 659.46375pt x 396.48125pt>
+<imgs/follow_turtlebot.png, id=587, 659.46375pt x 396.48125pt>
 File: imgs/follow_turtlebot.png Graphic file (type png)
 
 <use imgs/follow_turtlebot.png>
@@ -1528,13 +1525,13 @@ l.128 \end{itemize}
                    
 ? 
 [30 <./imgs/follow_turtlebot.png>]
-<imgs/opencv.png, id=596, 239.89626pt x 211.79124pt>
+<imgs/opencv.png, id=597, 239.89626pt x 211.79124pt>
 File: imgs/opencv.png Graphic file (type png)
  <use imgs/opencv.png>
 Package pdftex.def Info: imgs/opencv.png used on input line 145.
 (pdftex.def)             Requested size: 127.84279pt x 112.86607pt.
 
-<imgs/opencvP.png, id=597, 1371.1225pt x 552.0625pt>
+<imgs/opencvP.png, id=598, 1371.1225pt x 552.0625pt>
 File: imgs/opencvP.png Graphic file (type png)
  <use imgs/opencvP.png>
 Package pdftex.def Info: imgs/opencvP.png used on input line 148.
@@ -1553,20 +1550,20 @@ Chapter 4.
 
 
 
-] <imgs/esquema2.png, id=611, 922.44624pt x 604.2575pt>
+] <imgs/esquema2.png, id=612, 922.44624pt x 604.2575pt>
 File: imgs/esquema2.png Graphic file (type png)
 
 <use imgs/esquema2.png>
 Package pdftex.def Info: imgs/esquema2.png used on input line 16.
 (pdftex.def)             Requested size: 330.63559pt x 216.58286pt.
  [33]
-<imgs/baliza.jpg, id=616, 181.42781pt x 125.71968pt>
+<imgs/baliza.jpg, id=617, 181.42781pt x 125.71968pt>
 File: imgs/baliza.jpg Graphic file (type jpg)
  <use imgs/baliza.jpg>
 Package pdftex.def Info: imgs/baliza.jpg used on input line 25.
 (pdftex.def)             Requested size: 132.25557pt x 91.64798pt.
 
-[34 <./imgs/esquema2.png>] <imgs/fig421.jpg, id=623, 930.47626pt x 271.0125pt>
+[34 <./imgs/esquema2.png>] <imgs/fig421.jpg, id=624, 930.47626pt x 271.0125pt>
 File: imgs/fig421.jpg Graphic file (type jpg)
 
 <use imgs/fig421.jpg>
@@ -1584,7 +1581,7 @@ rted-to.pdf imgs/colorfilter.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/colorfilter-eps-converted-to.pdf, id=638, 1116.17pt x 328.22626pt>
+<imgs/colorfilter-eps-converted-to.pdf, id=639, 1116.17pt x 328.22626pt>
 File: imgs/colorfilter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/colorfilter-eps-converted-to.pdf>
@@ -1596,7 +1593,7 @@ Overfull \hbox (3.58554pt too wide) in paragraph at lines 111--112
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39] [40] <imgs/k_beacon21.png, id=712, 466.74374pt x 262.73157pt>
+[39] [40] <imgs/k_beacon21.png, id=713, 466.74374pt x 262.73157pt>
 File: imgs/k_beacon21.png Graphic file (type png)
 
 <use imgs/k_beacon21.png>
@@ -1613,7 +1610,7 @@ ed-to.pdf imgs/k_Beacon1.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<imgs/k_Beacon1-eps-converted-to.pdf, id=713, 679.53876pt x 321.2pt>
+<imgs/k_Beacon1-eps-converted-to.pdf, id=714, 679.53876pt x 321.2pt>
 File: imgs/k_Beacon1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imgs/k_Beacon1-eps-converted-to.pdf>
@@ -1621,14 +1618,14 @@ Package pdftex.def Info: imgs/k_Beacon1-eps-converted-to.pdf used on input line
  169.
 (pdftex.def)             Requested size: 199.16608pt x 85.35774pt.
 
-<imgs/NuevoAlgoritmo.jpg, id=715, 868.24374pt x 712.6625pt>
+<imgs/NuevoAlgoritmo.jpg, id=716, 868.24374pt x 712.6625pt>
 File: imgs/NuevoAlgoritmo.jpg Graphic file (type jpg)
 
 <use imgs/NuevoAlgoritmo.jpg>
 Package pdftex.def Info: imgs/NuevoAlgoritmo.jpg used on input line 184.
 (pdftex.def)             Requested size: 264.51115pt x 217.11707pt.
  [41 <./imgs/k_beacon21.png> <./imgs/k_Beacon1-eps-converted-to.pdf>] <imgs/sta
-tes.png, id=732, 487.06969pt x 383.18156pt>
+tes.png, id=733, 487.06969pt x 383.18156pt>
 File: imgs/states.png Graphic file (type png)
 
 <use imgs/states.png>
@@ -1831,21 +1828,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-[45] <imgs/esquemapd2.png, id=789, 972.63374pt x 167.62625pt>
+[45] <imgs/esquemapd2.png, id=790, 972.63374pt x 167.62625pt>
 File: imgs/esquemapd2.png Graphic file (type png)
 
 <use imgs/esquemapd2.png>
 Package pdftex.def Info: imgs/esquemapd2.png used on input line 276.
 (pdftex.def)             Requested size: 440.84746pt x 75.9759pt.
  [46 <./imgs/esquemapd2.png>] [47]
-<imgs/PreciseLanding1.png, id=815, 663.47874pt x 399.4925pt>
+<imgs/PreciseLanding1.png, id=816, 663.47874pt x 399.4925pt>
 File: imgs/PreciseLanding1.png Graphic file (type png)
 
 <use imgs/PreciseLanding1.png>
 Package pdftex.def Info: imgs/PreciseLanding1.png used on input line 322.
 (pdftex.def)             Requested size: 199.16664pt x 105.27371pt.
 
-<imgs/PreciseLanding2.png, id=816, 645.41125pt x 510.90875pt>
+<imgs/PreciseLanding2.png, id=817, 645.41125pt x 510.90875pt>
 File: imgs/PreciseLanding2.png Graphic file (type png)
 
 <use imgs/PreciseLanding2.png>
@@ -1860,41 +1857,41 @@ Chapter 5.
 
 
 
-] <imgs/perception1.jpg, id=832, 216.20775pt x 98.769pt>
+] <imgs/perception1.jpg, id=833, 216.20775pt x 98.769pt>
 File: imgs/perception1.jpg Graphic file (type jpg)
 
 <use imgs/perception1.jpg>
 Package pdftex.def Info: imgs/perception1.jpg used on input line 25.
 (pdftex.def)             Requested size: 176.33629pt x 80.55553pt.
 
-<imgs/perception2.jpg, id=833, 173.448pt x 81.906pt>
+<imgs/perception2.jpg, id=834, 173.448pt x 81.906pt>
 File: imgs/perception2.jpg Graphic file (type jpg)
 
 <use imgs/perception2.jpg>
 Package pdftex.def Info: imgs/perception2.jpg used on input line 28.
 (pdftex.def)             Requested size: 176.33629pt x 83.27429pt.
  [51 <./imgs/perception1.jpg> <./imgs/perception2.jpg>] <imgs/k_beacon21.jpg, i
-d=841, 622.325pt x 350.30875pt>
+d=842, 622.325pt x 350.30875pt>
 File: imgs/k_beacon21.jpg Graphic file (type jpg)
 
 <use imgs/k_beacon21.jpg>
 Package pdftex.def Info: imgs/k_beacon21.jpg used on input line 39.
 (pdftex.def)             Requested size: 242.46744pt x 136.48622pt.
- <imgs/TakeOff.jpg, id=844, 457.71pt x 293.29575pt>
+ <imgs/TakeOff.jpg, id=845, 457.71pt x 293.29575pt>
 File: imgs/TakeOff.jpg Graphic file (type jpg)
 
 <use imgs/TakeOff.jpg>
 Package pdftex.def Info: imgs/TakeOff.jpg used on input line 56.
 (pdftex.def)             Requested size: 369.89801pt x 170.72028pt.
  [52 <./imgs/k_beacon21.jpg>]
-<imgs/takeoff_baliza.jpg, id=849, 525.76425pt x 439.6425pt>
+<imgs/takeoff_baliza.jpg, id=850, 525.76425pt x 439.6425pt>
 File: imgs/takeoff_baliza.jpg Graphic file (type jpg)
 
 <use imgs/takeoff_baliza.jpg>
 Package pdftex.def Info: imgs/takeoff_baliza.jpg used on input line 68.
 (pdftex.def)             Requested size: 199.16673pt x 128.03644pt.
 
-<imgs/takeoff_baliza2.jpg, id=850, 495.65175pt x 490.83376pt>
+<imgs/takeoff_baliza2.jpg, id=851, 495.65175pt x 490.83376pt>
 File: imgs/takeoff_baliza2.jpg Graphic file (type jpg)
 
 <use imgs/takeoff_baliza2.jpg>
@@ -1902,66 +1899,66 @@ Package pdftex.def Info: imgs/takeoff_baliza2.jpg used on input line 71.
 (pdftex.def)             Requested size: 199.1723pt x 128.03317pt.
  [53 <./imgs/TakeOff.jpg> <./imgs/takeoff_baliza.jpg> <./imgs/takeoff_baliza2.j
 pg>]
-<imgs/busqueda1.jpg, id=861, 999.735pt x 363.3575pt>
+<imgs/busqueda1.jpg, id=862, 999.735pt x 363.3575pt>
 File: imgs/busqueda1.jpg Graphic file (type jpg)
  <use imgs/busqueda1.jpg>
 Package pdftex.def Info: imgs/busqueda1.jpg used on input line 87.
 (pdftex.def)             Requested size: 142.2654pt x 85.35574pt.
 
-<imgs/busqueda3.jpg, id=862, 960.58875pt x 362.35374pt>
+<imgs/busqueda3.jpg, id=863, 960.58875pt x 362.35374pt>
 File: imgs/busqueda3.jpg Graphic file (type jpg)
 
 <use imgs/busqueda3.jpg>
 Package pdftex.def Info: imgs/busqueda3.jpg used on input line 88.
 (pdftex.def)             Requested size: 142.26457pt x 85.35771pt.
- <imgs/busqueda5.jpg, id=863, 821.0675pt x 337.26pt>
+ <imgs/busqueda5.jpg, id=864, 821.0675pt x 337.26pt>
 File: imgs/busqueda5.jpg Graphic file (type jpg)
 
 <use imgs/busqueda5.jpg>
 Package pdftex.def Info: imgs/busqueda5.jpg used on input line 89.
 (pdftex.def)             Requested size: 142.26071pt x 85.35431pt.
- <imgs/busqueda6.jpg, id=864, 831.105pt x 316.18124pt>
+ <imgs/busqueda6.jpg, id=865, 831.105pt x 316.18124pt>
 File: imgs/busqueda6.jpg Graphic file (type jpg)
 
 <use imgs/busqueda6.jpg>
 Package pdftex.def Info: imgs/busqueda6.jpg used on input line 90.
 (pdftex.def)             Requested size: 216.23438pt x 85.35559pt.
- <imgs/busqueda7.jpg, id=865, 935.495pt x 341.275pt>
+ <imgs/busqueda7.jpg, id=866, 935.495pt x 341.275pt>
 File: imgs/busqueda7.jpg Graphic file (type jpg)
 
 <use imgs/busqueda7.jpg>
 Package pdftex.def Info: imgs/busqueda7.jpg used on input line 91.
 (pdftex.def)             Requested size: 216.2299pt x 85.35498pt.
  [54]
-<imgs/busqueda_real1.jpg, id=873, 1098.504pt x 517.935pt>
+<imgs/busqueda_real1.jpg, id=874, 1098.504pt x 517.935pt>
 File: imgs/busqueda_real1.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real1.jpg>
 Package pdftex.def Info: imgs/busqueda_real1.jpg used on input line 104.
 (pdftex.def)             Requested size: 145.48045pt x 68.59048pt.
 
-<imgs/busqueda_real3.jpg, id=874, 1007.56425pt x 498.663pt>
+<imgs/busqueda_real3.jpg, id=875, 1007.56425pt x 498.663pt>
 File: imgs/busqueda_real3.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real3.jpg>
 Package pdftex.def Info: imgs/busqueda_real3.jpg used on input line 105.
 (pdftex.def)             Requested size: 141.0744pt x 69.81995pt.
 
-<imgs/busqueda_real5.jpg, id=875, 1085.2545pt x 562.5015pt>
+<imgs/busqueda_real5.jpg, id=876, 1085.2545pt x 562.5015pt>
 File: imgs/busqueda_real5.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real5.jpg>
 Package pdftex.def Info: imgs/busqueda_real5.jpg used on input line 106.
 (pdftex.def)             Requested size: 132.25557pt x 68.54439pt.
 
-<imgs/busqueda_real6.jpg, id=876, 1115.96925pt x 552.26324pt>
+<imgs/busqueda_real6.jpg, id=877, 1115.96925pt x 552.26324pt>
 File: imgs/busqueda_real6.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real6.jpg>
 Package pdftex.def Info: imgs/busqueda_real6.jpg used on input line 107.
 (pdftex.def)             Requested size: 176.33629pt x 87.26pt.
 
-<imgs/busqueda_real7.jpg, id=877, 1058.15324pt x 540.8205pt>
+<imgs/busqueda_real7.jpg, id=878, 1058.15324pt x 540.8205pt>
 File: imgs/busqueda_real7.jpg Graphic file (type jpg)
 
 <use imgs/busqueda_real7.jpg>
@@ -1969,27 +1966,27 @@ Package pdftex.def Info: imgs/busqueda_real7.jpg used on input line 108.
 (pdftex.def)             Requested size: 167.52419pt x 85.61703pt.
  [55 <./imgs/busqueda1.jpg> <./imgs/busqueda3.jpg> <./imgs/busqueda5.jpg> <./im
 gs/busqueda6.jpg> <./imgs/busqueda7.jpg>]
-<imgs/landing1_1.jpg, id=883, 274.02374pt x 122.4575pt>
+<imgs/landing1_1.jpg, id=884, 274.02374pt x 122.4575pt>
 File: imgs/landing1_1.jpg Graphic file (type jpg)
 
 <use imgs/landing1_1.jpg>
 Package pdftex.def Info: imgs/landing1_1.jpg used on input line 122.
 (pdftex.def)             Requested size: 216.24641pt x 113.81328pt.
 
-<imgs/landing2_1.jpg, id=884, 272.01625pt x 122.4575pt>
+<imgs/landing2_1.jpg, id=885, 272.01625pt x 122.4575pt>
 File: imgs/landing2_1.jpg Graphic file (type jpg)
 
 <use imgs/landing2_1.jpg>
 Package pdftex.def Info: imgs/landing2_1.jpg used on input line 123.
 (pdftex.def)             Requested size: 216.25188pt x 113.81328pt.
 
-<imgs/landing3_1.jpg, id=885, 272.01625pt x 122.4575pt>
+<imgs/landing3_1.jpg, id=886, 272.01625pt x 122.4575pt>
 File: imgs/landing3_1.jpg Graphic file (type jpg)
 
 <use imgs/landing3_1.jpg>
 Package pdftex.def Info: imgs/landing3_1.jpg used on input line 124.
 (pdftex.def)             Requested size: 216.25188pt x 113.81328pt.
- <imgs/landing4_1.jpg, id=886, 273.02pt x 122.4575pt>
+ <imgs/landing4_1.jpg, id=887, 273.02pt x 122.4575pt>
 File: imgs/landing4_1.jpg Graphic file (type jpg)
 
 <use imgs/landing4_1.jpg>
@@ -1999,42 +1996,42 @@ Package pdftex.def Info: imgs/landing4_1.jpg used on input line 125.
 eal5.jpg> <./imgs/busqueda_real6.jpg> <./imgs/busqueda_real7.jpg>] [57 <./imgs/
 landing1_1.jpg> <./imgs/landing2_1.jpg> <./imgs/landing3_1.jpg> <./imgs/landing
 4_1.jpg>]
-<imgs/aterrizaje_real1.jpg, id=896, 331.83975pt x 188.50426pt>
+<imgs/aterrizaje_real1.jpg, id=897, 331.83975pt x 188.50426pt>
 File: imgs/aterrizaje_real1.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real1.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real1.jpg used on input line 137.
 (pdftex.def)             Requested size: 132.25557pt x 75.12997pt.
 
-<imgs/aterrizaje_real2.jpg, id=897, 338.4645pt x 189.70876pt>
+<imgs/aterrizaje_real2.jpg, id=898, 338.4645pt x 189.70876pt>
 File: imgs/aterrizaje_real2.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real2.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real2.jpg used on input line 138.
 (pdftex.def)             Requested size: 132.25557pt x 74.13084pt.
 
-<imgs/aterrizaje_real3.jpg, id=898, 335.45325pt x 190.311pt>
+<imgs/aterrizaje_real3.jpg, id=899, 335.45325pt x 190.311pt>
 File: imgs/aterrizaje_real3.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real3.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real3.jpg used on input line 139.
 (pdftex.def)             Requested size: 132.25557pt x 75.03407pt.
 
-<imgs/aterrizaje_real4.jpg, id=899, 333.6465pt x 193.9245pt>
+<imgs/aterrizaje_real4.jpg, id=900, 333.6465pt x 193.9245pt>
 File: imgs/aterrizaje_real4.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real4.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real4.jpg used on input line 140.
 (pdftex.def)             Requested size: 132.25557pt x 76.87007pt.
 
-<imgs/aterrizaje_real5.jpg, id=900, 334.851pt x 184.2885pt>
+<imgs/aterrizaje_real5.jpg, id=901, 334.851pt x 184.2885pt>
 File: imgs/aterrizaje_real5.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real5.jpg>
 Package pdftex.def Info: imgs/aterrizaje_real5.jpg used on input line 141.
 (pdftex.def)             Requested size: 132.25557pt x 72.78893pt.
 
-<imgs/aterrizaje_real6.jpg, id=901, 335.45325pt x 189.70876pt>
+<imgs/aterrizaje_real6.jpg, id=902, 335.45325pt x 189.70876pt>
 File: imgs/aterrizaje_real6.jpg Graphic file (type jpg)
 
 <use imgs/aterrizaje_real6.jpg>
@@ -2043,25 +2040,25 @@ Package pdftex.def Info: imgs/aterrizaje_real6.jpg used on input line 142.
  [58 <./imgs/aterrizaje_real1.jpg> <./imgs/aterrizaje_real2.jpg> <./imgs/aterri
 zaje_real3.jpg> <./imgs/aterrizaje_real4.jpg> <./imgs/aterrizaje_real5.jpg> <./
 imgs/aterrizaje_real6.jpg>]
-<imgs/total1.jpg, id=911, 186.09525pt x 90.3375pt>
+<imgs/total1.jpg, id=912, 186.09525pt x 90.3375pt>
 File: imgs/total1.jpg Graphic file (type jpg)
  <use imgs/total1.jpg>
 Package pdftex.def Info: imgs/total1.jpg used on input line 159.
 (pdftex.def)             Requested size: 110.21185pt x 53.4999pt.
 
-<imgs/total2.jpg, id=912, 224.63925pt x 104.18925pt>
+<imgs/total2.jpg, id=913, 224.63925pt x 104.18925pt>
 File: imgs/total2.jpg Graphic file (type jpg)
  <use imgs/total2.jpg>
 Package pdftex.def Info: imgs/total2.jpg used on input line 162.
 (pdftex.def)             Requested size: 110.21185pt x 51.11835pt.
 
-<imgs/total3.jpg, id=913, 189.70876pt x 103.587pt>
+<imgs/total3.jpg, id=914, 189.70876pt x 103.587pt>
 File: imgs/total3.jpg Graphic file (type jpg)
  <use imgs/total3.jpg>
 Package pdftex.def Info: imgs/total3.jpg used on input line 165.
 (pdftex.def)             Requested size: 110.21185pt x 60.18007pt.
 
-<imgs/total4.jpg, id=914, 190.311pt x 90.3375pt>
+<imgs/total4.jpg, id=915, 190.311pt x 90.3375pt>
 File: imgs/total4.jpg Graphic file (type jpg)
  <use imgs/total4.jpg>
 Package pdftex.def Info: imgs/total4.jpg used on input line 168.
@@ -2071,27 +2068,27 @@ Overfull \hbox (15.6664pt too wide) in paragraph at lines 159--168
  [][][][][][][][] 
  []
 
-<imgs/total5.jpg, id=915, 186.6975pt x 95.75775pt>
+<imgs/total5.jpg, id=916, 186.6975pt x 95.75775pt>
 File: imgs/total5.jpg Graphic file (type jpg)
  <use imgs/total5.jpg>
 Package pdftex.def Info: imgs/total5.jpg used on input line 171.
 (pdftex.def)             Requested size: 110.21185pt x 56.52725pt.
 
-<imgs/complete1.png, id=919, 511.31026pt x 284.86424pt>
+<imgs/complete1.png, id=920, 511.31026pt x 284.86424pt>
 File: imgs/complete1.png Graphic file (type png)
 
 <use imgs/complete1.png>
 Package pdftex.def Info: imgs/complete1.png used on input line 206.
 (pdftex.def)             Requested size: 145.48045pt x 81.0524pt.
 
-<imgs/complete2.png, id=920, 512.51476pt x 289.68225pt>
+<imgs/complete2.png, id=921, 512.51476pt x 289.68225pt>
 File: imgs/complete2.png Graphic file (type png)
 
 <use imgs/complete2.png>
 Package pdftex.def Info: imgs/complete2.png used on input line 209.
 (pdftex.def)             Requested size: 145.48045pt x 82.22878pt.
 
-<imgs/complete3.png, id=921, 514.3215pt x 287.27325pt>
+<imgs/complete3.png, id=922, 514.3215pt x 287.27325pt>
 File: imgs/complete3.png Graphic file (type png)
 
 <use imgs/complete3.png>
@@ -2102,19 +2099,19 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 206--212
  [][][][][][] 
  []
 
-<imgs/complete4.png, id=922, 514.3215pt x 289.08pt>
+<imgs/complete4.png, id=923, 514.3215pt x 289.08pt>
 File: imgs/complete4.png Graphic file (type png)
  <use imgs/complete4.png>
 Package pdftex.def Info: imgs/complete4.png used on input line 215.
 (pdftex.def)             Requested size: 145.48045pt x 81.7667pt.
 
-<imgs/complete5.png, id=923, 513.71925pt x 284.86424pt>
+<imgs/complete5.png, id=924, 513.71925pt x 284.86424pt>
 File: imgs/complete5.png Graphic file (type png)
 
 <use imgs/complete5.png>
 Package pdftex.def Info: imgs/complete5.png used on input line 218.
 (pdftex.def)             Requested size: 145.48045pt x 80.66989pt.
- <imgs/complete6.png, id=924, 512.51476pt x 289.08pt>
+ <imgs/complete6.png, id=925, 512.51476pt x 289.08pt>
 File: imgs/complete6.png Graphic file (type png)
 
 <use imgs/complete6.png>
@@ -2125,19 +2122,19 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 215--221
  [][][][][][] 
  []
 
-<imgs/complete7.png, id=925, 516.12825pt x 289.08pt>
+<imgs/complete7.png, id=926, 516.12825pt x 289.08pt>
 File: imgs/complete7.png Graphic file (type png)
  <use imgs/complete7.png>
 Package pdftex.def Info: imgs/complete7.png used on input line 224.
 (pdftex.def)             Requested size: 145.48045pt x 81.47998pt.
 
-<imgs/complete8.png, id=926, 514.3215pt x 283.65974pt>
+<imgs/complete8.png, id=927, 514.3215pt x 283.65974pt>
 File: imgs/complete8.png Graphic file (type png)
 
 <use imgs/complete8.png>
 Package pdftex.def Info: imgs/complete8.png used on input line 227.
 (pdftex.def)             Requested size: 145.48045pt x 80.23357pt.
- <imgs/complete9.png, id=927, 511.9125pt x 286.671pt>
+ <imgs/complete9.png, id=928, 511.9125pt x 286.671pt>
 File: imgs/complete9.png Graphic file (type png)
 
 <use imgs/complete9.png>
@@ -2148,21 +2145,21 @@ Overfull \hbox (7.34373pt too wide) in paragraph at lines 224--230
  [][][][][][] 
  []
 
-<imgs/complete10.png, id=928, 511.9125pt x 290.88675pt>
+<imgs/complete10.png, id=929, 511.9125pt x 290.88675pt>
 File: imgs/complete10.png Graphic file (type png)
 
 <use imgs/complete10.png>
 Package pdftex.def Info: imgs/complete10.png used on input line 233.
 (pdftex.def)             Requested size: 145.48045pt x 82.6639pt.
 
-<imgs/complete11.png, id=929, 513.117pt x 290.2845pt>
+<imgs/complete11.png, id=930, 513.117pt x 290.2845pt>
 File: imgs/complete11.png Graphic file (type png)
 
 <use imgs/complete11.png>
 Package pdftex.def Info: imgs/complete11.png used on input line 236.
 (pdftex.def)             Requested size: 145.48045pt x 82.30228pt.
 
-<imgs/complete12.png, id=930, 514.92375pt x 288.47775pt>
+<imgs/complete12.png, id=931, 514.92375pt x 288.47775pt>
 File: imgs/complete12.png Graphic file (type png)
 
 <use imgs/complete12.png>
@@ -2236,10 +2233,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 14669 strings out of 494953
- 210913 string characters out of 6180977
- 358460 words of memory out of 5000000
- 17210 multiletter control sequences out of 15000+600000
+ 14670 strings out of 494953
+ 210929 string characters out of 6180977
+ 358535 words of memory out of 5000000
+ 17211 multiletter control sequences out of 15000+600000
  81455 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,13n,51p,3218b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2256,10 +2253,10 @@ re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Memoria.pdf (73 pages, 14286132 bytes).
+Output written on Memoria.pdf (73 pages, 14211866 bytes).
 PDF statistics:
- 1182 PDF objects out of 1200 (max. 8388607)
- 976 compressed objects within 10 object streams
+ 1183 PDF objects out of 1200 (max. 8388607)
+ 977 compressed objects within 10 object streams
  342 named destinations out of 1000 (max. 500000)
  825 words of extra memory for PDF output out of 10000 (max. 10000000)
 

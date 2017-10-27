@@ -7,7 +7,7 @@
 \section{Diseño}
 \label{sec.Design}
 
-\hspace{1 cm} El diseño de este algoritmo consta de un comportamiento reactivo de iteraciones continuas. Es un proceso basado en adquisici\'on-procesado-env\'io de ordenes, tal y como muestra la figura \ref{fig:esquema_d}. La adquisici\'on de los datos se realizan mediante los sensores del drone. Estos datos sensoriales ser\'an recogidos para su procesamiento y tras \'esto se enviar\'an las instrucciones al drone para que las ejecute. El sensor utilizado en este proyecto ha sido la c\'amara, y los movimientos del drone depender\'an de lo que esta capte en cada momento. 
+\hspace{1 cm} El diseño de este algoritmo consta de un comportamiento reactivo de iteraciones continuas. Es un proceso basado en adquisici\'on-procesado-env\'io de ordenes, tal y como muestra la figura \ref{fig:esquema_d1}. La adquisici\'on de los datos se realizan mediante los sensores del drone. Estos datos sensoriales ser\'an recogidos para su procesamiento y tras \'esto se enviar\'an las instrucciones al drone para que las ejecute. El sensor utilizado en este proyecto ha sido la c\'amara, y los movimientos del drone depender\'an de lo que esta capte en cada momento. 
 
 \hspace{1 cm} Por otro lado, la parte de control es un aut\'omata finito de estados, el cual comienza en un estado inicial (despegue), y en funci\'on de lo que recibe a la entrada (imagen del sensor), realizar\'a el procesamiento necesario para producir la informaci\'on que enviar al drone, y en ocasiones le llevar\'a a pasar de un estado a otro. Este aut\'omata est\'a compuesto por 6 estados: despegando, buscando, posible baliza, centr\'andose en la baliza, aterrizando y aterrizado. A excepci\'on del primero, los dem\'as estados depender\'an de lo que detecte el drone en cada momento. El primer estado est\'a controlado por tiempo, pues son 10 segundos al iniciarse en los que el drone inicia el vuelo sobre una baliza y trata de estar centrado sobre \'esta, para as\'i tener un despegue controlado y evitar que el drone se mueva en caso de tener alguna deriva o haya factores externos que produzcan esto. Una vez transcurridos los 10 segundos se pasar\'a al estado de b\'usqueda e ir\'a pasando por los distintos estados hasta su aterrizaje, seg\'un se explicar\'a con detalle en la secci\'on \ref{sec.control}. 
 
@@ -15,7 +15,7 @@
 	\centering
 		\includegraphics[width=0.75\textwidth]{imgs/esquema2.png}
          \caption{Esquema que muestra la adquisici\'on, proceso y envio de ordenes}
-	\label{fig:esquema_d}
+	\label{fig:esquema_d1}
 \end{figure}
 
 \hspace{1 cm} El lugar de aterrizaje del drone es una baliza previamente definida. Esta baliza es un cuadrado que en su interior tiene cuatro cuadrantes, dos naranjas, y dos azules o verdes, dependiendo si se trabaja con el drone real o con el simulador. Esta baliza se diseñ\'o as\'i para que sea dif\'icil confundirla con otro objeto, pues de ser una baliza simple se podr\'ian confundir los colores y para que se pudiera detectar del mismo modo a diferentes alturas. Lo que busca el software ser\'a la cruceta que forman estos cuatro cuadrados y el punto central de \'esta. Lo que buscar\'a es un objeto que tenga determinadas caracter\'isticas y patrones, algo que se puede detectar a diferentes alturas, distintas condiciones y situaciones.
