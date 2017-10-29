@@ -218,8 +218,8 @@ class MyAlgorithm(threading.Thread):
             show_image=input_image+1-1
             show_image2=input_image+1-1
             # define range of orange and green color in HSV
-            lower_orange = np.array([108,220,69], dtype=np.uint8) # 108,220,69 orange, CAMARA DELANTERA REAL 70,110,120 CAMARA ABAJO DRONE 100,100,80
-            upper_orange = np.array([120, 255,110], dtype=np.uint8) #120, 255,110 orange,   CAMARA DELANTERA REAL 120, 200,255 CAMARA ABAJO DRONE 150, 255,255
+            lower_orange = np.array([108,220,69], dtype=np.uint8)                                         # 108,220,69 orange, CAMARA DELANTERA REAL 70,110,120 CAMARA ABAJO DRONE 100,100,80
+            upper_orange = np.array([120, 255,110], dtype=np.uint8)                                     #120, 255,110 orange,   CAMARA DELANTERA REAL 120, 200,255 CAMARA ABAJO DRONE 150, 255,255
             maskOrange = cv2.inRange(hsv, lower_orange, upper_orange)
             maskRGBOrange = cv2.bitwise_and(input_image,input_image, mask= maskOrange)
             momentsOrange = cv2.moments(maskOrange)
